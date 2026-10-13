@@ -1,0 +1,16 @@
+{
+  "name": "nesaasity-agency",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nesaasity — 0 -> 1 SaaS MVP Studio & Design Agency",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "start": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}

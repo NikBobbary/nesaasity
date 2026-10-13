@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesaasity — 0 -> 1 SaaS MVP Studio | Designed &amp; Launched in 14 Days</title>
+  <meta name="description" content="Nesaasity is the elite 0 -> 1 digital agency and MVP studio for venture-backed founders. We design, build, and deploy production-grade SaaS products in 14 days.">
+  <meta name="keywords" content="SaaS MVP studio, 0 to 1 design agency, rapid MVP development, Next.js Supabase agency, startup design studio">
+  <meta property="og:title" content="Nesaasity — 0 -> 1 SaaS MVP Studio">
+  <meta property="og:description" content="We bolt your SaaS from zero to product-market fit in 14 days. High-voltage UI/UX, battle-hardened fullstack code.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Kumbh Sans, Playfair Display & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Kumbh+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <!-- Dynamic Vector Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark-dark-B5FOCEAs.svg" id="faviconLink">
+
+  <link rel="stylesheet" crossorigin href="/assets/index-CwJh5Ze2.css">
+</head>
+<body class="grid-background-overlay">
+  <!-- Atmospheric High-Voltage Glow Background -->
+  <div class="bg-ambient-lightning"></div>
+
+  <!-- Confetti Canvas for Celebration -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Global Sticky Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Brand Official SVG Logo -->
+        <a href="#hero" class="brand-link" aria-label="Nesaasity Home">
+          <img src="/assets/logo-dark-full-Cme91Luw.svg" alt="Nesaasity" class="brand-logo-img" width="138" height="41">
+        </a>
+
+        <!-- Header Actions: Sound FX & Booking CTA -->
+        <div class="nav-cta-group">
+          <!-- Sound FX Toggle -->
+          <button id="soundToggle" class="btn btn-outline btn-sm" aria-label="Toggle Sound Effects" title="Toggle Micro Sound FX" style="padding: 0.5rem 0.65rem;">
+            <span id="soundIcon" class="material-symbols-rounded">volume_up</span>
+          </button>
+
+
+          <!-- Primary Sprint Booking Trigger -->
+          <button class="btn btn-primary btn-sm open-modal-btn hide-mobile" data-scope-type="default">
+            <span><span class="material-symbols-rounded filled">bolt</span> Book Sprint</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-nav-toggle" id="mobileMenuOpen" aria-label="Open mobile navigation menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="#hero" class="brand-link" aria-label="Nesaasity Home">
+          <img src="/assets/logo-dark-full-Cme91Luw.svg" alt="Nesaasity" class="brand-logo-img" width="115" height="34">
+        </a>
+        <button id="mobileMenuClose" class="modal-close-cross" aria-label="Close mobile navigation menu" style="position: static;">
+          &times;
+        </button>
+      </div>
+
+      <ul class="mobile-drawer-links">
+        <li><a href="#simulator" class="mobile-nav-item">Sprint Simulator</a></li>
+        <li><a href="#work" class="mobile-nav-item">Case Studies</a></li>
+        <li><a href="#process" class="mobile-nav-item">0 &rarr; 1 Engine</a></li>
+        <li><a href="#capabilities" class="mobile-nav-item">Capabilities</a></li>
+        <li><a href="#pricing" class="mobile-nav-item">Pricing</a></li>
+        <li><a href="#faq" class="mobile-nav-item">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: var(--primitive-space-3); padding-top: var(--primitive-space-4);">
+      <div class="chip-status chip-warning" style="justify-content: center; width: 100%;">
+        &excl; Accepting 2 Founders for Q4 Sprints
+      </div>
+      <button class="btn btn-primary btn-block-mobile open-modal-btn" data-scope-type="default">
+        <span><span class="material-symbols-rounded filled">bolt</span> Book 14-Day Sprint</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Floating Bottom Glassmorphic Pill Navigation Dock -->
+  <nav class="bottom-nav-dock" id="bottomNavDock" aria-label="Section Navigation">
+    <div class="bottom-nav-pill">
+      <ul class="nav-links-desktop">
+        <li class="nav-link-item"><a href="#simulator" class="nav-pill-link" data-section="simulator"><span>Sprint Simulator</span></a></li>
+        <li class="nav-link-item"><a href="#work" class="nav-pill-link" data-section="work"><span>Case Studies</span></a></li>
+        <li class="nav-link-item"><a href="#process" class="nav-pill-link" data-section="process"><span>0 &rarr; 1 Engine</span></a></li>
+        <li class="nav-link-item"><a href="#capabilities" class="nav-pill-link" data-section="capabilities"><span>Capabilities</span></a></li>
+        <li class="nav-link-item"><a href="#pricing" class="nav-pill-link" data-section="pricing"><span>Pricing</span></a></li>
+        <li class="nav-link-item"><a href="#faq" class="nav-pill-link" data-section="faq"><span>FAQ</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="hero">
+    <!-- HERO SECTION: 0 -> 1 SaaS Studio -->
+    <section class="hero-agency">
+      <div class="container">
+        <div class="hero-agency-inner">
+          
+          <!-- Announcement Pill -->
+          <div class="hero-pill-badge">
+            <img src="data:image/svg+xml,%3csvg%20width='485'%20height='573'%20viewBox='0%200%20485%20573'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M333.947%2085.3852L264.822%2085.7898H264.013C231.27%2086.5992%20204.994%20112.093%20202.569%20144.467V146.49V147.3L206.611%20442.303C166.996%20483.175%20126.976%20524.046%2087.3606%20564.918C81.7012%20570.583%2067.1486%20573.821%2059.4681%20570.988C46.1282%20566.132%2048.1494%20552.778%2053.8087%20541.447C79.2758%20487.221%20104.743%20432.996%20130.614%20378.77C145.167%20348.015%20141.124%20339.517%20108.785%20332.233C80.4885%20326.163%2052.1918%20320.093%2023.895%20313.618C-0.359323%20307.953%20-5.61443%20297.836%205.70427%20276.389C42.49%20207.191%2078.4673%20138.397%20116.466%2070.0077C122.125%2059.4863%20134.657%2048.1556%20145.975%2045.7276C214.696%2030.7548%20385.689%200%20385.689%200L333.947%2085.3852Z'%20fill='%239DFF2E'/%3e%3cpath%20d='M311.222%20136.462C311.429%20136.462%20311.636%20136.468%20311.841%20136.477L313.648%20136.462C318.903%20136.058%20323.754%20139.295%20325.775%20143.746L357.215%20233.239L396.112%20335.559C396.457%20336.421%20396.985%20337.063%20397.61%20337.496C399.831%20337.33%20401.957%20335.768%20402.176%20333.131L397.325%20149.816C397.325%20143.342%20402.984%20138.082%20409.452%20138.891H468.875C474.534%20139.7%20478.577%20144.556%20478.577%20150.221L482.89%20463.228L484.641%20559.746C484.55%20561.207%20484.229%20562.585%20483.717%20563.849C482.185%20568.93%20477.582%20572.696%20472.11%20572.696L426.43%20572.291C425.31%20572.291%20424.21%20572.16%20423.15%20571.911C418.392%20571.759%20414.141%20568.696%20412.282%20564.602L387.643%20494.47L341.54%20373.194C341.115%20372.13%20340.411%20371.402%20339.588%20370.987C337.705%20371.443%20336.072%20372.924%20335.881%20375.217L340.732%20558.532C340.732%20565.007%20335.072%20570.267%20328.605%20569.458H269.181C263.522%20568.649%20259.479%20563.792%20259.479%20558.127L253.511%20154.212L253.416%20148.603C253.419%20148.562%20253.423%20148.521%20253.426%20148.481L253.416%20147.793C253.82%20141.318%20259.075%20136.058%20265.543%20136.058L311.222%20136.462Z'%20fill='white'/%3e%3c/svg%3e" alt="" class="inline-mark" width="14" height="16" style="margin-right: 4px;">
+            <span>0 &rarr; 1 SaaS MVP Studio &bull; Accepting 2 Startups for Q4</span>
+          </div>
+
+          <!-- Headline with Kumbh Sans + Editorial Playfair Italic Contrast -->
+          <h1 class="hero-title-headline">
+            We Bolt <span class="gradient-text-bolt">Production MVPs</span> in <span class="italic-accent">14 Days</span> for Venture Founders.
+          </h1>
+
+          <!-- Lead Paragraph -->
+          <p class="hero-subtitle">
+            Next.js &amp; Supabase MVPs shipped in 14 days. Pure velocity.
+          </p>
+
+          <!-- Hero Actions -->
+          <div class="hero-actions-bar">
+            <button class="btn btn-primary btn-lg open-modal-btn" data-scope-type="14-day-sprint">
+              <span><span class="material-symbols-rounded filled">bolt</span> Start Your 14-Day Sprint</span>
+            </button>
+            <a href="#simulator" class="btn btn-secondary btn-lg">
+              <span><span class="material-symbols-rounded">bolt</span> Configure Scope &amp; Timeline</span>
+            </a>
+            <a href="#work" class="btn btn-outline btn-lg">
+              <span>Explore Portfolio ↓</span>
+            </a>
+          </div>
+
+          <!-- Hero Visual Showcase Frame -->
+          <div class="hero-visual-container">
+            <div class="hero-visual-frame card-featured">
+              <span class="hero-frame-telemetry">
+                <img src="data:image/svg+xml,%3csvg%20width='485'%20height='573'%20viewBox='0%200%20485%20573'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M333.947%2085.3852L264.822%2085.7898H264.013C231.27%2086.5992%20204.994%20112.093%20202.569%20144.467V146.49V147.3L206.611%20442.303C166.996%20483.175%20126.976%20524.046%2087.3606%20564.918C81.7012%20570.583%2067.1486%20573.821%2059.4681%20570.988C46.1282%20566.132%2048.1494%20552.778%2053.8087%20541.447C79.2758%20487.221%20104.743%20432.996%20130.614%20378.77C145.167%20348.015%20141.124%20339.517%20108.785%20332.233C80.4885%20326.163%2052.1918%20320.093%2023.895%20313.618C-0.359323%20307.953%20-5.61443%20297.836%205.70427%20276.389C42.49%20207.191%2078.4673%20138.397%20116.466%2070.0077C122.125%2059.4863%20134.657%2048.1556%20145.975%2045.7276C214.696%2030.7548%20385.689%200%20385.689%200L333.947%2085.3852Z'%20fill='%239DFF2E'/%3e%3cpath%20d='M311.222%20136.462C311.429%20136.462%20311.636%20136.468%20311.841%20136.477L313.648%20136.462C318.903%20136.058%20323.754%20139.295%20325.775%20143.746L357.215%20233.239L396.112%20335.559C396.457%20336.421%20396.985%20337.063%20397.61%20337.496C399.831%20337.33%20401.957%20335.768%20402.176%20333.131L397.325%20149.816C397.325%20143.342%20402.984%20138.082%20409.452%20138.891H468.875C474.534%20139.7%20478.577%20144.556%20478.577%20150.221L482.89%20463.228L484.641%20559.746C484.55%20561.207%20484.229%20562.585%20483.717%20563.849C482.185%20568.93%20477.582%20572.696%20472.11%20572.696L426.43%20572.291C425.31%20572.291%20424.21%20572.16%20423.15%20571.911C418.392%20571.759%20414.141%20568.696%20412.282%20564.602L387.643%20494.47L341.54%20373.194C341.115%20372.13%20340.411%20371.402%20339.588%20370.987C337.705%20371.443%20336.072%20372.924%20335.881%20375.217L340.732%20558.532C340.732%20565.007%20335.072%20570.267%20328.605%20569.458H269.181C263.522%20568.649%20259.479%20563.792%20259.479%20558.127L253.511%20154.212L253.416%20148.603C253.419%20148.562%20253.423%20148.521%20253.426%20148.481L253.416%20147.793C253.82%20141.318%20259.075%20136.058%20265.543%20136.058L311.222%20136.462Z'%20fill='white'/%3e%3c/svg%3e" alt="" class="inline-mark" width="14" height="16" style="margin-right: 4px;">
+                <span>PRODUCTION NEXT.JS 15 + SUPABASE STACK &bull; LIVE</span>
+              </span>
+              <img src="/assets/nesaasity-studio-hero-CyUojwaD.jpg" alt="Nesaasity SaaS 0 to 1 Studio Workstation Interface" class="hero-visual-img" width="1140" height="640" loading="eager">
+            </div>
+          </div>
+
+          <!-- Social Proof & Velocity Metrics Strip -->
+          <div class="stats-metric-strip">
+            <div class="stat-item">
+              <div class="stat-number chartreuse">14 Days</div>
+              <div class="stat-label">Average 0 &rarr; 1 Velocity</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number slate">$48M+</div>
+              <div class="stat-label">Raised by Alumni Startups</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Full IP &amp; Code Ownership</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number chartreuse">4.9 / 5</div>
+              <div class="stat-label">Founder NPS Score</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK & ENGINE TOOLING TICKER -->
+    <div class="tech-marquee-strip" aria-label="Core Technology Stack">
+      <div class="marquee-content-track">
+        <!-- Set 1 -->
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Next.js 15 App Router</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Supabase Postgres &amp; Auth</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> OpenAI GPT-4o &amp; Claude 3.5</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> TypeScript 5.5 Strict</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Tailwind CSS &amp; Primitives</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Stripe Billing &amp; Webhooks</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Vercel Edge Runtime</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> PostHog Product Telemetry</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Figma Tokenized Design System</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Prisma ORM &amp; Migrations</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Resend Transactional Email</span>
+        <!-- Set 2 (Duplicates for seamless loop) -->
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Next.js 15 App Router</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Supabase Postgres &amp; Auth</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> OpenAI GPT-4o &amp; Claude 3.5</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> TypeScript 5.5 Strict</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Tailwind CSS &amp; Primitives</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Stripe Billing &amp; Webhooks</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Vercel Edge Runtime</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> PostHog Product Telemetry</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Figma Tokenized Design System</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Prisma ORM &amp; Migrations</span>
+        <span class="tech-tag-pill"><span class="material-symbols-rounded">bolt</span> Resend Transactional Email</span>
+      </div>
+    </div>
+
+    <!-- INTERACTIVE 14-DAY SPRINT SIMULATOR & SCOPE CALCULATOR -->
+    <section class="agency-section" id="simulator">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> Interactive Scope Configurator</span>
+          <h2 class="section-main-title">Calculate Your 14-Day Sprint Scope</h2>
+          <p class="section-lead-desc">
+            Configure stack and stage to calculate timeline, squad, and fee.
+          </p>
+        </div>
+
+        <div class="simulator-wrapper">
+          <div class="simulator-grid">
+            
+            <!-- Left Controls Pane -->
+            <div class="sim-controls-pane">
+              
+              <!-- 1. Stage -->
+              <div>
+                <div class="sim-group-title">
+                  <span>1. Startup Stage</span>
+                  <span class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">STEP 01</span>
+                </div>
+                <div class="sim-options-cluster" id="stageOptions">
+                  <div class="sim-option-pill active" data-stage="pre-seed" data-days="0" data-price="0">
+                    <span><span class="material-symbols-rounded">lightbulb</span> Pre-Seed (Idea on Napkin)</span>
+                  </div>
+                  <div class="sim-option-pill" data-stage="seed" data-days="2" data-price="1200">
+                    <span><span class="material-symbols-rounded">rocket_launch</span> Seed-Funded (Ready to Scale)</span>
+                  </div>
+                  <div class="sim-option-pill" data-stage="ai-pivot" data-days="1" data-price="800">
+                    <span><span class="material-symbols-rounded">smart_toy</span> AI Pivot / LLM Wrap</span>
+                  </div>
+                  <div class="sim-option-pill" data-stage="series-a" data-days="3" data-price="2000">
+                    <span><span class="material-symbols-rounded">domain</span> Series A Spinout / V2 Rewrite</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Core Architecture -->
+              <div>
+                <div class="sim-group-title">
+                  <span>2. Product Architecture</span>
+                  <span class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">STEP 02</span>
+                </div>
+                <div class="sim-options-cluster" id="archOptions">
+                  <div class="sim-option-pill active" data-arch="fullstack" data-days="10" data-price="6500">
+                    <span><span class="material-symbols-rounded">bolt</span> Fullstack Web App (Next.js 15)</span>
+                  </div>
+                  <div class="sim-option-pill" data-arch="ai-agent" data-days="12" data-price="7800">
+                    <span><span class="material-symbols-rounded">psychology</span> Multi-Agent AI Canvas &amp; Telemetry</span>
+                  </div>
+                  <div class="sim-option-pill" data-arch="b2b-saas" data-days="11" data-price="7200">
+                    <span><span class="material-symbols-rounded">bar_chart</span> B2B Analytics &amp; Workflow Hub</span>
+                  </div>
+                  <div class="sim-option-pill" data-arch="devtools" data-days="13" data-price="8400">
+                    <span><span class="material-symbols-rounded">terminal</span> Developer Cloud Platform / API</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Key Inclusions / Integrations -->
+              <div>
+                <div class="sim-group-title">
+                  <span>3. Production Integrations</span>
+                  <span class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">SELECT ALL NEEDED</span>
+                </div>
+                <div class="sim-options-cluster" id="addonOptions">
+                  <div class="sim-option-pill active" data-addon="stripe" data-days="1" data-price="800">
+                    <span><span class="material-symbols-rounded">credit_card</span> Stripe Billing &amp; Subscriptions</span>
+                  </div>
+                  <div class="sim-option-pill active" data-addon="auth" data-days="0" data-price="0">
+                    <span><span class="material-symbols-rounded">lock</span> Supabase / Clerk Auth &amp; RBAC</span>
+                  </div>
+                  <div class="sim-option-pill active" data-addon="llm" data-days="2" data-price="1400">
+                    <span><span class="material-symbols-rounded">bolt</span> OpenAI / Claude RAG Vector DB</span>
+                  </div>
+                  <div class="sim-option-pill" data-addon="websockets" data-days="2" data-price="1100">
+                    <span><span class="material-symbols-rounded">sensors</span> Real-time WebSockets / Events</span>
+                  </div>
+                  <div class="sim-option-pill" data-addon="deck" data-days="1" data-price="900">
+                    <span><span class="material-symbols-rounded">trending_up</span> Pitch Deck &amp; Demo Day Interactive Assets</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Results & Action Pane -->
+            <div class="sim-results-pane">
+              <div>
+                <div class="sim-output-hero">
+                  <div class="sim-output-meta-row">
+                    <span class="text-mono" style="font-size: 12px; color: var(--semantic-text-tertiary); text-transform: uppercase;">Estimated Timeline</span>
+                    <span class="badge badge-chartreuse"><span class="pulse-dot"></span>Guaranteed Window</span>
+                  </div>
+                  <div class="sim-output-number" id="calcDays">13 Days</div>
+                  <p class="text-body-sm" style="margin-top: var(--primitive-space-1);">Kickoff call to live production URL.</p>
+                </div>
+
+                <div class="sim-squad-badge">
+                  <span><span class="material-symbols-rounded filled">bolt</span> Sprint Squad:</span>
+                  <strong id="calcSquad">1 Lead Product Designer + 1 Principal Fullstack Eng + 1 AI Systems Architect</strong>
+                </div>
+
+                <div style="margin-bottom: var(--primitive-space-4);">
+                  <div class="sim-group-title" style="margin-bottom: var(--primitive-space-2);">
+                    <span>Guaranteed Deliverables</span>
+                  </div>
+                  <ul class="sim-checklist-items" id="calcDeliverables">
+                    <li class="sim-checklist-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Complete Figma Design System &amp; Component Primitives</span>
+                    </li>
+                    <li class="sim-checklist-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Production Next.js 15 Repository with 100% IP Ownership</span>
+                    </li>
+                    <li class="sim-checklist-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Supabase Database Schemas, Row-Level Security &amp; Auth</span>
+                    </li>
+                    <li class="sim-checklist-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Live Vercel Production Environment + Automated CI/CD</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: var(--primitive-space-3); border-top: 1px solid var(--semantic-border-subtle); padding-top: var(--primitive-space-4);">
+                  <div>
+                    <span class="text-caption" style="display: block; text-transform: uppercase;">Fixed Sprint Investment</span>
+                    <strong style="font-size: 2rem; color: var(--semantic-text-primary);" id="calcPrice">$9,500</strong>
+                    <span style="font-size: 12px; color: var(--semantic-text-tertiary);"> / Flat Fixed Fee</span>
+                  </div>
+                  <div class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">NO HOURLY SURPRISES</div>
+                </div>
+
+                <button class="btn btn-primary btn-lg" id="lockScopeBtn" style="width: 100%;">
+                  <span><span class="material-symbols-rounded filled">bolt</span> Lock In Scope &amp; Reserve Sprint Slot</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES: 0 -> 1 MVPS LAUNCHED -->
+    <section class="agency-section" id="work">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> Proof of Velocity</span>
+          <h2 class="section-main-title">Recent 0 &rarr; 1 SaaS MVPs</h2>
+          <p class="section-lead-desc">
+            Napkin wireframes to production deployment in 14 days.
+          </p>
+        </div>
+
+        <!-- Portfolio Category Filters -->
+        <div class="portfolio-filter-row" role="tablist">
+          <button class="filter-tab-pill active" data-filter="all">All Startups (4)</button>
+          <button class="filter-tab-pill" data-filter="ai">AI Native (2)</button>
+          <button class="filter-tab-pill" data-filter="devtools">DevTools &amp; Data (1)</button>
+          <button class="filter-tab-pill" data-filter="health">HealthTech (1)</button>
+        </div>
+
+        <!-- Case Studies Grid -->
+        <div class="case-studies-grid">
+          
+          <!-- Case 1: Cognix AI -->
+          <article class="case-card-expanded" data-category="ai">
+            <div class="case-card-media">
+              <img src="/assets/cognix-ai-preview-BSQMcxUw.jpg" alt="Cognix AI Legal Reasoning Workspace Dashboard" loading="lazy">
+              <span class="case-media-tag">12 DAYS TO LAUNCH</span>
+            </div>
+            <div class="case-content-body">
+              <div class="case-title-row">
+                <h3 class="case-card-title">Cognix AI</h3>
+                <span class="badge badge-chartreuse">$2.4M Seed Raised</span>
+              </div>
+              <p class="text-body-sm" style="margin-bottom: var(--primitive-space-3);">
+                Autonomous legal AI with multi-agent reasoning and vector search.
+              </p>
+
+              <div class="case-stats-banner">
+                <div>
+                  <div class="case-stat-num">12 Days</div>
+                  <div class="case-stat-sub">Zero to Prod</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">$2.4M</div>
+                  <div class="case-stat-sub">Capital Raised</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">18,400+</div>
+                  <div class="case-stat-sub">Waitlist Founders</div>
+                </div>
+              </div>
+
+              <div class="case-tech-tags-list">
+                <span class="tech-tag-pill">Next.js 15</span>
+                <span class="tech-tag-pill">OpenAI GPT-4o</span>
+                <span class="tech-tag-pill">Supabase Vector</span>
+                <span class="tech-tag-pill">Kumbh Sans</span>
+                <button class="btn btn-outline btn-sm open-modal-btn" data-scope-type="cognix-like" style="margin-left: auto;">
+                  <span><span class="material-symbols-rounded">bolt</span> Build Like This</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2: Hyperflow -->
+          <article class="case-card-expanded" data-category="devtools">
+            <div class="case-card-media">
+              <img src="/assets/hyperflow-preview-BDP3of00.jpg" alt="Hyperflow Real-Time Event Stream Analytics Platform" loading="lazy">
+              <span class="case-media-tag">YC S24 BATCH</span>
+            </div>
+            <div class="case-content-body">
+              <div class="case-title-row">
+                <h3 class="case-card-title">Hyperflow</h3>
+                <span class="badge badge-slate">Y Combinator S24</span>
+              </div>
+              <p class="text-body-sm" style="margin-bottom: var(--primitive-space-3);">
+                Real-time telemetry ingesting 74k events/sec at sub-2ms latency.
+              </p>
+
+              <div class="case-stats-banner">
+                <div>
+                  <div class="case-stat-num">14 Days</div>
+                  <div class="case-stat-sub">Figma to Vercel</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">42 Orgs</div>
+                  <div class="case-stat-sub">Paying Enterprise</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">1.2ms</div>
+                  <div class="case-stat-sub">P99 System Latency</div>
+                </div>
+              </div>
+
+              <div class="case-tech-tags-list">
+                <span class="tech-tag-pill">Next.js App Router</span>
+                <span class="tech-tag-pill">WebSockets</span>
+                <span class="tech-tag-pill">ClickHouse</span>
+                <span class="tech-tag-pill">Tailwind</span>
+                <button class="btn btn-outline btn-sm open-modal-btn" data-scope-type="hyperflow-like" style="margin-left: auto;">
+                  <span><span class="material-symbols-rounded">bolt</span> Build Like This</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3: Layered Health -->
+          <article class="case-card-expanded" data-category="health">
+            <div class="case-card-media">
+              <img src="/assets/layered-health-preview-B-X6-xC8.jpg" alt="Layered Health Ambient Clinical Scribe Platform" loading="lazy">
+              <span class="case-media-tag">14 DAYS TO PROD</span>
+            </div>
+            <div class="case-content-body">
+              <div class="case-title-row">
+                <h3 class="case-card-title">Layered Health</h3>
+                <span class="badge badge-chartreuse">$4.1M Series A</span>
+              </div>
+              <p class="text-body-sm" style="margin-bottom: var(--primitive-space-3);">
+                HIPAA-ready ambient AI scribe with real-time SOAP generation.
+              </p>
+
+              <div class="case-stats-banner">
+                <div>
+                  <div class="case-stat-num">14 Days</div>
+                  <div class="case-stat-sub">MVP Engine Time</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">$4.1M</div>
+                  <div class="case-stat-sub">Series A Led by a16z</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">99.1%</div>
+                  <div class="case-stat-sub">Transcription Accuracy</div>
+                </div>
+              </div>
+
+              <div class="case-tech-tags-list">
+                <span class="tech-tag-pill">Whisper Audio</span>
+                <span class="tech-tag-pill">PostgreSQL</span>
+                <span class="tech-tag-pill">Clerk Auth</span>
+                <span class="tech-tag-pill">Playfair Editorial</span>
+                <button class="btn btn-outline btn-sm open-modal-btn" data-scope-type="layered-like" style="margin-left: auto;">
+                  <span><span class="material-symbols-rounded">bolt</span> Build Like This</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 4: PulseMetrics -->
+          <article class="case-card-expanded" data-category="ai">
+            <div class="case-card-media" style="background: radial-gradient(circle at 50% 50%, rgba(132, 61, 247, 0.25) 0%, rgba(8, 9, 10, 0.95) 75%); display: flex; align-items: center; justify-content: center; padding: 20px;">
+              <div style="width: 85%; background: var(--semantic-bg-surface-elevated); border: 1px solid var(--semantic-border-brand-primary); border-radius: 12px; padding: 16px; box-shadow: var(--semantic-shadow-md);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                  <span class="badge badge-chartreuse">PulseMetrics Engine</span>
+                  <span class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">LIVE RETENTION FEED</span>
+                </div>
+                <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                  <div style="flex: 1; background: rgba(118,224,26,0.1); border: 1px solid rgba(118,224,26,0.25); border-radius: 8px; padding: 8px; text-align: center;">
+                    <div style="font-size: 18px; font-weight: 800; color: var(--semantic-color-primary);">$1.8M ARR</div>
+                    <div style="font-size: 10px; color: var(--semantic-text-tertiary);">REVENUE RUN-RATE</div>
+                  </div>
+                  <div style="flex: 1; background: rgba(100,116,139,0.15); border: 1px solid rgba(148,163,184,0.3); border-radius: 8px; padding: 8px; text-align: center;">
+                    <div style="font-size: 18px; font-weight: 800; color: var(--primitive-slate-300);">9 Months</div>
+                    <div style="font-size: 10px; color: var(--semantic-text-tertiary);">TIME TO ACQUISITION</div>
+                  </div>
+                </div>
+                <div class="chip-status chip-success" style="width: 100%; box-sizing: border-box; font-size: 11px;">
+                  &check; 38 Enterprise Churn Funnels Protected in Real Time
+                </div>
+              </div>
+              <span class="case-media-tag">ACQUIRED IN 9 MOS</span>
+            </div>
+            <div class="case-content-body">
+              <div class="case-title-row">
+                <h3 class="case-card-title">PulseMetrics</h3>
+                <span class="badge badge-slate">Acquisition Exit</span>
+              </div>
+              <p class="text-body-sm" style="margin-bottom: var(--primitive-space-3);">
+                Predictive churn intelligence with automated Stripe workflows.
+              </p>
+
+              <div class="case-stats-banner">
+                <div>
+                  <div class="case-stat-num">10 Days</div>
+                  <div class="case-stat-sub">MVP Sprint Time</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">$1.8M</div>
+                  <div class="case-stat-sub">ARR at Acquisition</div>
+                </div>
+                <div>
+                  <div class="case-stat-num">9 Months</div>
+                  <div class="case-stat-sub">Zero to Exit</div>
+                </div>
+              </div>
+
+              <div class="case-tech-tags-list">
+                <span class="tech-tag-pill">Stripe Webhooks</span>
+                <span class="tech-tag-pill">Python ML</span>
+                <span class="tech-tag-pill">React 19</span>
+                <span class="tech-tag-pill">Supabase</span>
+                <button class="btn btn-outline btn-sm open-modal-btn" data-scope-type="pulse-like" style="margin-left: auto;">
+                  <span><span class="material-symbols-rounded">bolt</span> Build Like This</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- THE 4-PHASE 0 -> 1 SPRINT ENGINE (PROCESS) -->
+    <section class="agency-section" id="process">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> The 14-Day Delivery Engine</span>
+          <h2 class="section-main-title">How We Ship in 14 Days Flat</h2>
+          <p class="section-lead-desc">
+            Senior squads shipping via async Slack. Zero bureaucracy.
+          </p>
+        </div>
+
+        <div class="process-steps-grid">
+          
+          <!-- Phase 1 -->
+          <div class="process-step-card">
+            <div class="process-phase-badge">
+              <span>PHASE 01</span>
+              <span class="process-day-pill">DAYS 1 &ndash; 3</span>
+            </div>
+            <h3 class="process-step-title">Blueprint &amp; Architecture</h3>
+            <p class="text-body-sm">
+              Core PRD, database schema, user flows, and wireframes.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Relational PostgreSQL Schema</li>
+              <li>Interactive User Flow Map</li>
+              <li>Auth &amp; Permissions Spec</li>
+              <li>Figma Wireframe Canvas</li>
+            </ul>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="process-step-card">
+            <div class="process-phase-badge">
+              <span>PHASE 02</span>
+              <span class="process-day-pill">DAYS 4 &ndash; 7</span>
+            </div>
+            <h3 class="process-step-title">High-Voltage UI/UX</h3>
+            <p class="text-body-sm">
+              Dark design tokens, typography, and interactive prototype.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Tokenized Figma Design System</li>
+              <li>Kumbh Sans + Playfair Typography</li>
+              <li>All Responsive Breakpoint Specs</li>
+              <li>Founder Review &amp; Signoff</li>
+            </ul>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="process-step-card card-featured">
+            <div class="process-phase-badge">
+              <span style="color: var(--semantic-color-primary);">PHASE 03 // CORE ENGINE</span>
+              <span class="process-day-pill" style="border-color: var(--semantic-color-primary);">DAYS 8 &ndash; 12</span>
+            </div>
+            <h3 class="process-step-title">Fullstack Engineering</h3>
+            <p class="text-body-sm">
+              Next.js 15, Supabase, LLMs, and Stripe webhooks.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Production Next.js 15 Repo</li>
+              <li>Database Migrations &amp; RLS</li>
+              <li>OpenAI / Claude API Chains</li>
+              <li>Stripe Subscriptions Webhooks</li>
+            </ul>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="process-step-card">
+            <div class="process-phase-badge">
+              <span>PHASE 04</span>
+              <span class="process-day-pill">DAYS 13 &ndash; 14</span>
+            </div>
+            <h3 class="process-step-title">Polish, QA &amp; Launch</h3>
+            <p class="text-body-sm">
+              Lighthouse 99+ optimization, Vercel deployment, repo handoff.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Vercel Production Deploy</li>
+              <li>Lighthouse 99+ Performance</li>
+              <li>100% GitHub Repo IP Transfer</li>
+              <li>Founder Handover Loom &amp; Docs</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO CAPABILITIES & SERVICES -->
+    <section class="agency-section" id="capabilities">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> What We Do</span>
+          <h2 class="section-main-title">Full-Spectrum 0 &rarr; 1 Capabilities</h2>
+          <p class="section-lead-desc">
+            Built to validate, fundraise, and onboard customers.
+          </p>
+        </div>
+
+        <div class="capabilities-grid-layout">
+          
+          <div class="capability-box">
+            <div class="capability-icon-wrap"><span class="material-symbols-rounded">bolt</span></div>
+            <h3 class="text-h3" style="margin-bottom: var(--primitive-space-2);">0 &rarr; 1 MVP Engineering</h3>
+            <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
+              Modular fullstack code engineered for internal handover.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              <span class="badge badge-neutral">Next.js 15</span>
+              <span class="badge badge-neutral">Supabase</span>
+              <span class="badge badge-neutral">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="capability-box">
+            <div class="capability-icon-wrap"><span class="material-symbols-rounded">palette</span></div>
+            <h3 class="text-h3" style="margin-bottom: var(--primitive-space-2);">High-Voltage UI/UX Design</h3>
+            <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
+              Dark interfaces, design tokens, and fluid micro-interactions.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              <span class="badge badge-neutral">Figma Tokens</span>
+              <span class="badge badge-neutral">Kumbh Sans</span>
+              <span class="badge badge-neutral">Micro-animations</span>
+            </div>
+          </div>
+
+          <div class="capability-box">
+            <div class="capability-icon-wrap"><span class="material-symbols-rounded">psychology</span></div>
+            <h3 class="text-h3" style="margin-bottom: var(--primitive-space-2);">AI-Native Workspaces &amp; LLMs</h3>
+            <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
+              Agent chains, pgvector embeddings, and real-time streaming.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              <span class="badge badge-neutral">OpenAI</span>
+              <span class="badge badge-neutral">Claude 3.5</span>
+              <span class="badge badge-neutral">pgvector</span>
+            </div>
+          </div>
+
+          <div class="capability-box">
+            <div class="capability-icon-wrap"><span class="material-symbols-rounded">trending_up</span></div>
+            <h3 class="text-h3" style="margin-bottom: var(--primitive-space-2);">Pitch Decks &amp; Investor Demos</h3>
+            <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
+              Clickable Demo Day prototypes to close rounds.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              <span class="badge badge-neutral">Clickable Prototypes</span>
+              <span class="badge badge-neutral">Pitch Decks</span>
+              <span class="badge badge-neutral">Demo Video</span>
+            </div>
+          </div>
+
+          <div class="capability-box">
+            <div class="capability-icon-wrap"><span class="material-symbols-rounded">rocket_launch</span></div>
+            <h3 class="text-h3" style="margin-bottom: var(--primitive-space-2);">High-Converting Landing Funnels</h3>
+            <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
+              Conversion-tuned landing funnels with interactive widgets.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              <span class="badge badge-neutral">Copywriting</span>
+              <span class="badge badge-neutral">SEO Metadata</span>
+              <span class="badge badge-neutral">PostHog Analytics</span>
+            </div>
+          </div>
+
+          <div class="capability-box">
+            <div class="capability-icon-wrap"><span class="material-symbols-rounded">shield</span></div>
+            <h3 class="text-h3" style="margin-bottom: var(--primitive-space-2);">Code Audit &amp; Scale Refactoring</h3>
+            <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
+              Eliminate tech debt, optimize queries, and harden security.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              <span class="badge badge-neutral">Code Review</span>
+              <span class="badge badge-neutral">Query Optimization</span>
+              <span class="badge badge-neutral">Security Fixes</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- THE ANTIDOTE: COMPARISON MATRIX -->
+    <section class="agency-section" id="comparison">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> The Agency Antidote</span>
+          <h2 class="section-main-title">Why Ambitious Founders Choose Nesaasity</h2>
+          <p class="section-lead-desc">
+            Agencies stall. Freelancers ghost. Full-time hiring takes months.
+          </p>
+        </div>
+
+        <div class="comparison-card">
+          <div class="tokens-table-wrap">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Decision Criteria</th>
+                  <th class="comp-cell-highlight" style="color: var(--semantic-color-primary);"><span class="material-symbols-rounded">bolt</span> Nesaasity 14-Day Studio</th>
+                  <th>Traditional Design Agencies</th>
+                  <th>Hiring In-House Full-Time</th>
+                  <th>Freelance Roulette</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Time to Production</strong></td>
+                  <td class="comp-cell-highlight"><strong>14 Days Guaranteed</strong></td>
+                  <td>4 &ndash; 8 Months</td>
+                  <td>3 &ndash; 6 Months to Hire</td>
+                  <td>Unpredictable (Ghost Risk)</td>
+                </tr>
+                <tr>
+                  <td><strong>Pricing Structure</strong></td>
+                  <td class="comp-cell-highlight"><strong>Fixed $9,500 Sprint Fee</strong></td>
+                  <td>$70,000 &ndash; $150,000+</td>
+                  <td>$180k/yr Salary + Equity</td>
+                  <td>Hourly scope creep</td>
+                </tr>
+                <tr>
+                  <td><strong>Team Experience</strong></td>
+                  <td class="comp-cell-highlight"><strong>Senior Founders Only</strong></td>
+                  <td>Delegated to Junior Interns</td>
+                  <td>Depends on Hiring Market</td>
+                  <td>Fragmented quality</td>
+                </tr>
+                <tr>
+                  <td><strong>Code &amp; IP Ownership</strong></td>
+                  <td class="comp-cell-highlight"><strong>100% Yours on Day 14</strong></td>
+                  <td>Locked in Agency Repos</td>
+                  <td>Full Ownership</td>
+                  <td>Messy git history</td>
+                </tr>
+                <tr>
+                  <td><strong>Communication Style</strong></td>
+                  <td class="comp-cell-highlight"><strong>Async Slack + Daily Looms</strong></td>
+                  <td>Endless 2-hour Zoom meetings</td>
+                  <td>Endless internal syncs</td>
+                  <td>Unresponsive / timezone lag</td>
+                </tr>
+                <tr>
+                  <td><strong>Tech Modernity</strong></td>
+                  <td class="comp-cell-highlight"><strong>Next.js 15, Supabase, AI</strong></td>
+                  <td>Outdated WordPress / Legacy</td>
+                  <td>Modern</td>
+                  <td>Random tech stacks</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING & SPRINT PACKAGES -->
+    <section class="agency-section" id="pricing">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> Transparent Sprints</span>
+          <h2 class="section-main-title">Fixed Pricing. Zero Surprises.</h2>
+          <p class="section-lead-desc">
+            Zero hourly billing. Fixed scope. Fast launch.
+          </p>
+        </div>
+
+        <!-- Currency Selector -->
+        <div class="pricing-controls-row">
+          <span class="text-caption" style="text-transform: uppercase;">Select Currency:</span>
+          <div class="currency-picker" id="currencyPicker">
+            <button class="currency-btn active" data-curr="USD">USD ($)</button>
+            <button class="currency-btn" data-curr="EUR">EUR (&euro;)</button>
+            <button class="currency-btn" data-curr="GBP">GBP (&pound;)</button>
+          </div>
+        </div>
+
+        <!-- 3 Pricing Cards -->
+        <div class="pricing-plans-grid">
+          
+          <!-- Plan 1: 7-Day Prototype -->
+          <div class="pricing-card-box">
+            <span class="badge badge-neutral" style="align-self: flex-start; margin-bottom: var(--primitive-space-3);">PRE-SEED &bull; VALIDATION</span>
+            <h3 class="pricing-plan-title">7-Day Prototype Sprint</h3>
+            <p class="text-body-sm">
+              Validate product-market fit and pitch angels.
+            </p>
+            <div class="pricing-price-display" data-base="4800">$4,800</div>
+            <div class="text-mono" style="font-size: 11px; color: var(--semantic-text-tertiary);">ONE-TIME &bull; 7 CALENDAR DAYS</div>
+
+            <ul class="pricing-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complete Tokenized Figma Design System</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Clickable High-Fidelity Prototype</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pitch Deck Visual Assets &amp; Mockups</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Database Entity-Relationship Schema</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>48-Hour Kickoff SLA</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-outline btn-lg open-modal-btn" data-scope-type="7-day-prototype" style="margin-top: auto;">
+              <span>Reserve 7-Day Sprint</span>
+            </button>
+          </div>
+
+          <!-- Plan 2: 14-Day Full MVP (Featured) -->
+          <div class="pricing-card-box popular">
+            <span class="pricing-badge-hot"><span class="material-symbols-rounded filled">bolt</span> MOST POPULAR &bull; HIGH VOLTAGE</span>
+            <span class="badge badge-chartreuse" style="align-self: flex-start; margin-bottom: var(--primitive-space-3);">ZERO &rarr; PRODUCTION</span>
+            <h3 class="pricing-plan-title">14-Day Full MVP Engine</h3>
+            <p class="text-body-sm">
+              Full design, code, database, and live deployment.
+            </p>
+            <div class="pricing-price-display" style="color: var(--semantic-color-primary);" data-base="9500">$9,500</div>
+            <div class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">ONE-TIME &bull; 14 CALENDAR DAYS FLAT</div>
+
+            <ul class="pricing-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Everything in 7-Day Prototype</strong></span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Production Next.js 15 App Router Codebase</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Supabase PostgreSQL, Auth &amp; Row-Level Security</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stripe Subscriptions &amp; Webhook Handler</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>AI API Pipelines (OpenAI / Claude / RAG)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>100% GitHub Repo IP Transfer + Vercel Deployment</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary btn-lg open-modal-btn" data-scope-type="14-day-sprint" style="margin-top: auto;">
+              <span><span class="material-symbols-rounded filled">bolt</span> Lock In 14-Day MVP Sprint</span>
+            </button>
+          </div>
+
+          <!-- Plan 3: Dedicated Studio Retainer -->
+          <div class="pricing-card-box">
+            <span class="badge badge-slate" style="align-self: flex-start; margin-bottom: var(--primitive-space-3);">DEDICATED SQUAD</span>
+            <h3 class="pricing-plan-title">Studio Retainer</h3>
+            <p class="text-body-sm">
+              Dedicated squad for continuous post-launch shipping.
+            </p>
+            <div class="pricing-price-display" data-base="6500">$6,500</div>
+            <div class="text-mono" style="font-size: 11px; color: var(--semantic-text-tertiary);">PER MONTH &bull; CANCEL ANYTIME</div>
+
+            <ul class="pricing-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dedicated Slack Channel &amp; Direct Loom Comms</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Continuous Bi-Weekly Product Releases</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Feature Additions &amp; Conversion Optimization</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Guaranteed 24-Hour Task Turnaround</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pause or Cancel Anytime with 14-Day Notice</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-outline btn-lg open-modal-btn" data-scope-type="retainer" style="margin-top: auto;">
+              <span>Apply for Retainer Pod</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Guarantee Pill -->
+        <div style="margin-top: var(--primitive-space-8); text-align: center;">
+          <div class="chip-status chip-success" style="display: inline-flex;">
+            &check; <strong>100% Velocity Guarantee:</strong> If your production MVP is not live within the sprint window, you get a full refund.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER TESTIMONIALS & WALL OF LOVE -->
+    <section class="agency-section" id="testimonials">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> Founder Verified</span>
+          <h2 class="section-main-title">Trusted by Venture Founders</h2>
+          <p class="section-lead-desc">
+            Verified feedback from venture-backed founders.
+          </p>
+        </div>
+
+        <div class="testimonials-grid-layout">
+          
+          <div class="testimonial-quote-card">
+            <p class="testi-quote-text">
+              &ldquo;Nesaasity shipped our Next.js MVP in 12 days. We closed our $2.4M seed.&rdquo;
+            </p>
+            <div class="testi-author-row">
+              <div class="author-avatar-circle">SJ</div>
+              <div>
+                <strong style="display: block; color: var(--semantic-text-primary);">Sarah Jenkins</strong>
+                <span style="font-size: 12px; color: var(--semantic-text-tertiary);">Founder &amp; CEO, Cognix AI</span>
+                <div class="badge badge-chartreuse" style="margin-top: 4px; font-size: 10px;">Seed Backed</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-quote-card">
+            <p class="testi-quote-text">
+              &ldquo;Agencies quoted $90K and 5 months. Nesaasity shipped in 14 days. YC was stunned.&rdquo;
+            </p>
+            <div class="testi-author-row">
+              <div class="author-avatar-circle">AJ</div>
+              <div>
+                <strong style="display: block; color: var(--semantic-text-primary);">Alex Thorne</strong>
+                <span style="font-size: 12px; color: var(--semantic-text-tertiary);">CTO &amp; Co-founder, Hyperflow</span>
+                <div class="badge badge-slate" style="margin-top: 4px; font-size: 10px;">YC S24 Batch</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-quote-card">
+            <p class="testi-quote-text">
+              &ldquo;Clean TypeScript, zero tech debt, flawless tokens. Our team inherited the repo seamlessly.&rdquo;
+            </p>
+            <div class="testi-author-row">
+              <div class="author-avatar-circle">MC</div>
+              <div>
+                <strong style="display: block; color: var(--semantic-text-primary);">Michael Chen</strong>
+                <span style="font-size: 12px; color: var(--semantic-text-tertiary);">Head of Product, Layered Health</span>
+                <div class="badge badge-chartreuse" style="margin-top: 4px; font-size: 10px;">Series A Backed</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+    <section class="agency-section" id="faq">
+      <div class="container">
+        <div class="section-head-wrap">
+          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> Got Questions?</span>
+          <h2 class="section-main-title">Frequently Asked Questions</h2>
+          <p class="section-lead-desc">
+            Sprint logistics, IP ownership, and velocity.
+          </p>
+        </div>
+
+        <div class="faq-accordion-group">
+          
+          <div class="faq-item-container active">
+            <button class="faq-question-btn" aria-expanded="true">
+              <span>Can an MVP truly be built and deployed in 14 days?</span>
+              <span class="faq-chevron">&blacktriangledown;</span>
+            </button>
+            <div class="faq-answer-pane" style="max-height: 200px;">
+              <p class="faq-answer-text">
+                Senior squads, design tokens, and Next.js ship in 14 days.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-container">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Who owns the code and intellectual property?</span>
+              <span class="faq-chevron">&blacktriangledown;</span>
+            </button>
+            <div class="faq-answer-pane">
+              <p class="faq-answer-text">
+                100% ownership. Repo, tokens, and keys transfer on Day 14.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-container">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What technology stack do you build on?</span>
+              <span class="faq-chevron">&blacktriangledown;</span>
+            </button>
+            <div class="faq-answer-pane">
+              <p class="faq-answer-text">
+                Next.js 15, Supabase, Stripe, and AI APIs. Built for team handoff.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-container">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How do we collaborate and communicate during the sprint?</span>
+              <span class="faq-chevron">&blacktriangledown;</span>
+            </button>
+            <div class="faq-answer-pane">
+              <p class="faq-answer-text">
+                Private Slack, daily Loom videos, and Vercel previews. Zero meetings.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-container">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What happens if we want additional features after launch?</span>
+              <span class="faq-chevron">&blacktriangledown;</span>
+            </button>
+            <div class="faq-answer-pane">
+              <p class="faq-answer-text">
+                Transition to our Retainer ($6,500/mo) or keep the codebase.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-container">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What does the 100% Velocity Guarantee cover?</span>
+              <span class="faq-chevron">&blacktriangledown;</span>
+            </button>
+            <div class="faq-answer-pane">
+              <p class="faq-answer-text">
+                Scope not live in 14 days? 100% full refund.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL HIGH-VOLTAGE CALL TO ACTION -->
+    <section class="agency-section" id="cta">
+      <div class="container">
+        <div class="cta-high-voltage-box">
+          <div class="hero-pill-badge" style="margin-bottom: var(--primitive-space-4);">
+            <span class="pulse-dot"></span>
+            <span>Sprint Queue: 2 Slots Open for Q4</span>
+          </div>
+
+          <h2 class="hero-title-headline" style="margin: 0 auto var(--primitive-space-4);">
+            Stop Spending 6 Months Building What Can Launch in <span class="italic-accent">14 Days</span>.
+          </h2>
+
+          <p class="text-body-lead" style="margin: 0 auto var(--primitive-space-8); color: var(--semantic-text-secondary);">
+            Book a 15-minute technical review to lock in kickoff dates.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: var(--primitive-space-4); flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg open-modal-btn" data-scope-type="q4-sprint">
+              <span><span class="material-symbols-rounded filled">bolt</span> Schedule 15-Min Scoping Call</span>
+            </button>
+            <a href="tokens.html" class="btn btn-outline btn-lg">
+              <span>Explore Design System Tokens &rarr;</span>
+            </a>
+          </div>
+
+          <p class="text-caption" style="margin-top: var(--primitive-space-5); color: var(--semantic-text-tertiary);">
+            <span class="material-symbols-rounded" style="font-size: 14px; vertical-align: -2px;">bolt</span> No sales pitch &bull; Senior technical review
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SCOPING & SPRINT BOOKING MODAL DIALOG -->
+  <div class="modal-overlay-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card-dialog">
+      <button class="modal-close-cross" id="modalCloseBtn" aria-label="Close booking modal">&times;</button>
+      
+      <div style="margin-bottom: var(--primitive-space-6);">
+        <div style="display: flex; align-items: center; gap: var(--primitive-space-3); margin-bottom: var(--primitive-space-2);">
+          <img src="data:image/svg+xml,%3csvg%20width='485'%20height='573'%20viewBox='0%200%20485%20573'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M333.947%2085.3852L264.822%2085.7898H264.013C231.27%2086.5992%20204.994%20112.093%20202.569%20144.467V146.49V147.3L206.611%20442.303C166.996%20483.175%20126.976%20524.046%2087.3606%20564.918C81.7012%20570.583%2067.1486%20573.821%2059.4681%20570.988C46.1282%20566.132%2048.1494%20552.778%2053.8087%20541.447C79.2758%20487.221%20104.743%20432.996%20130.614%20378.77C145.167%20348.015%20141.124%20339.517%20108.785%20332.233C80.4885%20326.163%2052.1918%20320.093%2023.895%20313.618C-0.359323%20307.953%20-5.61443%20297.836%205.70427%20276.389C42.49%20207.191%2078.4673%20138.397%20116.466%2070.0077C122.125%2059.4863%20134.657%2048.1556%20145.975%2045.7276C214.696%2030.7548%20385.689%200%20385.689%200L333.947%2085.3852Z'%20fill='%239DFF2E'/%3e%3cpath%20d='M311.222%20136.462C311.429%20136.462%20311.636%20136.468%20311.841%20136.477L313.648%20136.462C318.903%20136.058%20323.754%20139.295%20325.775%20143.746L357.215%20233.239L396.112%20335.559C396.457%20336.421%20396.985%20337.063%20397.61%20337.496C399.831%20337.33%20401.957%20335.768%20402.176%20333.131L397.325%20149.816C397.325%20143.342%20402.984%20138.082%20409.452%20138.891H468.875C474.534%20139.7%20478.577%20144.556%20478.577%20150.221L482.89%20463.228L484.641%20559.746C484.55%20561.207%20484.229%20562.585%20483.717%20563.849C482.185%20568.93%20477.582%20572.696%20472.11%20572.696L426.43%20572.291C425.31%20572.291%20424.21%20572.16%20423.15%20571.911C418.392%20571.759%20414.141%20568.696%20412.282%20564.602L387.643%20494.47L341.54%20373.194C341.115%20372.13%20340.411%20371.402%20339.588%20370.987C337.705%20371.443%20336.072%20372.924%20335.881%20375.217L340.732%20558.532C340.732%20565.007%20335.072%20570.267%20328.605%20569.458H269.181C263.522%20568.649%20259.479%20563.792%20259.479%20558.127L253.511%20154.212L253.416%20148.603C253.419%20148.562%20253.423%20148.521%20253.426%20148.481L253.416%20147.793C253.82%20141.318%20259.075%20136.058%20265.543%20136.058L311.222%20136.462Z'%20fill='white'/%3e%3c/svg%3e" alt="Nesaasity" width="24" height="28">
+          <div class="badge badge-chartreuse">
+            <span class="pulse-dot"></span>
+            <span>14-DAY SPRINT APPLICATION</span>
+          </div>
+        </div>
+        <h3 id="modalTitle" class="text-h2" style="color: var(--semantic-text-primary);">Lock In Your MVP Sprint</h3>
+        <p class="text-body-sm">
+          Brief us on your concept. Kickoff in 12 hours.
+        </p>
+      </div>
+
+      <form id="sprintBookingForm">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--primitive-space-3);" class="grid-1-tablet">
+          <div class="form-field-group">
+            <label class="form-field-label" for="founderName">Your Name *</label>
+            <input type="text" id="founderName" class="form-field-input" placeholder="e.g. Alex Mercer" required>
+          </div>
+          <div class="form-field-group">
+            <label class="form-field-label" for="founderEmail">Work Email *</label>
+            <input type="email" id="founderEmail" class="form-field-input" placeholder="alex@startup.io" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--primitive-space-3);" class="grid-1-tablet">
+          <div class="form-field-group">
+            <label class="form-field-label" for="startupName">Startup Name / Working Title</label>
+            <input type="text" id="startupName" class="form-field-input" placeholder="e.g. Atlas AI">
+          </div>
+          <div class="form-field-group">
+            <label class="form-field-label" for="startupStage">Current Stage</label>
+            <select id="startupStage" class="form-field-select">
+              <option value="pre-seed">Pre-Seed (Idea on Napkin)</option>
+              <option value="seed" selected>Seed Funded (Raising / Scaling)</option>
+              <option value="ai-pivot">AI Pivot / Wrapper Overhaul</option>
+              <option value="series-a">Series A / V2 Architecture</option>
+              <option value="bootstrapped">Bootstrapped Founder</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field-group">
+          <label class="form-field-label" for="sprintPackage">Selected Package</label>
+          <select id="sprintPackage" class="form-field-select">
+            <option value="14-day-sprint" selected>14-Day Full MVP Engine ($9,500)</option>
+            <option value="7-day-prototype">7-Day Clickable Prototype ($4,800)</option>
+            <option value="retainer">Studio Retainer Pod ($6,500/mo)</option>
+            <option value="custom">Custom Architecture Scope</option>
+          </select>
+        </div>
+
+        <div class="form-field-group">
+          <label class="form-field-label" for="projectDescription">What are you building? (Brief 1-2 sentence overview) *</label>
+          <textarea id="projectDescription" class="form-field-textarea" rows="3" placeholder="Tell us about the user problem, target audience, and key required features..." required></textarea>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: var(--primitive-space-6); gap: var(--primitive-space-4);" class="flex-col-tablet">
+          <div class="text-caption" style="color: var(--semantic-text-tertiary); font-size: 11px;">
+            <span class="material-symbols-rounded filled" style="font-size: 13px; vertical-align: -1px;">lock</span> Strict mutual NDA guaranteed &bull; 100% IP retention
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" id="submitFormBtn">
+            <span><span class="material-symbols-rounded filled">bolt</span> Submit Sprint Application</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Confirmation Toast Banner -->
+  <div class="toast-toast-box" id="toastMessage" role="status" aria-live="polite">
+    <span class="material-symbols-rounded filled" style="font-size: 24px; color: var(--semantic-color-primary);">bolt</span>
+    <div>
+      <strong style="display: block; color: var(--semantic-color-primary);" id="toastTitle">Application Submitted!</strong>
+      <span style="font-size: 12px; color: var(--semantic-text-secondary);" id="toastDesc">We will review your scope and email your kickoff link within 12 hours.</span>
+    </div>
+  </div>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer-agency">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="#hero" class="brand-link" aria-label="Nesaasity Home" style="margin-bottom: var(--primitive-space-3); display: inline-flex;">
+            <img src="/assets/logo-dark-full-Cme91Luw.svg" alt="Nesaasity" class="brand-logo-img" height="38" width="128">
+          </a>
+          <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
+            0 &rarr; 1 SaaS MVP studio. Live in 14 days flat.
+          </p>
+          <div class="chip-status chip-success" style="font-size: 11px;">
+            &check; System Operational &bull; 99.98% Sprint SLA
+          </div>
+        </div>
+
+        <!-- Col 2: Studio Links -->
+        <div>
+          <div class="footer-col-title">Studio Engine</div>
+          <ul class="footer-links-list">
+            <li><a href="#work">Case Studies</a></li>
+            <li><a href="#simulator">Scope Simulator</a></li>
+            <li><a href="#process">The 14-Day Process</a></li>
+            <li><a href="#capabilities">Studio Capabilities</a></li>
+            <li><a href="#comparison">Agency Antidote</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Packages & System -->
+        <div>
+          <div class="footer-col-title">Packaging &amp; Design</div>
+          <ul class="footer-links-list">
+            <li><a href="#pricing">Sprint Pricing</a></li>
+            <li><a href="tokens.html"><span class="material-symbols-rounded">bolt</span> Design Tokens Spec</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#" class="open-modal-btn" data-scope-type="default">Book Technical Call</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Tech & Office -->
+        <div>
+          <div class="footer-col-title">Connect &amp; Legal</div>
+          <ul class="footer-links-list">
+            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X @nesaasity</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Organization</a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble Portfolio</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Agency</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Nesaasity Studio Inc. All rights reserved. Built with Kumbh Sans &amp; Playfair Display tokens.
+        </div>
+        <div style="display: flex; gap: var(--primitive-space-4);">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security &amp; NDA</a>
+          <a href="tokens.html" style="color: var(--semantic-color-primary);">Tokens Style Guide &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE APPLICATION SCRIPTS -->
+  <script>
+    // --- 1. Sound FX Synthesizer (Web Audio API) ---
+    let soundEnabled = true;
+    let audioCtx = null;
+
+    function playTone(freq = 520, type = 'sine', duration = 0.08) {
+      if (!soundEnabled) return;
+      try {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    const soundToggle = document.getElementById('soundToggle');
+    const soundIcon = document.getElementById('soundIcon');
+    if (soundToggle) {
+      soundToggle.addEventListener('click', () => {
+        soundEnabled = !soundEnabled;
+        soundIcon.textContent = soundEnabled ? 'volume_up' : 'volume_off';
+        if (soundEnabled) playTone(650, 'sine', 0.1);
+      });
+    }
+
+    // Enforce dark mode and clean up any legacy theme state in localStorage
+    if (localStorage.getItem('nesaasity_theme')) {
+      localStorage.removeItem('nesaasity_theme');
+    }
+    document.documentElement.setAttribute('data-theme', 'dark');
+
+    // --- 3. Sticky Header Scroll Effect ---
+    const siteHeader = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.remove('scrolled');
+      }
+    });
+
+    // --- 3b. Bottom Glassmorphic Pill Dock & Active Scrollspy ---
+    const navPillLinks = document.querySelectorAll('.bottom-nav-dock .nav-link-item a');
+    const scrollSectionTargets = [
+      { id: 'simulator', navTarget: 'simulator' },
+      { id: 'work', navTarget: 'work' },
+      { id: 'process', navTarget: 'process' },
+      { id: 'capabilities', navTarget: 'capabilities' },
+      { id: 'comparison', navTarget: 'capabilities' },
+      { id: 'pricing', navTarget: 'pricing' },
+      { id: 'testimonials', navTarget: 'pricing' },
+      { id: 'faq', navTarget: 'faq' },
+      { id: 'cta', navTarget: 'faq' }
+    ];
+
+    let isManualScrolling = false;
+    let manualScrollTimer = null;
+
+    function setActivePill(targetId) {
+      navPillLinks.forEach(link => {
+        const linkSection = link.getAttribute('data-section') || link.getAttribute('href')?.replace('#', '');
+        if (targetId && linkSection === targetId) {
+          link.classList.add('active');
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.classList.remove('active');
+          link.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    function updateActiveSection() {
+      if (isManualScrolling) return;
+
+      const scrollPos = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+
+      // 1. Bottom of page threshold -> activate last section (FAQ)
+      if (viewportHeight + scrollPos >= docHeight - 90) {
+        setActivePill('faq');
+        return;
+      }
+
+      // 2. Above the first section (Hero area) -> clear active state
+      const firstSection = document.getElementById('simulator');
+      if (firstSection && scrollPos < firstSection.offsetTop - 220) {
+        setActivePill(null);
+        return;
+      }
+
+      // 3. Trigger check point (approx 35% down the viewport)
+      const triggerPoint = scrollPos + (viewportHeight * 0.35);
+
+      let currentTarget = null;
+      for (const item of scrollSectionTargets) {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (triggerPoint >= top && triggerPoint < top + height) {
+            currentTarget = item.navTarget;
+            break;
+          }
+        }
+      }
+
+      // Fallback: check closest section above trigger
+      if (!currentTarget) {
+        for (let i = scrollSectionTargets.length - 1; i >= 0; i--) {
+          const el = document.getElementById(scrollSectionTargets[i].id);
+          if (el && scrollPos >= el.offsetTop - 120) {
+            currentTarget = scrollSectionTargets[i].navTarget;
+            break;
+          }
+        }
+      }
+
+      setActivePill(currentTarget);
+    }
+
+    // Attach click feedback and manual scroll dampening to nav pill links
+    navPillLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (typeof playTone === 'function') {
+          playTone(540, 'sine', 0.05);
+        }
+        const targetId = link.getAttribute('data-section') || link.getAttribute('href')?.replace('#', '');
+        setActivePill(targetId);
+
+        isManualScrolling = true;
+        clearTimeout(manualScrollTimer);
+        manualScrollTimer = setTimeout(() => {
+          isManualScrolling = false;
+          updateActiveSection();
+        }, 850);
+      });
+    });
+
+    // Throttled scroll listener with requestAnimationFrame
+    let scrollRafId = null;
+    window.addEventListener('scroll', () => {
+      if (!scrollRafId) {
+        scrollRafId = requestAnimationFrame(() => {
+          updateActiveSection();
+          scrollRafId = null;
+        });
+      }
+    }, { passive: true });
+
+    // Initial evaluation on DOM load
+    updateActiveSection();
+
+    // --- 4. Mobile Menu Drawer Navigation ---
+    const mobileMenuOpen = document.getElementById('mobileMenuOpen');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileDrawerOverlay = document.getElementById('mobileDrawerOverlay');
+    const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+    function openMobileMenu() {
+      playTone(400, 'sine', 0.05);
+      mobileDrawer.classList.add('active');
+      mobileDrawerOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      playTone(320, 'sine', 0.05);
+      mobileDrawer.classList.remove('active');
+      mobileDrawerOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (mobileMenuOpen) mobileMenuOpen.addEventListener('click', openMobileMenu);
+    if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+    if (mobileDrawerOverlay) mobileDrawerOverlay.addEventListener('click', closeMobileMenu);
+    mobileNavItems.forEach(item => item.addEventListener('click', closeMobileMenu));
+
+    // --- 5. Interactive 14-Day Sprint Simulator ---
+    const calcDays = document.getElementById('calcDays');
+    const calcPrice = document.getElementById('calcPrice');
+    const calcSquad = document.getElementById('calcSquad');
+    const lockScopeBtn = document.getElementById('lockScopeBtn');
+
+    let simulatorState = {
+      baseDays: 10,
+      stageDays: 0,
+      archDays: 0,
+      addonsDays: 3,
+      basePrice: 6500,
+      stagePrice: 0,
+      archPrice: 0,
+      addonsPrice: 2200,
+      currency: 'USD',
+      rate: 1
+    };
+
+    function updateSimulatorCalculations() {
+      const totalDays = simulatorState.baseDays + simulatorState.stageDays + simulatorState.archDays + simulatorState.addonsDays;
+      const rawPrice = simulatorState.basePrice + simulatorState.stagePrice + simulatorState.archPrice + simulatorState.addonsPrice;
+      const convertedPrice = Math.round(rawPrice * simulatorState.rate);
+
+      let symbol = '$';
+      if (simulatorState.currency === 'EUR') symbol = '€';
+      if (simulatorState.currency === 'GBP') symbol = '£';
+
+      if (calcDays) calcDays.textContent = `${totalDays} Days`;
+      if (calcPrice) calcPrice.textContent = `${symbol}${convertedPrice.toLocaleString()}`;
+
+      if (totalDays <= 12) {
+        calcSquad.textContent = '1 Lead Product Designer + 1 Principal Fullstack Engineer';
+      } else if (totalDays <= 15) {
+        calcSquad.textContent = '1 Lead Product Designer + 1 Principal Fullstack Eng + 1 AI Systems Architect';
+      } else {
+        calcSquad.textContent = '1 Lead Designer + 2 Principal Fullstack Engs + 1 Cloud Architect';
+      }
+    }
+
+    // Stage Pill selection
+    const stagePills = document.querySelectorAll('#stageOptions .sim-option-pill');
+    stagePills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        playTone(550, 'sine', 0.05);
+        stagePills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        simulatorState.stageDays = parseInt(pill.getAttribute('data-days')) || 0;
+        simulatorState.stagePrice = parseInt(pill.getAttribute('data-price')) || 0;
+        updateSimulatorCalculations();
+      });
+    });
+
+    // Architecture Pill selection
+    const archPills = document.querySelectorAll('#archOptions .sim-option-pill');
+    archPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        playTone(600, 'sine', 0.05);
+        archPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        simulatorState.baseDays = parseInt(pill.getAttribute('data-days')) || 10;
+        simulatorState.basePrice = parseInt(pill.getAttribute('data-price')) || 6500;
+        updateSimulatorCalculations();
+      });
+    });
+
+    // Addons Pill multi-selection
+    const addonPills = document.querySelectorAll('#addonOptions .sim-option-pill');
+    addonPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        playTone(520, 'sine', 0.05);
+        pill.classList.toggle('active');
+        
+        let sumDays = 0;
+        let sumPrice = 0;
+        document.querySelectorAll('#addonOptions .sim-option-pill.active').forEach(act => {
+          sumDays += parseInt(act.getAttribute('data-days')) || 0;
+          sumPrice += parseInt(act.getAttribute('data-price')) || 0;
+        });
+        simulatorState.addonsDays = sumDays;
+        simulatorState.addonsPrice = sumPrice;
+        updateSimulatorCalculations();
+      });
+    });
+
+    // Lock Scope Button
+    if (lockScopeBtn) {
+      lockScopeBtn.addEventListener('click', () => {
+        playTone(700, 'sine', 0.1);
+        openBookingModal('calculated-simulator');
+      });
+    }
+
+    // --- 6. Case Studies Filter Tabs ---
+    const filterTabs = document.querySelectorAll('.filter-tab-pill');
+    const caseCards = document.querySelectorAll('.case-card-expanded');
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        playTone(450, 'sine', 0.05);
+        filterTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.getAttribute('data-filter');
+
+        caseCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // --- 7. Currency Switcher for Pricing ---
+    const currencyButtons = document.querySelectorAll('#currencyPicker .currency-btn');
+    const priceDisplays = document.querySelectorAll('.pricing-price-display');
+
+    currencyButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        playTone(500, 'triangle', 0.06);
+        currencyButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const curr = btn.getAttribute('data-curr');
+        simulatorState.currency = curr;
+
+        let rate = 1;
+        let symbol = '$';
+        if (curr === 'EUR') {
+          rate = 0.92;
+          symbol = '€';
+        } else if (curr === 'GBP') {
+          rate = 0.78;
+          symbol = '£';
+        }
+        simulatorState.rate = rate;
+
+        priceDisplays.forEach(elem => {
+          const base = parseInt(elem.getAttribute('data-base')) || 0;
+          const converted = Math.round(base * rate);
+          elem.textContent = `${symbol}${converted.toLocaleString()}`;
+        });
+
+        updateSimulatorCalculations();
+      });
+    });
+
+    // --- 8. FAQ Accordion ---
+    const faqItems = document.querySelectorAll('.faq-item-container');
+    faqItems.forEach(item => {
+      const btn = item.querySelector('.faq-question-btn');
+      btn.addEventListener('click', () => {
+        playTone(440, 'sine', 0.04);
+        const isActive = item.classList.contains('active');
+        
+        faqItems.forEach(i => {
+          i.classList.remove('active');
+          const panel = i.querySelector('.faq-answer-pane');
+          if (panel) panel.style.maxHeight = '0px';
+          const trigger = i.querySelector('.faq-question-btn');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          const answerPanel = item.querySelector('.faq-answer-pane');
+          if (answerPanel) answerPanel.style.maxHeight = answerPanel.scrollHeight + 30 + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // --- 9. Scoping & Booking Modal Dialog ---
+    const bookingModal = document.getElementById('bookingModal');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    const openModalBtns = document.querySelectorAll('.open-modal-btn');
+    const sprintPackageSelect = document.getElementById('sprintPackage');
+
+    function openBookingModal(scopeType = 'default') {
+      playTone(600, 'sine', 0.08);
+      if (sprintPackageSelect) {
+        if (scopeType === '7-day-prototype') {
+          sprintPackageSelect.value = '7-day-prototype';
+        } else if (scopeType === 'retainer') {
+          sprintPackageSelect.value = 'retainer';
+        } else {
+          sprintPackageSelect.value = '14-day-sprint';
+        }
+      }
+      bookingModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      const nameInput = document.getElementById('founderName');
+      if (nameInput) setTimeout(() => nameInput.focus(), 100);
+    }
+
+    function closeBookingModal() {
+      playTone(350, 'sine', 0.05);
+      bookingModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    openModalBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const scope = btn.getAttribute('data-scope-type') || 'default';
+        openBookingModal(scope);
+      });
+    });
+
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeBookingModal);
+    if (bookingModal) {
+      bookingModal.addEventListener('click', (e) => {
+        if (e.target === bookingModal) closeBookingModal();
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && bookingModal && bookingModal.classList.contains('active')) {
+        closeBookingModal();
+      }
+    });
+
+    // --- 10. Form Submission, Celebration Confetti & Toast Notification ---
+    const sprintForm = document.getElementById('sprintBookingForm');
+    const toastMessage = document.getElementById('toastMessage');
+
+    function showToast(title, desc) {
+      const toastTitle = document.getElementById('toastTitle');
+      const toastDesc = document.getElementById('toastDesc');
+      if (toastTitle) toastTitle.textContent = title;
+      if (toastDesc) toastDesc.textContent = desc;
+      toastMessage.classList.add('show');
+      setTimeout(() => {
+        toastMessage.classList.remove('show');
+      }, 5500);
+    }
+
+    // Confetti Animation Effect
+    function launchConfetti() {
+      const canvas = document.getElementById('confettiCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ['#76e01a', '#94a3b8', '#bbf276', '#64748b', '#ffffff', '#ef6500'];
+
+      for (let i = 0; i < 90; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          r: Math.random() * 5 + 3,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.5) * 14 - 3,
+          alpha: 1
+        });
+      }
+
+      let frame = 0;
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p, idx) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.25; // gravity
+          p.alpha -= 0.015;
+
+          if (p.alpha > 0) {
+            ctx.save();
+            ctx.globalAlpha = p.alpha;
+            ctx.fillStyle = p.color;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+          }
+        });
+
+        frame++;
+        if (frame < 80) {
+          requestAnimationFrame(animate);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      animate();
+    }
+
+    if (sprintForm) {
+      sprintForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        playTone(880, 'sine', 0.2);
+        
+        const submitBtn = document.getElementById('submitFormBtn');
+        if (submitBtn) {
+          submitBtn.innerHTML = '<span><span class="material-symbols-rounded filled">bolt</span> Securing Sprint Slot...</span>';
+          submitBtn.disabled = true;
+        }
+
+        setTimeout(() => {
+          if (submitBtn) {
+            submitBtn.innerHTML = '<span><span class="material-symbols-rounded filled">bolt</span> Submit Sprint Application</span>';
+            submitBtn.disabled = false;
+          }
+          closeBookingModal();
+          launchConfetti();
+          playTone(980, 'sine', 0.15);
+          showToast('Sprint Application Received!', 'Our founding partners will review your scope and email your kickoff link within 12 hours.');
+          sprintForm.reset();
+        }, 800);
+      });
+    }
+
+    // Initial state trigger
+    updateSimulatorCalculations();
+  </script>
+</body>
+</html>
