@@ -16,8 +16,8 @@
 @font-face {
   font-family: 'Riven Didone';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -26,8 +26,8 @@
 @font-face {
   font-family: 'Riven Didone';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -36,8 +36,8 @@
 @font-face {
   font-family: 'Riven Didone Regular';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -46,8 +46,8 @@
 @font-face {
   font-family: 'Riven Didone Regular';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -57,8 +57,8 @@
 @font-face {
   font-family: 'Burgundia';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -67,8 +67,8 @@
 @font-face {
   font-family: 'Burgundia';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -77,8 +77,8 @@
 @font-face {
   font-family: 'Burgundia PERSONAL USE Regular';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -87,8 +87,8 @@
 @font-face {
   font-family: 'Burgundia PERSONAL USE Regular';
   src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -98,7 +98,7 @@
 @font-face {
   font-family: 'Inter Display';
   src: url('assets/framer/inter-display-300.woff2') format('woff2'),
-       local('Inter Display Light'), local('InterDisplay-Light');
+    local('Inter Display Light'), local('InterDisplay-Light');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -107,7 +107,7 @@
 @font-face {
   font-family: 'Inter Display';
   src: url('assets/framer/inter-display-300italic.woff2') format('woff2'),
-       local('Inter Display Light Italic'), local('InterDisplay-LightItalic');
+    local('Inter Display Light Italic'), local('InterDisplay-LightItalic');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -116,7 +116,7 @@
 @font-face {
   font-family: 'Inter Display';
   src: url('assets/framer/inter-display-400.woff2') format('woff2'),
-       local('Inter Display Regular'), local('Inter Display'), local('Inter-Display'), local('Inter');
+    local('Inter Display Regular'), local('Inter Display'), local('Inter-Display'), local('Inter');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -125,7 +125,7 @@
 @font-face {
   font-family: 'Inter Display';
   src: url('assets/framer/inter-display-500.woff2') format('woff2'),
-       local('Inter Display Medium'), local('InterDisplay-Medium');
+    local('Inter Display Medium'), local('InterDisplay-Medium');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -134,8 +134,27 @@
 @font-face {
   font-family: 'Inter Display';
   src: url('assets/framer/inter-display-600.woff2') format('woff2'),
-       local('Inter Display SemiBold'), local('InterDisplay-SemiBold');
+    local('Inter Display SemiBold'), local('InterDisplay-SemiBold');
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Opening Hours Sans (Price in Dollars) --- */
+@font-face {
+  font-family: 'Opening Hours Sans';
+  src: url('assets/fonts/opening-hours-sans-regular.otf') format('opentype'),
+    url('Opening Hours Sans Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Opening Hours Sans Regular';
+  src: url('assets/fonts/opening-hours-sans-regular.otf') format('opentype'),
+    url('Opening Hours Sans Regular.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -226,12 +245,13 @@
    -------------------------------------------------------------------------- */
 :root {
   /* --- Brand Color Primitives: Chartreuse (Primary Neon / Bolt) --- */
-  --primitive-chartreuse-50:  #f4fee5;
+  --primitive-chartreuse-50: #f4fee5;
   --primitive-chartreuse-100: #e7fdc4;
   --primitive-chartreuse-200: #d1fb8f;
   --primitive-chartreuse-300: #b3f752;
   --primitive-chartreuse-400: #93ee1e;
-  --primitive-chartreuse-500: #76e01a; /* Official Brand Primary */
+  --primitive-chartreuse-500: #76e01a;
+  /* Official Brand Primary */
   --primitive-chartreuse-600: #5cb511;
   --primitive-chartreuse-700: #468b10;
   --primitive-chartreuse-800: #396e12;
@@ -239,20 +259,21 @@
   --primitive-chartreuse-950: #173405;
 
   /* --- Brand Color Primitives: Slate (Secondary Refined Slate) --- */
-  --primitive-slate-50:   #f8fafc;
-  --primitive-slate-100:  #f1f5f9;
-  --primitive-slate-200:  #e2e8f0;
-  --primitive-slate-300:  #cbd5e1;
-  --primitive-slate-400:  #94a3b8;
-  --primitive-slate-500:  #64748b; /* Official Brand Secondary */
-  --primitive-slate-600:  #475569;
-  --primitive-slate-700:  #334155;
-  --primitive-slate-800:  #1e293b;
-  --primitive-slate-900:  #0f172a;
-  --primitive-slate-950:  #020617;
+  --primitive-slate-50: #f8fafc;
+  --primitive-slate-100: #f1f5f9;
+  --primitive-slate-200: #e2e8f0;
+  --primitive-slate-300: #cbd5e1;
+  --primitive-slate-400: #94a3b8;
+  --primitive-slate-500: #64748b;
+  /* Official Brand Secondary */
+  --primitive-slate-600: #475569;
+  --primitive-slate-700: #334155;
+  --primitive-slate-800: #1e293b;
+  --primitive-slate-900: #0f172a;
+  --primitive-slate-950: #020617;
 
   /* Backward Compatibility Aliases: Veronica -> Slate */
-  --primitive-veronica-50:  var(--primitive-slate-50);
+  --primitive-veronica-50: var(--primitive-slate-50);
   --primitive-veronica-100: var(--primitive-slate-100);
   --primitive-veronica-200: var(--primitive-slate-200);
   --primitive-veronica-300: var(--primitive-slate-300);
@@ -265,163 +286,210 @@
   --primitive-veronica-950: var(--primitive-slate-950);
 
   /* --- Alternate Brand Variants: Avocado & Indigo --- */
-  --primitive-avocado-500:  #4f9e07;
-  --primitive-avocado-600:  #408205;
-  --primitive-indigo-500:   #5404ba;
-  --primitive-indigo-600:   #46029e;
+  --primitive-avocado-500: #4f9e07;
+  --primitive-avocado-600: #408205;
+  --primitive-indigo-500: #5404ba;
+  --primitive-indigo-600: #46029e;
 
   /* --- Neutral Primitives (Obsidian Dark to Pure Light) --- */
-  --primitive-white:        #ffffff;
+  --primitive-white: #ffffff;
   --primitive-canvas-light: #f0f0f0;
-  --primitive-gray-25:      #fcfcfd;
-  --primitive-gray-50:      #f9fafb;
-  --primitive-gray-100:     #f3f4f6;
-  --primitive-gray-200:     #e5e7eb;
-  --primitive-gray-300:     #d1d5db;
-  --primitive-gray-400:     #9ca3af;
-  --primitive-gray-500:     #6b7280;
-  --primitive-gray-600:     #4b5563;
-  --primitive-gray-700:     #374151;
-  --primitive-gray-800:     #1f2937;
-  --primitive-gray-850:     #171e2b;
-  --primitive-gray-900:     #111827;
-  --primitive-gray-925:     #0d111a;
-  --primitive-gray-950:     #080a0f;
-  --primitive-black:        #000000;
+  --primitive-gray-25: #fcfcfd;
+  --primitive-gray-50: #f9fafb;
+  --primitive-gray-100: #f3f4f6;
+  --primitive-gray-200: #e5e7eb;
+  --primitive-gray-300: #d1d5db;
+  --primitive-gray-400: #9ca3af;
+  --primitive-gray-500: #6b7280;
+  --primitive-gray-600: #4b5563;
+  --primitive-gray-700: #374151;
+  --primitive-gray-800: #1f2937;
+  --primitive-gray-850: #171e2b;
+  --primitive-gray-900: #111827;
+  --primitive-gray-925: #0d111a;
+  --primitive-gray-950: #080a0f;
+  --primitive-black: #000000;
 
   /* --- Status / Functional Primitives --- */
-  --primitive-success-50:   #ecfdf3;
-  --primitive-success-500:  #168943; /* From Palette */
-  --primitive-success-600:  #117236;
-  --primitive-warning-50:   #fff7ed;
-  --primitive-warning-500:  #ef6500; /* From Palette */
-  --primitive-warning-600:  #c24f00;
-  --primitive-info-50:     #eff8ff;
-  --primitive-info-500:    #1c74d8; /* From Palette */
-  --primitive-info-600:    #155db0;
-  --primitive-error-50:    #fef2f2;
-  --primitive-error-500:   #d12f2f; /* From Palette */
-  --primitive-error-600:   #b02424;
+  --primitive-success-50: #ecfdf3;
+  --primitive-success-500: #168943;
+  /* From Palette */
+  --primitive-success-600: #117236;
+  --primitive-warning-50: #fff7ed;
+  --primitive-warning-500: #ef6500;
+  /* From Palette */
+  --primitive-warning-600: #c24f00;
+  --primitive-info-50: #eff8ff;
+  --primitive-info-500: #1c74d8;
+  /* From Palette */
+  --primitive-info-600: #155db0;
+  --primitive-error-50: #fef2f2;
+  --primitive-error-500: #d12f2f;
+  /* From Palette */
+  --primitive-error-600: #b02424;
 
   /* --- Typography Primitives: Riven Didone, Cabin Condensed & Inter Display --- */
-  --primitive-font-riven:            'Riven Didone', 'Riven Didone Regular', 'Burgundia', Georgia, serif;
-  --primitive-font-burgundia:        var(--primitive-font-riven);
-  --primitive-font-cabin-condensed:  'Cabin Condensed', -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
-  --primitive-font-inter-display:    'Inter Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --primitive-font-inter:            'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --primitive-font-mono:             'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --primitive-font-riven: 'Riven Didone', 'Riven Didone Regular', 'Burgundia', Georgia, serif;
+  --primitive-font-burgundia: var(--primitive-font-riven);
+  --primitive-font-cabin-condensed: 'Cabin Condensed', -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
+  --primitive-font-inter-display: 'Inter Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --primitive-font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --primitive-font-opening-hours: 'Opening Hours Sans', 'Opening Hours Sans Regular', sans-serif;
+  --primitive-font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   /* Aliases mapped to design hierarchy intent */
-  --primitive-font-heading:          var(--primitive-font-riven);        /* Main headings */
-  --primitive-font-editorial:        var(--primitive-font-riven);        /* Emphasised accents */
-  --primitive-font-condensed:        var(--primitive-font-cabin-condensed);  /* Smaller headings & imp text */
-  --primitive-font-imp:              var(--primitive-font-cabin-condensed);  /* Important UI text */
-  --primitive-font-sans:             var(--primitive-font-inter-display);    /* Normal text, body */
-  --primitive-font-body:             var(--primitive-font-inter-display);    /* Body with not much importance */
+  --primitive-font-heading: var(--primitive-font-riven);
+  /* Main headings */
+  --primitive-font-editorial: var(--primitive-font-riven);
+  /* Emphasised accents */
+  --primitive-font-condensed: var(--primitive-font-cabin-condensed);
+  /* Smaller headings & imp text */
+  --primitive-font-imp: var(--primitive-font-cabin-condensed);
+  /* Important UI text */
+  --primitive-font-sans: var(--primitive-font-inter-display);
+  /* Normal text, body */
+  --primitive-font-body: var(--primitive-font-inter-display);
+  /* Body with not much importance */
 
   /* Backward compatibility aliases */
-  --primitive-font-kumbh:            var(--primitive-font-inter-display);
-  --primitive-font-playfair:         var(--primitive-font-riven);
-  --primitive-font-serif:            var(--primitive-font-riven);
+  --primitive-font-kumbh: var(--primitive-font-inter-display);
+  --primitive-font-playfair: var(--primitive-font-riven);
+  --primitive-font-serif: var(--primitive-font-riven);
 
   /* Font Weights (Kumbh Sans full native scale) */
-  --primitive-font-weight-light:     300;
-  --primitive-font-weight-regular:   400;
-  --primitive-font-weight-medium:    500;
-  --primitive-font-weight-semibold:  600;
-  --primitive-font-weight-bold:      700;
+  --primitive-font-weight-light: 300;
+  --primitive-font-weight-regular: 400;
+  --primitive-font-weight-medium: 500;
+  --primitive-font-weight-semibold: 600;
+  --primitive-font-weight-bold: 700;
   --primitive-font-weight-extrabold: 800;
-  --primitive-font-weight-black:     900;
+  --primitive-font-weight-black: 900;
 
-  --primitive-font-size-2xs: 0.6875rem; /* 11px */
-  --primitive-font-size-xs:  0.75rem;   /* 12px */
-  --primitive-font-size-sm:  0.875rem;  /* 14px */
-  --primitive-font-size-base: 1rem;     /* 16px */
-  --primitive-font-size-md:  1.125rem;  /* 18px */
-  --primitive-font-size-lg:  1.25rem;   /* 20px */
-  --primitive-font-size-xl:  1.5rem;    /* 24px */
-  --primitive-font-size-2xl: 1.875rem;  /* 30px */
-  --primitive-font-size-3xl: 2.25rem;   /* 36px */
-  --primitive-font-size-4xl: 3rem;      /* 48px */
-  --primitive-font-size-5xl: 3.75rem;   /* 60px */
-  --primitive-font-size-6xl: 4.5rem;    /* 72px */
-  --primitive-font-size-7xl: 5.5rem;    /* 88px */
+  --primitive-font-size-2xs: 0.6875rem;
+  /* 11px */
+  --primitive-font-size-xs: 0.75rem;
+  /* 12px */
+  --primitive-font-size-sm: 0.875rem;
+  /* 14px */
+  --primitive-font-size-base: 1rem;
+  /* 16px */
+  --primitive-font-size-md: 1.125rem;
+  /* 18px */
+  --primitive-font-size-lg: 1.25rem;
+  /* 20px */
+  --primitive-font-size-xl: 1.5rem;
+  /* 24px */
+  --primitive-font-size-2xl: 1.875rem;
+  /* 30px */
+  --primitive-font-size-3xl: 2.25rem;
+  /* 36px */
+  --primitive-font-size-4xl: 3rem;
+  /* 48px */
+  --primitive-font-size-5xl: 3.75rem;
+  /* 60px */
+  --primitive-font-size-6xl: 4.5rem;
+  /* 72px */
+  --primitive-font-size-7xl: 5.5rem;
+  /* 88px */
 
-  --primitive-line-height-none:     1;
-  --primitive-line-height-tight:    1.12;
-  --primitive-line-height-snug:     1.28;
-  --primitive-line-height-normal:   1.5;
-  --primitive-line-height-relaxed:  1.65;
-  --primitive-line-height-loose:    1.8;
+  --primitive-line-height-none: 1;
+  --primitive-line-height-tight: 1.12;
+  --primitive-line-height-snug: 1.28;
+  --primitive-line-height-normal: 1.5;
+  --primitive-line-height-relaxed: 1.65;
+  --primitive-line-height-loose: 1.8;
 
   --primitive-letter-spacing-tighter: -0.04em;
-  --primitive-letter-spacing-tight:   -0.02em;
-  --primitive-letter-spacing-normal:  0em;
-  --primitive-letter-spacing-wide:    0.04em;
-  --primitive-letter-spacing-wider:   0.08em;
-  --primitive-letter-spacing-widest:  0.14em;
+  --primitive-letter-spacing-tight: -0.02em;
+  --primitive-letter-spacing-normal: 0em;
+  --primitive-letter-spacing-wide: 0.04em;
+  --primitive-letter-spacing-wider: 0.08em;
+  --primitive-letter-spacing-widest: 0.14em;
 
   /* --- Spacing Scale Primitives (4px Baseline Modular System) --- */
-  --primitive-space-0:   0rem;       /* 0px */
-  --primitive-space-0-5: 0.125rem;   /* 2px */
-  --primitive-space-1:   0.25rem;    /* 4px */
-  --primitive-space-1-5: 0.375rem;   /* 6px */
-  --primitive-space-2:   0.5rem;     /* 8px */
-  --primitive-space-2-5: 0.625rem;   /* 10px */
-  --primitive-space-3:   0.75rem;    /* 12px */
-  --primitive-space-4:   1rem;       /* 16px */
-  --primitive-space-5:   1.25rem;    /* 20px */
-  --primitive-space-6:   1.5rem;     /* 24px */
-  --primitive-space-8:   2rem;       /* 32px */
-  --primitive-space-10:  2.5rem;     /* 40px */
-  --primitive-space-12:  3rem;       /* 48px */
-  --primitive-space-16:  4rem;       /* 64px */
-  --primitive-space-20:  5rem;       /* 80px */
-  --primitive-space-24:  6rem;       /* 96px */
-  --primitive-space-32:  8rem;       /* 128px */
-  --primitive-space-48:  12rem;      /* 192px (4x 48px) */
-  --primitive-space-64:  16rem;      /* 256px (4x 64px) */
-  --primitive-space-80:  20rem;      /* 320px (4x 80px) */
+  --primitive-space-0: 0rem;
+  /* 0px */
+  --primitive-space-0-5: 0.125rem;
+  /* 2px */
+  --primitive-space-1: 0.25rem;
+  /* 4px */
+  --primitive-space-1-5: 0.375rem;
+  /* 6px */
+  --primitive-space-2: 0.5rem;
+  /* 8px */
+  --primitive-space-2-5: 0.625rem;
+  /* 10px */
+  --primitive-space-3: 0.75rem;
+  /* 12px */
+  --primitive-space-4: 1rem;
+  /* 16px */
+  --primitive-space-5: 1.25rem;
+  /* 20px */
+  --primitive-space-6: 1.5rem;
+  /* 24px */
+  --primitive-space-8: 2rem;
+  /* 32px */
+  --primitive-space-10: 2.5rem;
+  /* 40px */
+  --primitive-space-12: 3rem;
+  /* 48px */
+  --primitive-space-16: 4rem;
+  /* 64px */
+  --primitive-space-20: 5rem;
+  /* 80px */
+  --primitive-space-24: 6rem;
+  /* 96px */
+  --primitive-space-32: 8rem;
+  /* 128px */
+  --primitive-space-48: 12rem;
+  /* 192px (4x 48px) */
+  --primitive-space-64: 16rem;
+  /* 256px (4x 64px) */
+  --primitive-space-80: 20rem;
+  /* 320px (4x 80px) */
 
   /* --- Border Radius Primitives --- */
   --primitive-radius-none: 0px;
-  --primitive-radius-xs:   4px;
-  --primitive-radius-sm:   6px;
-  --primitive-radius-md:   10px;
-  --primitive-radius-lg:   16px;
-  --primitive-radius-xl:   22px;
-  --primitive-radius-2xl:  32px;
+  --primitive-radius-xs: 4px;
+  --primitive-radius-sm: 6px;
+  --primitive-radius-md: 10px;
+  --primitive-radius-lg: 16px;
+  --primitive-radius-xl: 22px;
+  --primitive-radius-2xl: 32px;
   --primitive-radius-full: 9999px;
 
   /* --- Motion Primitives --- */
   --primitive-duration-instant: 75ms;
-  --primitive-duration-fast:    150ms;
-  --primitive-duration-normal:  250ms;
-  --primitive-duration-slow:    400ms;
-  --primitive-duration-slower:  700ms;
+  --primitive-duration-fast: 150ms;
+  --primitive-duration-normal: 250ms;
+  --primitive-duration-slow: 400ms;
+  --primitive-duration-slower: 700ms;
 
-  --primitive-ease-default:   cubic-bezier(0.16, 1, 0.3, 1);
-  --primitive-ease-in:        cubic-bezier(0.4, 0, 1, 1);
-  --primitive-ease-out:       cubic-bezier(0, 0, 0.2, 1);
-  --primitive-ease-in-out:    cubic-bezier(0.4, 0, 0.2, 1);
-  --primitive-ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1);
+  --primitive-ease-default: cubic-bezier(0.16, 1, 0.3, 1);
+  --primitive-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --primitive-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --primitive-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --primitive-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* --- Z-Index Primitives --- */
   --primitive-z-negative: -1;
-  --primitive-z-base:     0;
-  --primitive-z-raised:   10;
+  --primitive-z-base: 0;
+  --primitive-z-raised: 10;
   --primitive-z-dropdown: 100;
-  --primitive-z-sticky:   200;
-  --primitive-z-overlay:  500;
-  --primitive-z-modal:    1000;
-  --primitive-z-popover:  1100;
-  --primitive-z-toast:    1200;
-  --primitive-z-tooltip:  1300;
+  --primitive-z-sticky: 200;
+  --primitive-z-overlay: 500;
+  --primitive-z-modal: 1000;
+  --primitive-z-popover: 1100;
+  --primitive-z-toast: 1200;
+  --primitive-z-tooltip: 1300;
 
   /* --- Breakpoint Primitives --- */
-  --primitive-breakpoint-desktop: 1280px; /* Large Desktop boundary */
-  --primitive-breakpoint-tablet:  960px;  /* Tablet & compact desktop boundary */
-  --primitive-breakpoint-mobile:  480px;  /* Mobile devices boundary */
+  --primitive-breakpoint-desktop: 1280px;
+  /* Large Desktop boundary */
+  --primitive-breakpoint-tablet: 960px;
+  /* Tablet & compact desktop boundary */
+  --primitive-breakpoint-mobile: 480px;
+  /* Mobile devices boundary */
 }
 
 /* --------------------------------------------------------------------------
@@ -431,186 +499,192 @@
 :root,
 [data-theme="dark"] {
   /* --- Surfaces & Backgrounds --- */
-  --semantic-bg-canvas:              #090909;
-  --semantic-bg-canvas-subtle:       #090909;
-  --semantic-bg-surface:             #0d1117;
-  --semantic-bg-surface-elevated:    #131924;
-  --semantic-bg-surface-hover:       #1a2232;
-  --semantic-bg-surface-active:      #212c40;
+  --semantic-bg-canvas: #090909;
+  --semantic-bg-canvas-subtle: #090909;
+  --semantic-bg-surface: #0d1117;
+  --semantic-bg-surface-elevated: #131924;
+  --semantic-bg-surface-hover: #1a2232;
+  --semantic-bg-surface-active: #212c40;
 
   /* Translucent & Glassmorphism Surfaces */
-  --semantic-bg-glass-subtle:        rgba(13, 17, 23, 0.55);
-  --semantic-bg-glass-default:       rgba(17, 24, 39, 0.72);
-  --semantic-bg-glass-strong:        rgba(19, 25, 36, 0.88);
-  --semantic-bg-glass-primary:       rgba(118, 224, 26, 0.12);
-  --semantic-bg-glass-secondary:     rgba(100, 116, 139, 0.16);
+  --semantic-bg-glass-subtle: rgba(13, 17, 23, 0.55);
+  --semantic-bg-glass-default: rgba(17, 24, 39, 0.72);
+  --semantic-bg-glass-strong: rgba(19, 25, 36, 0.88);
+  --semantic-bg-glass-primary: rgba(118, 224, 26, 0.12);
+  --semantic-bg-glass-secondary: rgba(100, 116, 139, 0.16);
 
   /* Backdrop Blurs */
-  --semantic-backdrop-blur-sm:       blur(8px);
-  --semantic-backdrop-blur-md:       blur(16px);
-  --semantic-backdrop-blur-lg:       blur(24px);
+  --semantic-backdrop-blur-sm: blur(8px);
+  --semantic-backdrop-blur-md: blur(16px);
+  --semantic-backdrop-blur-lg: blur(24px);
 
   /* --- Semantic Typography (Font Roles & Intent Hierarchy) ---
      1. Emphasised accents, main headings: Riven Didone
      2. Smaller headings, imp text: Cabin Condensed
      3. Normal text, body with not much importance: Inter Display
      ----------------------------------------------------------------------- */
-  --semantic-font-heading:           var(--primitive-font-riven);
-  --semantic-font-display:           var(--primitive-font-riven);
-  --semantic-font-editorial:         var(--primitive-font-riven);
-  --semantic-font-serif:             var(--primitive-font-riven);
+  --semantic-font-heading: var(--primitive-font-riven);
+  --semantic-font-display: var(--primitive-font-riven);
+  --semantic-font-editorial: var(--primitive-font-riven);
+  --semantic-font-serif: var(--primitive-font-riven);
 
-  --semantic-font-condensed:         var(--primitive-font-cabin-condensed);
-  --semantic-font-brand:             var(--primitive-font-cabin-condensed);
-  --semantic-font-imp:               var(--primitive-font-cabin-condensed);
+  --semantic-font-condensed: var(--primitive-font-cabin-condensed);
+  --semantic-font-brand: var(--primitive-font-cabin-condensed);
+  --semantic-font-imp: var(--primitive-font-cabin-condensed);
 
-  --semantic-font-body:              var(--primitive-font-inter-display);
-  --semantic-font-code:              var(--primitive-font-mono);
+  --semantic-font-body: var(--primitive-font-inter-display);
+  --semantic-font-code: var(--primitive-font-mono);
 
   /* Display & Heading Scale Semantics */
-  --semantic-type-display-family:        var(--semantic-font-display);
-  --semantic-type-display-size:          clamp(3.575rem, 9.1vw, 5.85rem);
-  --semantic-type-display-weight:        var(--primitive-font-weight-regular);
-  --semantic-type-display-line-height:   var(--primitive-line-height-tight);
+  --semantic-type-display-family: var(--semantic-font-display);
+  --semantic-type-display-size: clamp(3.575rem, 9.1vw, 5.85rem);
+  --semantic-type-display-weight: var(--primitive-font-weight-regular);
+  --semantic-type-display-line-height: var(--primitive-line-height-tight);
   --semantic-type-display-letter-spacing: -0.025em;
 
-  --semantic-type-editorial-family:      var(--semantic-font-editorial);
-  --semantic-type-editorial-size:        clamp(3.25rem, 7.8vw, 4.875rem);
-  --semantic-type-editorial-weight:      var(--primitive-font-weight-regular);
+  --semantic-type-editorial-family: var(--semantic-font-editorial);
+  --semantic-type-editorial-size: clamp(3.25rem, 7.8vw, 4.875rem);
+  --semantic-type-editorial-weight: var(--primitive-font-weight-regular);
   --semantic-type-editorial-line-height: var(--primitive-line-height-tight);
   --semantic-type-editorial-letter-spacing: -0.025em;
 
-  --semantic-type-h1-family:             var(--semantic-font-heading);
-  --semantic-type-h1-size:               clamp(2.925rem, 6.5vw, 3.9rem);
-  --semantic-type-h1-weight:             var(--primitive-font-weight-regular);
-  --semantic-type-h1-line-height:        1.2;
-  --semantic-type-h1-letter-spacing:     -0.025em;
+  --semantic-type-h1-family: var(--semantic-font-heading);
+  --semantic-type-h1-size: clamp(2.925rem, 6.5vw, 3.9rem);
+  --semantic-type-h1-weight: var(--primitive-font-weight-regular);
+  --semantic-type-h1-line-height: 1.2;
+  --semantic-type-h1-letter-spacing: -0.025em;
 
-  --semantic-type-h2-family:             var(--semantic-font-condensed);
-  --semantic-type-h2-size:               clamp(1.75rem, 3.5vw, var(--primitive-font-size-3xl));
-  --semantic-type-h2-weight:             var(--primitive-font-weight-bold);
-  --semantic-type-h2-line-height:        var(--primitive-line-height-snug);
-  --semantic-type-h2-letter-spacing:     0.015em;
+  --semantic-type-h2-family: var(--semantic-font-condensed);
+  --semantic-type-h2-size: clamp(1.75rem, 3.5vw, var(--primitive-font-size-3xl));
+  --semantic-type-h2-weight: var(--primitive-font-weight-bold);
+  --semantic-type-h2-line-height: var(--primitive-line-height-snug);
+  --semantic-type-h2-letter-spacing: 0.015em;
 
-  --semantic-type-h3-family:             var(--semantic-font-condensed);
-  --semantic-type-h3-size:               var(--primitive-font-size-xl);
-  --semantic-type-h3-weight:             var(--primitive-font-weight-bold);
-  --semantic-type-h3-line-height:        var(--primitive-line-height-snug);
-  --semantic-type-h3-letter-spacing:     0.01em;
+  --semantic-type-h3-family: var(--semantic-font-condensed);
+  --semantic-type-h3-size: var(--primitive-font-size-xl);
+  --semantic-type-h3-weight: var(--primitive-font-weight-bold);
+  --semantic-type-h3-line-height: var(--primitive-line-height-snug);
+  --semantic-type-h3-letter-spacing: 0.01em;
 
-  --semantic-type-h4-family:             var(--semantic-font-condensed);
-  --semantic-type-h4-size:               var(--primitive-font-size-lg);
-  --semantic-type-h4-weight:             var(--primitive-font-weight-semibold);
-  --semantic-type-h4-line-height:        var(--primitive-line-height-snug);
+  --semantic-type-h4-family: var(--semantic-font-condensed);
+  --semantic-type-h4-size: var(--primitive-font-size-lg);
+  --semantic-type-h4-weight: var(--primitive-font-weight-semibold);
+  --semantic-type-h4-line-height: var(--primitive-line-height-snug);
 
   /* Body & Functional Text Semantics: Inter Display */
-  --semantic-type-body-lead-family:      var(--semantic-font-body);
-  --semantic-type-body-lead-size:        var(--primitive-font-size-md);
-  --semantic-type-body-lead-weight:      var(--primitive-font-weight-regular);
+  --semantic-type-body-lead-family: var(--semantic-font-body);
+  --semantic-type-body-lead-size: var(--primitive-font-size-md);
+  --semantic-type-body-lead-weight: var(--primitive-font-weight-regular);
   --semantic-type-body-lead-line-height: var(--primitive-line-height-relaxed);
 
-  --semantic-type-body-family:           var(--semantic-font-body);
-  --semantic-type-body-size:             var(--primitive-font-size-base);
-  --semantic-type-body-weight:           var(--primitive-font-weight-regular);
-  --semantic-type-body-line-height:      var(--primitive-line-height-normal);
+  --semantic-type-body-family: var(--semantic-font-body);
+  --semantic-type-body-size: var(--primitive-font-size-base);
+  --semantic-type-body-weight: var(--primitive-font-weight-regular);
+  --semantic-type-body-line-height: var(--primitive-line-height-normal);
 
-  --semantic-type-body-sm-family:        var(--semantic-font-body);
-  --semantic-type-body-sm-size:          var(--primitive-font-size-sm);
-  --semantic-type-body-sm-weight:        var(--primitive-font-weight-regular);
-  --semantic-type-body-sm-line-height:   var(--primitive-line-height-normal);
+  --semantic-type-body-sm-family: var(--semantic-font-body);
+  --semantic-type-body-sm-size: var(--primitive-font-size-sm);
+  --semantic-type-body-sm-weight: var(--primitive-font-weight-regular);
+  --semantic-type-body-sm-line-height: var(--primitive-line-height-normal);
 
-  --semantic-type-caption-family:        var(--semantic-font-body);
-  --semantic-type-caption-size:          var(--primitive-font-size-xs);
-  --semantic-type-caption-weight:        var(--primitive-font-weight-medium);
+  --semantic-type-caption-family: var(--semantic-font-body);
+  --semantic-type-caption-size: var(--primitive-font-size-xs);
+  --semantic-type-caption-weight: var(--primitive-font-weight-medium);
   --semantic-type-caption-letter-spacing: var(--primitive-letter-spacing-wide);
 
   /* Important UI Text: Cabin Condensed */
-  --semantic-type-tagline-family:        var(--semantic-font-condensed);
-  --semantic-type-tagline-size:          var(--primitive-font-size-xs);
-  --semantic-type-tagline-weight:        var(--primitive-font-weight-bold);
+  --semantic-type-tagline-family: var(--semantic-font-condensed);
+  --semantic-type-tagline-size: var(--primitive-font-size-xs);
+  --semantic-type-tagline-weight: var(--primitive-font-weight-bold);
   --semantic-type-tagline-letter-spacing: var(--primitive-letter-spacing-widest);
 
-  --semantic-type-button-family:         var(--semantic-font-condensed);
-  --semantic-type-button-size:           var(--primitive-font-size-sm);
-  --semantic-type-button-weight:         var(--primitive-font-weight-bold);
-  --semantic-type-button-line-height:    var(--primitive-line-height-none);
+  --semantic-type-button-family: var(--semantic-font-condensed);
+  --semantic-type-button-size: var(--primitive-font-size-sm);
+  --semantic-type-button-weight: var(--primitive-font-weight-bold);
+  --semantic-type-button-line-height: var(--primitive-line-height-none);
 
-  --semantic-type-code-family:           var(--semantic-font-code);
-  --semantic-type-code-size:             var(--primitive-font-size-sm);
+  --semantic-type-code-family: var(--semantic-font-code);
+  --semantic-type-code-size: var(--primitive-font-size-sm);
 
   /* --- Typography / Foregrounds --- */
-  --semantic-text-primary:           var(--primitive-white);
-  --semantic-text-secondary:         #c9d1d9;
-  --semantic-text-tertiary:          #8b949e;
-  --semantic-text-muted:             #545d68;
-  --semantic-text-inverse:           var(--primitive-black);
+  --semantic-text-primary: var(--primitive-white);
+  --semantic-text-secondary: #c9d1d9;
+  --semantic-text-tertiary: #8b949e;
+  --semantic-text-muted: #545d68;
+  --semantic-text-inverse: var(--primitive-black);
 
   /* Brand Accents on Text */
-  --semantic-text-brand-primary:     var(--primitive-chartreuse-400);
-  --semantic-text-brand-secondary:   var(--primitive-slate-300);
+  --semantic-text-brand-primary: var(--primitive-chartreuse-400);
+  --semantic-text-brand-secondary: var(--primitive-slate-300);
 
   /* --- Borders & Dividers --- */
-  --semantic-border-subtle:          rgba(255, 255, 255, 0.07);
-  --semantic-border-default:         rgba(255, 255, 255, 0.14);
-  --semantic-border-strong:          rgba(255, 255, 255, 0.24);
-  --semantic-border-interactive:     rgba(255, 255, 255, 0.32);
-  --semantic-border-brand-primary:   rgba(118, 224, 26, 0.45);
+  --semantic-border-subtle: rgba(255, 255, 255, 0.07);
+  --semantic-border-default: rgba(255, 255, 255, 0.14);
+  --semantic-border-strong: rgba(255, 255, 255, 0.24);
+  --semantic-border-interactive: rgba(255, 255, 255, 0.32);
+  --semantic-border-brand-primary: rgba(118, 224, 26, 0.45);
   --semantic-border-brand-secondary: rgba(148, 163, 184, 0.35);
 
   /* --- Brand Identity Semantic Roles --- */
-  --semantic-color-primary:          var(--primitive-chartreuse-500);
-  --semantic-color-primary-hover:    var(--primitive-chartreuse-400);
-  --semantic-color-primary-active:   var(--primitive-chartreuse-600);
-  --semantic-color-primary-fg:       var(--primitive-black); /* High contrast on Chartreuse */
+  --semantic-color-primary: var(--primitive-chartreuse-500);
+  --semantic-color-primary-hover: var(--primitive-chartreuse-400);
+  --semantic-color-primary-active: var(--primitive-chartreuse-600);
+  --semantic-color-primary-fg: var(--primitive-black);
+  /* High contrast on Chartreuse */
 
-  --semantic-color-secondary:        var(--primitive-slate-700);
-  --semantic-color-secondary-hover:  var(--primitive-slate-600);
+  --semantic-color-secondary: var(--primitive-slate-700);
+  --semantic-color-secondary-hover: var(--primitive-slate-600);
   --semantic-color-secondary-active: var(--primitive-slate-800);
-  --semantic-color-secondary-fg:     var(--primitive-white); /* High contrast on Slate */
+  --semantic-color-secondary-fg: var(--primitive-white);
+  /* High contrast on Slate */
 
-  --semantic-color-accent-avocado:   var(--primitive-avocado-500);
-  --semantic-color-accent-indigo:    var(--primitive-indigo-500);
+  --semantic-color-accent-avocado: var(--primitive-avocado-500);
+  --semantic-color-accent-indigo: var(--primitive-indigo-500);
 
   /* --- Feedback & Functional Semantics --- */
-  --semantic-feedback-success-bg:     rgba(22, 137, 67, 0.16);
-  --semantic-feedback-success-fg:     #3dd676;
+  --semantic-feedback-success-bg: rgba(22, 137, 67, 0.16);
+  --semantic-feedback-success-fg: #3dd676;
   --semantic-feedback-success-border: rgba(61, 214, 118, 0.35);
 
-  --semantic-feedback-warning-bg:     rgba(239, 101, 0, 0.16);
-  --semantic-feedback-warning-fg:     #ff8e3d;
+  --semantic-feedback-warning-bg: rgba(239, 101, 0, 0.16);
+  --semantic-feedback-warning-fg: #ff8e3d;
   --semantic-feedback-warning-border: rgba(255, 142, 61, 0.35);
 
-  --semantic-feedback-info-bg:        rgba(28, 116, 216, 0.16);
-  --semantic-feedback-info-fg:        #54a3ff;
-  --semantic-feedback-info-border:    rgba(84, 163, 255, 0.35);
+  --semantic-feedback-info-bg: rgba(28, 116, 216, 0.16);
+  --semantic-feedback-info-fg: #54a3ff;
+  --semantic-feedback-info-border: rgba(84, 163, 255, 0.35);
 
-  --semantic-feedback-error-bg:       rgba(209, 47, 47, 0.16);
-  --semantic-feedback-error-fg:       #ff5c5c;
-  --semantic-feedback-error-border:   rgba(255, 92, 92, 0.35);
+  --semantic-feedback-error-bg: rgba(209, 47, 47, 0.16);
+  --semantic-feedback-error-fg: #ff5c5c;
+  --semantic-feedback-error-border: rgba(255, 92, 92, 0.35);
 
   /* --- Shadows & Radiant Glows --- */
-  --semantic-shadow-xs:               0 1px 2px rgba(0, 0, 0, 0.4);
-  --semantic-shadow-sm:               0 2px 4px rgba(0, 0, 0, 0.5);
-  --semantic-shadow-md:               0 6px 16px rgba(0, 0, 0, 0.6);
-  --semantic-shadow-lg:               0 12px 32px rgba(0, 0, 0, 0.75);
-  --semantic-shadow-xl:               0 20px 48px rgba(0, 0, 0, 0.85);
+  --semantic-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --semantic-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --semantic-shadow-md: 0 6px 16px rgba(0, 0, 0, 0.6);
+  --semantic-shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.75);
+  --semantic-shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.85);
 
   /* High-Voltage Signature Glows — Disabled per directive */
-  --semantic-glow-bolt:               none;
-  --semantic-glow-bolt-intense:       none;
-  --semantic-glow-slate:              none;
-  --semantic-glow-veronica:           none;
-  --semantic-glow-ambient:            none;
+  --semantic-glow-bolt: none;
+  --semantic-glow-bolt-intense: none;
+  --semantic-glow-slate: none;
+  --semantic-glow-veronica: none;
+  --semantic-glow-ambient: none;
 
   /* Focus Outline */
-  --semantic-focus-ring:              0 0 0 3px rgba(118, 224, 26, 0.45);
+  --semantic-focus-ring: 0 0 0 3px rgba(118, 224, 26, 0.45);
 
   /* --- Responsive Breakpoint Intent Mappings --- */
-  --semantic-breakpoint-desktop:      var(--primitive-breakpoint-desktop); /* 1280px */
-  --semantic-breakpoint-tablet:       var(--primitive-breakpoint-tablet);  /* 960px */
-  --semantic-breakpoint-mobile:       var(--primitive-breakpoint-mobile);  /* 480px */
-  --semantic-container-max:           none;
-  --semantic-space-section:           var(--primitive-space-80);           /* 20rem (320px) — 4x section separation */
+  --semantic-breakpoint-desktop: var(--primitive-breakpoint-desktop);
+  /* 1280px */
+  --semantic-breakpoint-tablet: var(--primitive-breakpoint-tablet);
+  /* 960px */
+  --semantic-breakpoint-mobile: var(--primitive-breakpoint-mobile);
+  /* 480px */
+  --semantic-container-max: none;
+  --semantic-space-section: var(--primitive-space-80);
+  /* 20rem (320px) — 4x section separation */
 }
 
 /* --------------------------------------------------------------------------
@@ -618,101 +692,104 @@
    -------------------------------------------------------------------------- */
 [data-theme="light"] {
   /* --- Surfaces & Backgrounds --- */
-  --semantic-bg-canvas:              var(--primitive-canvas-light);
-  --semantic-bg-canvas-subtle:       var(--primitive-canvas-light);
-  --semantic-bg-surface:             var(--primitive-white);
-  --semantic-bg-surface-elevated:    var(--primitive-gray-100);
-  --semantic-bg-surface-hover:       var(--primitive-gray-200);
-  --semantic-bg-surface-active:      var(--primitive-gray-300);
+  --semantic-bg-canvas: var(--primitive-canvas-light);
+  --semantic-bg-canvas-subtle: var(--primitive-canvas-light);
+  --semantic-bg-surface: var(--primitive-white);
+  --semantic-bg-surface-elevated: var(--primitive-gray-100);
+  --semantic-bg-surface-hover: var(--primitive-gray-200);
+  --semantic-bg-surface-active: var(--primitive-gray-300);
 
   /* Translucent & Glassmorphism Surfaces */
-  --semantic-bg-glass-subtle:        rgba(255, 255, 255, 0.7);
-  --semantic-bg-glass-default:       rgba(255, 255, 255, 0.85);
-  --semantic-bg-glass-strong:        rgba(255, 255, 255, 0.95);
-  --semantic-bg-glass-primary:       rgba(118, 224, 26, 0.14);
-  --semantic-bg-glass-secondary:     rgba(100, 116, 139, 0.12);
+  --semantic-bg-glass-subtle: rgba(255, 255, 255, 0.7);
+  --semantic-bg-glass-default: rgba(255, 255, 255, 0.85);
+  --semantic-bg-glass-strong: rgba(255, 255, 255, 0.95);
+  --semantic-bg-glass-primary: rgba(118, 224, 26, 0.14);
+  --semantic-bg-glass-secondary: rgba(100, 116, 139, 0.12);
 
   /* Backdrop Blurs */
-  --semantic-backdrop-blur-sm:       blur(8px);
-  --semantic-backdrop-blur-md:       blur(16px);
-  --semantic-backdrop-blur-lg:       blur(24px);
+  --semantic-backdrop-blur-sm: blur(8px);
+  --semantic-backdrop-blur-md: blur(16px);
+  --semantic-backdrop-blur-lg: blur(24px);
 
   /* Typography / Foregrounds */
-  --semantic-text-primary:           var(--primitive-gray-950);
-  --semantic-text-secondary:         var(--primitive-gray-700);
-  --semantic-text-tertiary:          var(--primitive-gray-500);
-  --semantic-text-muted:             var(--primitive-gray-400);
-  --semantic-text-inverse:           var(--primitive-white);
+  --semantic-text-primary: var(--primitive-gray-950);
+  --semantic-text-secondary: var(--primitive-gray-700);
+  --semantic-text-tertiary: var(--primitive-gray-500);
+  --semantic-text-muted: var(--primitive-gray-400);
+  --semantic-text-inverse: var(--primitive-white);
 
   /* Brand Accents on Text */
-  --semantic-text-brand-primary:     var(--primitive-chartreuse-800);
-  --semantic-text-brand-secondary:   var(--primitive-slate-700);
+  --semantic-text-brand-primary: var(--primitive-chartreuse-800);
+  --semantic-text-brand-secondary: var(--primitive-slate-700);
 
   /* Borders & Dividers */
-  --semantic-border-subtle:          rgba(0, 0, 0, 0.06);
-  --semantic-border-default:         rgba(0, 0, 0, 0.12);
-  --semantic-border-strong:          rgba(0, 0, 0, 0.22);
-  --semantic-border-interactive:     rgba(0, 0, 0, 0.35);
-  --semantic-border-brand-primary:   rgba(92, 181, 17, 0.45);
+  --semantic-border-subtle: rgba(0, 0, 0, 0.06);
+  --semantic-border-default: rgba(0, 0, 0, 0.12);
+  --semantic-border-strong: rgba(0, 0, 0, 0.22);
+  --semantic-border-interactive: rgba(0, 0, 0, 0.35);
+  --semantic-border-brand-primary: rgba(92, 181, 17, 0.45);
   --semantic-border-brand-secondary: rgba(71, 85, 105, 0.28);
 
   /* Brand Identity Semantic Roles */
-  --semantic-color-primary:          var(--primitive-chartreuse-500);
-  --semantic-color-primary-hover:    var(--primitive-chartreuse-600);
-  --semantic-color-primary-active:   var(--primitive-chartreuse-700);
-  --semantic-color-primary-fg:       var(--primitive-black);
+  --semantic-color-primary: var(--primitive-chartreuse-500);
+  --semantic-color-primary-hover: var(--primitive-chartreuse-600);
+  --semantic-color-primary-active: var(--primitive-chartreuse-700);
+  --semantic-color-primary-fg: var(--primitive-black);
 
-  --semantic-color-secondary:        var(--primitive-slate-800);
-  --semantic-color-secondary-hover:  var(--primitive-slate-700);
+  --semantic-color-secondary: var(--primitive-slate-800);
+  --semantic-color-secondary-hover: var(--primitive-slate-700);
   --semantic-color-secondary-active: var(--primitive-slate-900);
-  --semantic-color-secondary-fg:     var(--primitive-white);
+  --semantic-color-secondary-fg: var(--primitive-white);
 
-  --semantic-color-accent-avocado:   var(--primitive-avocado-500);
-  --semantic-color-accent-indigo:    var(--primitive-indigo-500);
+  --semantic-color-accent-avocado: var(--primitive-avocado-500);
+  --semantic-color-accent-indigo: var(--primitive-indigo-500);
 
   /* Feedback & Functional Semantics */
-  --semantic-feedback-success-bg:     var(--primitive-success-50);
-  --semantic-feedback-success-fg:     var(--primitive-success-600);
+  --semantic-feedback-success-bg: var(--primitive-success-50);
+  --semantic-feedback-success-fg: var(--primitive-success-600);
   --semantic-feedback-success-border: rgba(22, 137, 67, 0.25);
 
-  --semantic-feedback-warning-bg:     var(--primitive-warning-50);
-  --semantic-feedback-warning-fg:     var(--primitive-warning-600);
+  --semantic-feedback-warning-bg: var(--primitive-warning-50);
+  --semantic-feedback-warning-fg: var(--primitive-warning-600);
   --semantic-feedback-warning-border: rgba(239, 101, 0, 0.25);
 
-  --semantic-feedback-info-bg:        var(--primitive-info-50);
-  --semantic-feedback-info-fg:        var(--primitive-info-600);
-  --semantic-feedback-info-border:    rgba(28, 116, 216, 0.25);
+  --semantic-feedback-info-bg: var(--primitive-info-50);
+  --semantic-feedback-info-fg: var(--primitive-info-600);
+  --semantic-feedback-info-border: rgba(28, 116, 216, 0.25);
 
-  --semantic-feedback-error-bg:       var(--primitive-error-50);
-  --semantic-feedback-error-fg:       var(--primitive-error-600);
-  --semantic-feedback-error-border:   rgba(209, 47, 47, 0.25);
+  --semantic-feedback-error-bg: var(--primitive-error-50);
+  --semantic-feedback-error-fg: var(--primitive-error-600);
+  --semantic-feedback-error-border: rgba(209, 47, 47, 0.25);
 
   /* Shadows — Zero-Shadow Enforcement */
-  --semantic-shadow-xs:               none;
-  --semantic-shadow-sm:               none;
-  --semantic-shadow-md:               none;
-  --semantic-shadow-lg:               none;
-  --semantic-shadow-xl:               none;
+  --semantic-shadow-xs: none;
+  --semantic-shadow-sm: none;
+  --semantic-shadow-md: none;
+  --semantic-shadow-lg: none;
+  --semantic-shadow-xl: none;
 
-  --semantic-glow-bolt:               none;
-  --semantic-glow-bolt-intense:       none;
-  --semantic-glow-slate:              none;
-  --semantic-glow-veronica:           none;
-  --semantic-glow-ambient:            none;
+  --semantic-glow-bolt: none;
+  --semantic-glow-bolt-intense: none;
+  --semantic-glow-slate: none;
+  --semantic-glow-veronica: none;
+  --semantic-glow-ambient: none;
 
-  --semantic-focus-ring:              0 0 0 3px rgba(92, 181, 17, 0.5);
+  --semantic-focus-ring: 0 0 0 3px rgba(92, 181, 17, 0.5);
 
   /* Responsive Breakpoint Intent Mappings */
-  --semantic-breakpoint-desktop:      var(--primitive-breakpoint-desktop);
-  --semantic-breakpoint-tablet:       var(--primitive-breakpoint-tablet);
-  --semantic-breakpoint-mobile:       var(--primitive-breakpoint-mobile);
-  --semantic-container-max:           none;
-  --semantic-space-section:           var(--primitive-space-80);
+  --semantic-breakpoint-desktop: var(--primitive-breakpoint-desktop);
+  --semantic-breakpoint-tablet: var(--primitive-breakpoint-tablet);
+  --semantic-breakpoint-mobile: var(--primitive-breakpoint-mobile);
+  --semantic-container-max: none;
+  --semantic-space-section: var(--primitive-space-80);
 }
+
 /* --------------------------------------------------------------------------
    4. CSS RESET & GLOBAL RESILIENCE
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -768,7 +845,9 @@ body {
   background: var(--semantic-color-primary);
 }
 
-img, svg, video {
+img,
+svg,
+video {
   display: block;
   max-width: 100%;
 }
@@ -779,7 +858,10 @@ a {
   transition: color var(--primitive-duration-fast) var(--primitive-ease-default);
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
   color: inherit;
   border: none;
@@ -1161,8 +1243,8 @@ h6,
   padding: var(--primitive-space-6);
   position: relative;
   transition: transform var(--primitive-duration-normal) var(--primitive-ease-default),
-              border-color var(--primitive-duration-normal) var(--primitive-ease-default),
-              box-shadow var(--primitive-duration-normal) var(--primitive-ease-default);
+    border-color var(--primitive-duration-normal) var(--primitive-ease-default),
+    box-shadow var(--primitive-duration-normal) var(--primitive-ease-default);
 }
 
 .card-glass {
@@ -1243,9 +1325,21 @@ h6,
 }
 
 @keyframes pulse-animation {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.4); opacity: 1; box-shadow: none; }
-  100% { transform: scale(0.95); opacity: 0.8; }
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
 }
 
 /* --- Semantic Status Chips / Alerts --- */
@@ -1319,7 +1413,7 @@ h6,
 
 .fixed-canvas-dark {
   background-color: #090909;
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 48px 48px;
@@ -1328,7 +1422,7 @@ h6,
 
 .fixed-canvas-light {
   background-color: var(--primitive-canvas-light, #f0f0f0);
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 48px 48px;
@@ -1405,7 +1499,7 @@ h6,
   box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
   font-family: var(--primitive-font-riven);
   letter-spacing: -0.025em;
-  transition: 
+  transition:
     background-color 0.45s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.45s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
@@ -1519,7 +1613,7 @@ h6,
   color: #08090A;
   border: 0px;
   box-shadow: none;
-  transition: 
+  transition:
     background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
     color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
@@ -1664,6 +1758,7 @@ h6,
     opacity: 0;
     transform: translate(-50%, 28px) scale(0.95);
   }
+
   100% {
     opacity: 1;
     transform: translate(-50%, 0) scale(1);
@@ -1679,7 +1774,7 @@ h6,
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--primitive-radius-full);
   padding: 5px 6px;
-  box-shadow: 
+  box-shadow:
     0 20px 45px -10px rgba(0, 0, 0, 0.65),
     0 0 0 1px rgba(255, 255, 255, 0.05) inset;
   transition: all var(--primitive-duration-normal) var(--primitive-ease-default);
@@ -2124,14 +2219,17 @@ h6,
   .hero-showcase-section {
     height: 520px;
   }
+
   .hero-showcase-col.col-mobile {
     width: 115px;
     flex: 0 0 115px;
   }
+
   .hero-showcase-col.col-desktop {
     width: 200px;
     flex: 0 0 200px;
   }
+
   .hero-showcase-columns {
     min-width: 1400px;
     gap: 12px;
@@ -2143,14 +2241,17 @@ h6,
     height: 420px;
     margin-top: var(--primitive-space-4);
   }
+
   .hero-showcase-col.col-mobile {
     width: 90px;
     flex: 0 0 90px;
   }
+
   .hero-showcase-col.col-desktop {
     width: 155px;
     flex: 0 0 155px;
   }
+
   .hero-showcase-columns {
     min-width: 1100px;
     gap: 10px;
@@ -2203,8 +2304,13 @@ h6,
 }
 
 @keyframes marqueeTrack {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .tech-tag-pill {
@@ -2272,7 +2378,7 @@ h6,
   transition: color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.agency-section > .container {
+.agency-section>.container {
   position: relative;
   z-index: 1;
 }
@@ -2347,7 +2453,7 @@ h6,
    NO LONG-TERM CONTRACTS PRICING SECTION
    ========================================================================== */
 .pricing-contracts-section {
-  padding: clamp(4.5rem, 8vw, 7.5rem) 0 clamp(5rem, 9vw, 8rem);
+  padding: clamp(4.5rem, vw, 7.5rem) 0 clamp(4.5rem, 7vw, 6.5rem);
   position: relative;
   z-index: 2;
 }
@@ -2355,7 +2461,7 @@ h6,
 .pricing-contracts-header {
   text-align: center;
   max-width: 900px;
-  margin: 0 auto clamp(2.5rem, 5vw, 4.25rem);
+  margin: 0 auto clamp(2rem, 3.5vw, 3rem);
 }
 
 .pricing-contracts-title {
@@ -2370,53 +2476,72 @@ h6,
 }
 
 .pricing-contracts-subtitle {
-  font-family: var(--primitive-font-inter), sans-serif;
+  font-family: var(--primitive-font-inter-display), sans-serif !important;
   font-size: clamp(0.95rem, 1.35vw, 1.15rem);
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.65) !important;
   margin: 0 auto;
   max-width: 720px;
   text-wrap: balance;
 }
 
+/* Wider Cards Grid */
 .pricing-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1.25rem, 2vw, 1.75rem);
-  max-width: 1140px;
+  gap: clamp(1.25rem, 2vw, 2rem);
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   align-items: stretch;
 }
 
+/* Outer Box: "The whole item within a box" */
 .pricing-tier-card {
-  border-radius: 24px;
-  padding: 40px 36px 36px;
+  border-radius: 28px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 580px;
+  min-height: 590px;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.3s ease;
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s ease;
   position: relative;
+  box-sizing: border-box;
 }
 
 .pricing-tier-card:hover {
   transform: translateY(-6px);
 }
 
+/* Inner Box: "Have the icon, title, checklist in a box" */
+.pricing-card-inner-box {
+  border-radius: 20px;
+  padding: clamp(1.75rem, 2.5vw, 2.25rem) clamp(1.5rem, 2vw, 2rem);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
 /* Dark Card Styling (Audit & Design sprint) */
 .pricing-card-dark {
-  background: #111113;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #0d0d0f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   color: #ffffff;
-  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.7);
 }
 
 .pricing-card-dark:hover {
-  border-color: rgba(255, 255, 255, 0.22);
-  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 28px 56px -15px rgba(0, 0, 0, 0.85);
+}
+
+.pricing-card-dark .pricing-card-inner-box {
+  background: #18181b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .pricing-card-dark .pricing-tier-icon {
@@ -2428,11 +2553,11 @@ h6,
 }
 
 .pricing-card-dark .pricing-check-icon {
-  stroke: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .pricing-card-dark .pricing-feature-item {
-  color: #9ca3af;
+  color: #a1a1aa;
 }
 
 .pricing-card-dark .pricing-amount-val {
@@ -2445,14 +2570,18 @@ h6,
 
 /* Light Card Styling (Retainer - Inverted / Highlighted) */
 .pricing-card-light {
-  background: #ececef;
+  background: #f0f0f0;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #0f1115;
-  box-shadow: 0 16px 36px -10px rgba(255, 255, 255, 0.06), 0 20px 40px -15px rgba(0, 0, 0, 0.4);
 }
 
 .pricing-card-light:hover {
-  box-shadow: 0 24px 50px -10px rgba(255, 255, 255, 0.12), 0 24px 50px -15px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.21);
+  box-shadow: 0 28px 56px -15px rgba(255, 255, 255, 0.178);
+}
+
+.pricing-card-light .pricing-card-inner-box {
+  background: #ffffff;
 }
 
 .pricing-card-light .pricing-tier-icon {
@@ -2464,7 +2593,7 @@ h6,
 }
 
 .pricing-card-light .pricing-check-icon {
-  stroke: #4b5563;
+  color: #4b5563;
 }
 
 .pricing-card-light .pricing-feature-item {
@@ -2479,12 +2608,7 @@ h6,
   color: #6b7280;
 }
 
-/* Card Inner Elements */
-.pricing-tier-top {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Inner Box Elements */
 .pricing-tier-icon {
   display: inline-flex;
   align-items: center;
@@ -2492,13 +2616,21 @@ h6,
   margin-bottom: 4px;
 }
 
+.pricing-tier-icon svg,
+.pricing-tier-icon i {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  display: block;
+}
+
 .pricing-tier-heading {
-  font-family: var(--primitive-font-inter), sans-serif !important;
+  font-family: var(--primitive-font-inter-display), sans-serif !important;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin: 16px 0 28px 0;
+  margin: 18px 0 26px 0;
 }
 
 .pricing-features-list {
@@ -2507,14 +2639,14 @@ h6,
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 13px;
 }
 
 .pricing-feature-item {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-family: var(--primitive-font-inter), sans-serif;
+  font-family: var(--primitive-font-inter-display), sans-serif !important;
   font-size: 14.5px;
   line-height: 1.45;
 }
@@ -2522,24 +2654,28 @@ h6,
 .pricing-check-icon {
   flex-shrink: 0;
   margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
 }
 
-.pricing-tier-bottom {
-  margin-top: clamp(2.5rem, 4vw, 3.5rem);
-  padding-top: 12px;
+/* Pricing Part: "The pricing part below the box" */
+.pricing-card-price-part {
+  padding: 24px 20px 14px;
+  box-sizing: border-box;
 }
 
 .pricing-amount-val {
-  font-family: var(--primitive-font-inter), sans-serif;
-  font-size: clamp(2.4rem, 3.2vw, 2.75rem);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.035em;
+  font-family: var(--primitive-font-opening-hours) !important;
+  font-size: clamp(2.6rem, 3.8vw, 3.35rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
   margin-bottom: 6px;
 }
 
 .pricing-period-meta {
-  font-family: var(--primitive-font-inter), sans-serif;
+  font-family: var(--primitive-font-inter-display), sans-serif !important;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: -0.01em;
@@ -2549,7 +2685,7 @@ h6,
 .pricing-action-footer {
   display: flex;
   justify-content: center;
-  margin-top: clamp(2.75rem, 4.5vw, 3.75rem);
+  margin-top: clamp(2.5rem, 4vw, 3.5rem);
 }
 
 .btn-book-call {
@@ -2568,8 +2704,8 @@ h6,
   text-decoration: none;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              background-color 0.25s ease;
+    box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.25s ease;
   cursor: pointer;
 }
 
@@ -2581,11 +2717,12 @@ h6,
 }
 
 /* Responsive Breakpoints */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .pricing-cards-grid {
     grid-template-columns: 1fr;
-    max-width: 480px;
+    max-width: 520px;
   }
+
   .pricing-tier-card {
     min-height: auto;
   }
@@ -3249,6 +3386,7 @@ h6,
    BREAKPOINT 1: 1280px — DESKTOP BOUNDARY (@media (max-width: 1280px))
    -------------------------------------------------------------------------- */
 @media (max-width: 1280px) {
+
   /* Container & Layout Constraints */
   .container {
     padding-left: var(--primitive-space-5);
@@ -3290,6 +3428,7 @@ h6,
    BREAKPOINT 2: 960px — TABLET & COMPACT DESKTOPS (@media (max-width: 960px))
    -------------------------------------------------------------------------- */
 @media (max-width: 960px) {
+
   /* Containers & Layout */
   .container,
   .container-narrow {
@@ -3406,9 +3545,11 @@ h6,
   .nav-links-desktop {
     display: none !important;
   }
+
   .mobile-nav-toggle {
     display: flex !important;
   }
+
   .tagline-bolt {
     display: none !important;
   }
@@ -3417,13 +3558,16 @@ h6,
   .simulator-grid {
     grid-template-columns: 1fr;
   }
+
   .sim-controls-pane {
     border-right: none;
     border-bottom: 1px solid var(--semantic-border-subtle);
   }
+
   .process-steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .capabilities-grid-layout {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3432,18 +3576,22 @@ h6,
     max-width: 100%;
     margin-bottom: 24px;
   }
+
   .footer-cta-headline {
     font-size: clamp(2rem, 5.2vw, 2.75rem);
     max-width: 100%;
   }
+
   .footer-cta-lead {
     font-size: 1.05rem;
     max-width: 520px;
   }
+
   .comparison-card {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
   .comp-table {
     min-width: 640px;
   }
@@ -3463,6 +3611,7 @@ h6,
    BREAKPOINT 3: 480px — MOBILE PORTRAIT & HANDHELD (@media (max-width: 480px))
    -------------------------------------------------------------------------- */
 @media (max-width: 480px) {
+
   /* Containers & Spacing */
   .container,
   .container-narrow {
@@ -3642,16 +3791,19 @@ h6,
   .hero-agency {
     padding: clamp(3.5rem, 7vw, 5rem) 0 var(--primitive-space-6);
   }
+
   .hero-agency .hero-title-headline,
   .hero-title-headline {
     font-size: clamp(2.5rem, 9.5vw, 4rem);
     margin-bottom: 60px;
   }
+
   .hero-actions-bar {
     flex-direction: column;
     width: 100%;
     gap: var(--primitive-space-3);
   }
+
   .hero-actions-bar .btn {
     width: 100%;
   }
@@ -3659,48 +3811,59 @@ h6,
   .process-steps-grid {
     grid-template-columns: 1fr;
   }
+
   .capabilities-grid-layout {
     grid-template-columns: 1fr;
   }
+
   .site-footer-agency {
     padding: var(--primitive-space-8) 16px var(--primitive-space-6);
   }
+
   .footer-card-container {
     border-radius: 28px;
     padding: 32px 16px 0;
   }
+
   .footer-logo-wrap {
     width: calc(100% + 32px);
     margin-left: -16px;
     margin-right: -16px;
   }
+
   .footer-cta-hero {
     margin-bottom: 20px;
   }
+
   .footer-cta-headline {
     font-size: clamp(1.75rem, 6.5vw, 2.15rem);
     line-height: 1.15;
     margin-bottom: 14px;
   }
+
   .footer-cta-lead {
     font-size: 0.95rem;
     line-height: 1.45;
     margin-bottom: 22px;
   }
+
   .footer-cta-actions {
     width: 100%;
     margin-bottom: 14px;
   }
+
   .footer-cta-actions .btn-primary {
     width: 100%;
     justify-content: center;
     padding: 0.95rem 1.4rem;
     font-size: 0.975rem;
   }
+
   .footer-cta-reassurance {
     font-size: 0.78rem;
     gap: 8px;
   }
+
   .footer-bottom-bar {
     flex-direction: column;
     align-items: flex-start;
@@ -3712,12 +3875,15 @@ h6,
   .sim-results-pane {
     padding: var(--primitive-space-4);
   }
+
   .sim-output-number {
     font-size: 2.25rem;
   }
+
   .cta-high-voltage-box {
     padding: var(--primitive-space-10) var(--primitive-space-4);
   }
+
   .modal-card-dialog {
     padding: var(--primitive-space-5);
   }
@@ -3757,9 +3923,9 @@ h6,
 .btn-header-cta,
 .bottom-nav-dock .bottom-nav-pill {
   transition: color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ==========================================================================
