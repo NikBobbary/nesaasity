@@ -6,9 +6,139 @@
 
 /* --------------------------------------------------------------------------
    0. FONTS & EXTERNAL ASSETS
+   Cabin Condensed (Card & Step Titles), Inter Display & Inter (Headings & Body),
+   Riven Didone (Signature Editorial Display Serif / Main Headings & Accents)
    -------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* --- Riven Didone Font-Face (Signature Editorial Display Serif / Headings & Accents) --- */
+@font-face {
+  font-family: 'Riven Didone';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Riven Didone';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Riven Didone Regular';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Riven Didone Regular';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Backward-compatibility alias: Burgundia -> maps to Riven Didone */
+@font-face {
+  font-family: 'Burgundia';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Burgundia';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Burgundia PERSONAL USE Regular';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Burgundia PERSONAL USE Regular';
+  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
+       url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
+       url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- Inter Display Font-Face (Local Webfonts from assets/framer) --- */
+@font-face {
+  font-family: 'Inter Display';
+  src: url('assets/framer/inter-display-300.woff2') format('woff2'),
+       local('Inter Display Light'), local('InterDisplay-Light');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('assets/framer/inter-display-300italic.woff2') format('woff2'),
+       local('Inter Display Light Italic'), local('InterDisplay-LightItalic');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('assets/framer/inter-display-400.woff2') format('woff2'),
+       local('Inter Display Regular'), local('Inter Display'), local('Inter-Display'), local('Inter');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('assets/framer/inter-display-500.woff2') format('woff2'),
+       local('Inter Display Medium'), local('InterDisplay-Medium');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('assets/framer/inter-display-600.woff2') format('woff2'),
+       local('Inter Display SemiBold'), local('InterDisplay-SemiBold');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ==========================================================================
    MATERIAL SYMBOLS ROUNDED — GLOBAL ICON SYSTEM
@@ -142,6 +272,7 @@
 
   /* --- Neutral Primitives (Obsidian Dark to Pure Light) --- */
   --primitive-white:        #ffffff;
+  --primitive-canvas-light: #f0f0f0;
   --primitive-gray-25:      #fcfcfd;
   --primitive-gray-50:      #f9fafb;
   --primitive-gray-100:     #f3f4f6;
@@ -172,12 +303,26 @@
   --primitive-error-500:   #d12f2f; /* From Palette */
   --primitive-error-600:   #b02424;
 
-  /* --- Typography Primitives: Kumbh Sans, Playfair Display & Code --- */
-  --primitive-font-kumbh:            'Kumbh Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --primitive-font-sans:             var(--primitive-font-kumbh); /* Alias for compatibility */
-  --primitive-font-playfair:         'Playfair Display', Georgia, 'Times New Roman', serif;
-  --primitive-font-serif:            var(--primitive-font-playfair);
+  /* --- Typography Primitives: Riven Didone, Cabin Condensed & Inter Display --- */
+  --primitive-font-riven:            'Riven Didone', 'Riven Didone Regular', 'Burgundia', Georgia, serif;
+  --primitive-font-burgundia:        var(--primitive-font-riven);
+  --primitive-font-cabin-condensed:  'Cabin Condensed', -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
+  --primitive-font-inter-display:    'Inter Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --primitive-font-inter:            'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --primitive-font-mono:             'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Aliases mapped to design hierarchy intent */
+  --primitive-font-heading:          var(--primitive-font-riven);        /* Main headings */
+  --primitive-font-editorial:        var(--primitive-font-riven);        /* Emphasised accents */
+  --primitive-font-condensed:        var(--primitive-font-cabin-condensed);  /* Smaller headings & imp text */
+  --primitive-font-imp:              var(--primitive-font-cabin-condensed);  /* Important UI text */
+  --primitive-font-sans:             var(--primitive-font-inter-display);    /* Normal text, body */
+  --primitive-font-body:             var(--primitive-font-inter-display);    /* Body with not much importance */
+
+  /* Backward compatibility aliases */
+  --primitive-font-kumbh:            var(--primitive-font-inter-display);
+  --primitive-font-playfair:         var(--primitive-font-riven);
+  --primitive-font-serif:            var(--primitive-font-riven);
 
   /* Font Weights (Kumbh Sans full native scale) */
   --primitive-font-weight-light:     300;
@@ -305,51 +450,60 @@
   --semantic-backdrop-blur-md:       blur(16px);
   --semantic-backdrop-blur-lg:       blur(24px);
 
-  /* --- Semantic Typography (Font Roles & Intent Hierarchy) --- */
-  --semantic-font-brand:             var(--primitive-font-kumbh);
-  --semantic-font-heading:           var(--primitive-font-playfair);
-  --semantic-font-display:           var(--primitive-font-playfair);
-  --semantic-font-editorial:         var(--primitive-font-playfair);
-  --semantic-font-serif:             var(--primitive-font-playfair);
-  --semantic-font-body:              var(--primitive-font-kumbh);
+  /* --- Semantic Typography (Font Roles & Intent Hierarchy) ---
+     1. Emphasised accents, main headings: Riven Didone
+     2. Smaller headings, imp text: Cabin Condensed
+     3. Normal text, body with not much importance: Inter Display
+     ----------------------------------------------------------------------- */
+  --semantic-font-heading:           var(--primitive-font-riven);
+  --semantic-font-display:           var(--primitive-font-riven);
+  --semantic-font-editorial:         var(--primitive-font-riven);
+  --semantic-font-serif:             var(--primitive-font-riven);
+
+  --semantic-font-condensed:         var(--primitive-font-cabin-condensed);
+  --semantic-font-brand:             var(--primitive-font-cabin-condensed);
+  --semantic-font-imp:               var(--primitive-font-cabin-condensed);
+
+  --semantic-font-body:              var(--primitive-font-inter-display);
   --semantic-font-code:              var(--primitive-font-mono);
 
   /* Display & Heading Scale Semantics */
   --semantic-type-display-family:        var(--semantic-font-display);
-  --semantic-type-display-size:          clamp(2.75rem, 7vw, var(--primitive-font-size-7xl));
-  --semantic-type-display-weight:        var(--primitive-font-weight-black);
+  --semantic-type-display-size:          clamp(3.575rem, 9.1vw, 5.85rem);
+  --semantic-type-display-weight:        var(--primitive-font-weight-regular);
   --semantic-type-display-line-height:   var(--primitive-line-height-tight);
-  --semantic-type-display-letter-spacing: var(--primitive-letter-spacing-tighter);
+  --semantic-type-display-letter-spacing: -0.025em;
 
   --semantic-type-editorial-family:      var(--semantic-font-editorial);
-  --semantic-type-editorial-size:        clamp(2.5rem, 6vw, var(--primitive-font-size-6xl));
-  --semantic-type-editorial-weight:      var(--primitive-font-weight-bold);
+  --semantic-type-editorial-size:        clamp(3.25rem, 7.8vw, 4.875rem);
+  --semantic-type-editorial-weight:      var(--primitive-font-weight-regular);
   --semantic-type-editorial-line-height: var(--primitive-line-height-tight);
-  --semantic-type-editorial-letter-spacing: var(--primitive-letter-spacing-tight);
+  --semantic-type-editorial-letter-spacing: -0.025em;
 
   --semantic-type-h1-family:             var(--semantic-font-heading);
-  --semantic-type-h1-size:               clamp(2.25rem, 5vw, var(--primitive-font-size-5xl));
-  --semantic-type-h1-weight:             var(--primitive-font-weight-extrabold);
-  --semantic-type-h1-line-height:        var(--primitive-line-height-tight);
-  --semantic-type-h1-letter-spacing:     var(--primitive-letter-spacing-tight);
+  --semantic-type-h1-size:               clamp(2.925rem, 6.5vw, 3.9rem);
+  --semantic-type-h1-weight:             var(--primitive-font-weight-regular);
+  --semantic-type-h1-line-height:        1.2;
+  --semantic-type-h1-letter-spacing:     -0.025em;
 
-  --semantic-type-h2-family:             var(--semantic-font-heading);
+  --semantic-type-h2-family:             var(--semantic-font-condensed);
   --semantic-type-h2-size:               clamp(1.75rem, 3.5vw, var(--primitive-font-size-3xl));
   --semantic-type-h2-weight:             var(--primitive-font-weight-bold);
   --semantic-type-h2-line-height:        var(--primitive-line-height-snug);
-  --semantic-type-h2-letter-spacing:     var(--primitive-letter-spacing-tight);
+  --semantic-type-h2-letter-spacing:     0.015em;
 
-  --semantic-type-h3-family:             var(--semantic-font-heading);
+  --semantic-type-h3-family:             var(--semantic-font-condensed);
   --semantic-type-h3-size:               var(--primitive-font-size-xl);
   --semantic-type-h3-weight:             var(--primitive-font-weight-bold);
   --semantic-type-h3-line-height:        var(--primitive-line-height-snug);
+  --semantic-type-h3-letter-spacing:     0.01em;
 
-  --semantic-type-h4-family:             var(--semantic-font-heading);
+  --semantic-type-h4-family:             var(--semantic-font-condensed);
   --semantic-type-h4-size:               var(--primitive-font-size-lg);
   --semantic-type-h4-weight:             var(--primitive-font-weight-semibold);
   --semantic-type-h4-line-height:        var(--primitive-line-height-snug);
 
-  /* Body & Functional Text Semantics */
+  /* Body & Functional Text Semantics: Inter Display */
   --semantic-type-body-lead-family:      var(--semantic-font-body);
   --semantic-type-body-lead-size:        var(--primitive-font-size-md);
   --semantic-type-body-lead-weight:      var(--primitive-font-weight-regular);
@@ -370,12 +524,13 @@
   --semantic-type-caption-weight:        var(--primitive-font-weight-medium);
   --semantic-type-caption-letter-spacing: var(--primitive-letter-spacing-wide);
 
-  --semantic-type-tagline-family:        var(--semantic-font-brand);
+  /* Important UI Text: Cabin Condensed */
+  --semantic-type-tagline-family:        var(--semantic-font-condensed);
   --semantic-type-tagline-size:          var(--primitive-font-size-xs);
   --semantic-type-tagline-weight:        var(--primitive-font-weight-bold);
   --semantic-type-tagline-letter-spacing: var(--primitive-letter-spacing-widest);
 
-  --semantic-type-button-family:         var(--semantic-font-brand);
+  --semantic-type-button-family:         var(--semantic-font-condensed);
   --semantic-type-button-size:           var(--primitive-font-size-sm);
   --semantic-type-button-weight:         var(--primitive-font-weight-bold);
   --semantic-type-button-line-height:    var(--primitive-line-height-none);
@@ -463,8 +618,8 @@
    -------------------------------------------------------------------------- */
 [data-theme="light"] {
   /* --- Surfaces & Backgrounds --- */
-  --semantic-bg-canvas:              var(--primitive-white);
-  --semantic-bg-canvas-subtle:       var(--primitive-gray-50);
+  --semantic-bg-canvas:              var(--primitive-canvas-light);
+  --semantic-bg-canvas-subtle:       var(--primitive-canvas-light);
   --semantic-bg-surface:             var(--primitive-white);
   --semantic-bg-surface-elevated:    var(--primitive-gray-100);
   --semantic-bg-surface-hover:       var(--primitive-gray-200);
@@ -573,7 +728,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  scroll-padding-top: 84px;
+  scroll-padding-top: 100px;
   transition: color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -636,11 +791,78 @@ button {
   cursor: pointer;
 }
 
-/* Global Heading Elements — Playfair Display */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--semantic-font-heading);
+/* ==========================================================================
+   GLOBAL TYPOGRAPHY HIERARCHY RULES:
+   1. Emphasised accents, main headings in Riven Didone
+   2. Smaller headings, imp text in Cabin Condensed
+   3. Normal text, body with not much importance in Inter Display
+   ========================================================================== */
+
+/* --- 1. Main Headings: Riven Didone --- */
+h1,
+.text-h1,
+.hero-title-headline,
+.section-main-title {
+  font-family: var(--primitive-font-riven);
   color: var(--semantic-text-primary);
-  letter-spacing: -0.015em;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+/* --- 1. Emphasised Accents: Riven Didone (Italic) --- */
+em,
+i,
+.italic-accent,
+.text-editorial,
+.text-editorial-italic,
+.accent-riven,
+.accent-burgundia {
+  font-family: var(--primitive-font-riven) !important;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* --- 2. Smaller Headings: Cabin Condensed --- */
+h2:not(.section-main-title):not(.hero-title-headline),
+h3,
+h4,
+h5,
+h6,
+.text-h2:not(.section-main-title),
+.text-h3,
+.text-h4,
+.process-step-title,
+.sim-group-title,
+.capability-card-title,
+.faq-question-btn,
+#modalTitle {
+  font-family: var(--primitive-font-cabin-condensed);
+  color: var(--semantic-text-primary);
+  letter-spacing: 0.015em;
+}
+
+/* --- 2. Important Text (Imp Text): Cabin Condensed --- */
+.btn,
+.badge,
+.hero-pill-badge,
+.section-eyebrow-tag,
+.tagline-bolt,
+.sim-option-pill,
+.sim-squad-badge,
+.process-day-pill,
+.chip-status,
+.nav-link-item a,
+.mobile-drawer-links a,
+.brand-wordmark,
+.sim-output-number,
+.stat-number,
+.metric-value,
+.form-field-label,
+.comp-table th,
+#calcPrice,
+.imp-text {
+  font-family: var(--primitive-font-cabin-condensed);
 }
 
 /* --------------------------------------------------------------------------
@@ -768,18 +990,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Font Family Utilities */
-.font-playfair,
-.font-serif {
-  font-family: var(--primitive-font-playfair) !important;
+.font-inter,
+.font-sans {
+  font-family: var(--primitive-font-inter) !important;
 }
 
-.font-kumbh,
-.font-sans {
-  font-family: var(--primitive-font-kumbh) !important;
+.font-inter-display,
+.font-display {
+  font-family: var(--primitive-font-inter-display) !important;
+}
+
+.font-cabin,
+.font-condensed {
+  font-family: var(--primitive-font-cabin-condensed) !important;
+}
+
+.font-riven,
+.font-burgundia,
+.font-editorial,
+.font-serif {
+  font-family: var(--primitive-font-riven) !important;
+  letter-spacing: -0.025em;
 }
 
 .font-mono {
   font-family: var(--primitive-font-mono) !important;
+}
+
+/* Backward compatibility aliases */
+.font-playfair {
+  font-family: var(--primitive-font-riven) !important;
+}
+
+.font-kumbh {
+  font-family: var(--primitive-font-inter) !important;
 }
 
 .font-italic {
@@ -1083,7 +1327,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fixed-canvas-light {
-  background-color: #ffffff;
+  background-color: var(--primitive-canvas-light, #f0f0f0);
   background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
@@ -1143,31 +1387,95 @@ h1, h2, h3, h4, h5, h6 {
    6.1. AGENCY SUITE: CORE LAYOUT, SHOWCASE & INTERACTIVE COMPONENTS
    ========================================================================== */
 
-/* --- Sticky Global Site Header --- */
+/* --- Floating Glass Global Site Header (Appbar) --- */
 .site-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: var(--semantic-bg-glass-default);
-  backdrop-filter: var(--semantic-backdrop-blur-md);
-  -webkit-backdrop-filter: var(--semantic-backdrop-blur-md);
-  border-bottom: 1px solid var(--semantic-border-subtle);
-  z-index: var(--primitive-z-sticky);
-  transition: all var(--primitive-duration-normal) var(--primitive-ease-default);
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1200px, calc(100% - 32px));
+  z-index: 250;
+  background: rgba(12, 16, 22, 0.76);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--primitive-radius-full);
+  box-shadow: 
+    0 20px 45px -12px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  font-family: var(--primitive-font-riven);
+  letter-spacing: -0.025em;
+  transition: 
+    background-color 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    top 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .site-header.scrolled {
-  background: var(--semantic-bg-glass-strong);
-  border-bottom-color: var(--semantic-border-default);
-  box-shadow: var(--semantic-shadow-md);
+  background: rgba(10, 13, 18, 0.88);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 24px 50px -10px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.site-header .container {
+  padding-left: clamp(1rem, 2.5vw, 1.75rem);
+  padding-right: clamp(1rem, 2.5vw, 1.75rem);
+  max-width: 100%;
 }
 
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: 64px;
   gap: var(--primitive-space-4);
+}
+
+/* Appbar Primary Booking CTA: Direct Cal.com link in Riven Didone */
+.btn-header-cta {
+  font-family: var(--primitive-font-riven) !important;
+  font-size: 1.33rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.48rem 1.45rem;
+  border-radius: var(--primitive-radius-full);
+  line-height: 1.2;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Dark mode default: Stark white button */
+  background: #FFFFFF;
+  color: #08090A;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: 
+    background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-header-cta:hover {
+  background: #F2F3F5;
+  color: #000000;
+  border-color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+}
+
+.btn-header-cta:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .brand-link {
@@ -1399,38 +1707,47 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-1px);
 }
 
-/* --- Dynamic Theme Support: Sticky Header in Light Mode --- */
+/* --- Dynamic Theme Support: Floating Glass Appbar in Light Mode --- */
 [data-theme="light"] .site-header,
 .site-header[data-theme="light"] {
-  background: rgba(255, 255, 255, 0.88);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 
+    0 18px 40px -12px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.02);
 }
 
 [data-theme="light"] .site-header.scrolled,
 .site-header[data-theme="light"].scrolled {
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 
+    0 22px 46px -10px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-[data-theme="light"] .site-header #soundToggle,
-.site-header[data-theme="light"] #soundToggle {
-  background: rgba(255, 255, 255, 0.7);
-  border-color: rgba(0, 0, 0, 0.15);
-  color: var(--primitive-gray-900);
+/* Light Mode CTA: Inverted to Crisp Stark Black Button with White Text */
+[data-theme="light"] .btn-header-cta,
+.site-header[data-theme="light"] .btn-header-cta {
+  background: #090A0C;
+  color: #FFFFFF;
+  border: 1px solid #090A0C;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
 
-[data-theme="light"] .site-header #soundToggle:hover,
-.site-header[data-theme="light"] #soundToggle:hover {
-  background: var(--primitive-gray-100);
-  border-color: var(--primitive-chartreuse-600);
-  color: var(--primitive-chartreuse-800);
+[data-theme="light"] .btn-header-cta:hover,
+.site-header[data-theme="light"] .btn-header-cta:hover {
+  background: #202227;
+  color: #FFFFFF;
+  border-color: #000000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 [data-theme="light"] .site-header .mobile-nav-toggle,
 .site-header[data-theme="light"] .mobile-nav-toggle {
-  background: var(--primitive-gray-100);
-  border-color: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.12);
   color: var(--primitive-gray-950);
 }
 
@@ -1547,7 +1864,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Hero Section & Studio Showcase --- */
 .hero-agency {
-  padding: var(--primitive-space-16) 0 var(--primitive-space-48);
+  padding: clamp(6.25rem, 9.5vw, 7.5rem) 0 var(--primitive-space-8);
   position: relative;
   overflow: hidden;
 }
@@ -1556,6 +1873,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  padding: var(--primitive-space-2) 0;
 }
 
 .hero-pill-badge {
@@ -1575,27 +1893,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title-headline {
-  font-family: var(--semantic-font-heading);
-  font-size: clamp(2.5rem, 6vw, 4.25rem);
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.015em;
+  font-family: var(--primitive-font-riven);
+  font-size: clamp(3.7rem, 8.85vw, 6.5rem);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
   color: var(--semantic-text-primary);
-  margin-bottom: var(--primitive-space-6);
+  max-width: min(92%, 1100px);
+  margin: 0 auto clamp(2.75rem, 5vw, 4.25rem);
+  text-wrap: balance;
+}
+
+/* Hero Heading: Riven Didone editorial signature */
+.hero-agency .hero-title-headline {
+  font-family: var(--primitive-font-riven);
+  font-size: clamp(3.7rem, 8.85vw, 6.5rem);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  color: var(--semantic-text-primary);
+  max-width: min(92%, 1100px);
+  margin: 0 auto clamp(2.75rem, 5vw, 4.25rem);
+  text-wrap: balance;
+}
+
+.hero-title-headline .hero-heading-condensed,
+.hero-heading-condensed {
+  font-family: var(--semantic-font-condensed);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.08em;
+  letter-spacing: 0.015em;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .hero-title-headline .italic-accent {
-  font-family: var(--semantic-font-editorial);
+  font-family: var(--primitive-font-riven);
   font-weight: 400;
   font-style: italic;
+  font-size: 1.15em;
   color: var(--primitive-chartreuse-300);
-  padding: 0 0.1em;
+  padding: 0 0.15em;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-family: var(--primitive-font-sans);
+  font-family: var(--primitive-font-inter-display);
   font-size: clamp(1.05rem, 2vw, 1.3rem);
-  font-weight: var(--primitive-font-weight-normal);
+  font-weight: var(--primitive-font-weight-regular);
   line-height: 1.6;
   color: var(--semantic-text-secondary);
   margin: 0 auto var(--primitive-space-8);
@@ -1610,52 +1958,145 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--primitive-space-12);
 }
 
-.hero-visual-container {
+/* ==========================================================================
+   HERO END-TO-END PARALLAX COLUMNS SHOWCASE
+   5 Mobile + 4 Desktop Alternating Columns
+   Parallax scroll physics: Mobile columns move down, Desktop columns move up
+   ========================================================================== */
+.hero-showcase-section {
   position: relative;
   width: 100%;
-  margin: 0 auto;
-  border-radius: var(--primitive-radius-xl);
-  perspective: 1200px;
-}
-
-.hero-visual-frame {
-  position: relative;
-  border-radius: var(--primitive-radius-xl);
+  height: 620px;
   overflow: hidden;
-  border: 1px solid var(--semantic-border-brand-primary);
-  box-shadow: var(--semantic-shadow-xl);
-  background: var(--semantic-bg-surface);
-  transition: transform 0.4s var(--primitive-ease-default);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-top: var(--primitive-space-6);
+  pointer-events: auto;
+  user-select: none;
 }
 
-.hero-visual-frame:hover {
-  transform: translateY(-4px) scale(1.005);
+.hero-showcase-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+  min-width: 1720px;
+  width: max-content;
+  pointer-events: auto;
 }
 
-.hero-visual-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.hero-frame-telemetry {
-  position: absolute;
-  top: var(--primitive-space-4);
-  left: var(--primitive-space-4);
-  display: inline-flex;
+/* Column Dimensions & Base Styling */
+.hero-showcase-col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  gap: var(--primitive-space-2);
-  padding: 0.35rem 0.75rem;
-  background: rgba(8, 9, 10, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(118, 224, 26, 0.4);
-  border-radius: var(--primitive-radius-full);
-  font-family: var(--primitive-font-mono);
-  font-size: var(--primitive-font-size-xs);
-  color: var(--primitive-chartreuse-400);
+  position: relative;
+  overflow: visible;
+}
+
+.hero-showcase-col.col-mobile {
+  width: 136px;
+  flex: 0 0 136px;
+}
+
+.hero-showcase-col.col-desktop {
+  width: 252px;
+  flex: 0 0 252px;
+}
+
+/* GPU Accelerated Track */
+.hero-col-track {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.08s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Individual Cards */
+.hero-col-card {
+  position: relative;
+  width: 100%;
+  border-radius: var(--primitive-radius-lg, 12px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background: #0d0e11;
+  cursor: default;
+}
+
+.hero-col-card.card-mobile {
+  aspect-ratio: 9 / 19.5;
+  border-radius: 14px;
+}
+
+.hero-col-card.card-desktop {
+  aspect-ratio: 16 / 10;
+  border-radius: 10px;
+}
+
+.hero-col-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Ambient Bottom Vignette (Soft fade into section below) */
+.hero-showcase-overlay-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: linear-gradient(to top, var(--primitive-black) 0%, rgba(8, 9, 10, 0.75) 45%, transparent 100%);
   pointer-events: none;
+  z-index: 4;
+}
+
+@media (max-width: 1200px) {
+  .hero-showcase-section {
+    height: 520px;
+  }
+  .hero-showcase-col.col-mobile {
+    width: 115px;
+    flex: 0 0 115px;
+  }
+  .hero-showcase-col.col-desktop {
+    width: 200px;
+    flex: 0 0 200px;
+  }
+  .hero-showcase-columns {
+    min-width: 1400px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-showcase-section {
+    height: 420px;
+    margin-top: var(--primitive-space-4);
+  }
+  .hero-showcase-col.col-mobile {
+    width: 90px;
+    flex: 0 0 90px;
+  }
+  .hero-showcase-col.col-desktop {
+    width: 155px;
+    flex: 0 0 155px;
+  }
+  .hero-showcase-columns {
+    min-width: 1100px;
+    gap: 10px;
+  }
 }
 
 
@@ -1733,7 +2174,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent !important;
   background-color: transparent !important;
   color: var(--semantic-text-primary);
-  padding: var(--primitive-space-16) 0 var(--primitive-space-48);
+  padding: clamp(4.5rem, 8vw, 6.75rem) 0 var(--primitive-space-8);
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -1801,12 +2242,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: var(--primitive-space-1-5);
-  font-family: var(--primitive-font-mono);
-  font-size: var(--primitive-font-size-xs);
-  font-weight: var(--primitive-font-weight-semibold);
+  font-family: var(--primitive-font-cabin-condensed);
+  font-size: var(--primitive-font-size-sm);
+  font-weight: var(--primitive-font-weight-bold);
   color: var(--semantic-color-primary);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   margin-bottom: var(--primitive-space-2);
 }
 
@@ -1817,17 +2258,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-main-title {
-  font-family: var(--semantic-font-heading);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.015em;
+  font-family: var(--primitive-font-riven);
+  font-size: clamp(2.95rem, 5.85vw, 4.25rem);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
   color: var(--semantic-text-primary);
   margin-bottom: var(--primitive-space-3);
 }
 
+.section-main-title .italic-accent {
+  font-family: var(--primitive-font-riven);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.12em;
+  color: var(--primitive-chartreuse-300);
+  padding: 0 0.12em;
+  letter-spacing: -0.02em;
+}
+
 .section-lead-desc {
+  font-family: var(--primitive-font-inter-display);
   font-size: var(--primitive-font-size-md);
+  font-weight: var(--primitive-font-weight-regular);
   color: var(--semantic-text-secondary);
   line-height: 1.6;
 }
@@ -1857,11 +2310,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sim-group-title {
-  font-size: var(--primitive-font-size-sm);
-  font-weight: var(--primitive-font-weight-bold);
+  font-family: var(--semantic-font-condensed);
+  font-size: var(--primitive-font-size-base);
+  font-weight: 600;
   color: var(--semantic-text-primary);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   margin-bottom: var(--primitive-space-3);
   display: flex;
   align-items: center;
@@ -1971,111 +2425,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
 }
 
-/* --- Case Studies Portfolio Grid --- */
-.portfolio-filter-row {
-  display: flex;
-  justify-content: center;
-  gap: var(--primitive-space-2);
-  margin-bottom: var(--primitive-space-8);
-  flex-wrap: wrap;
-}
 
-.filter-tab-pill {
-  padding: 0.45rem 1.1rem;
-  border-radius: var(--primitive-radius-full);
-  background: var(--semantic-bg-surface-elevated);
-  border: 1px solid var(--semantic-border-default);
-  font-size: var(--primitive-font-size-xs);
-  font-weight: var(--primitive-font-weight-semibold);
-  color: var(--semantic-text-secondary);
-  cursor: pointer;
-  transition: all var(--primitive-duration-fast) var(--primitive-ease-default);
-}
-
-.filter-tab-pill:hover,
-.filter-tab-pill.active {
-  background: var(--semantic-color-primary);
-  color: var(--semantic-color-primary-fg);
-  border-color: var(--semantic-color-primary);
-  box-shadow: none;
-}
-
-.case-studies-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--primitive-space-6);
-}
-
-.case-card-expanded {
-  background: var(--semantic-bg-surface);
-  border: 1px solid var(--semantic-border-subtle);
-  border-radius: var(--primitive-radius-xl);
-  overflow: hidden;
-  transition: transform var(--primitive-duration-normal) var(--primitive-ease-default),
-              border-color var(--primitive-duration-normal) var(--primitive-ease-default),
-              box-shadow var(--primitive-duration-normal) var(--primitive-ease-default);
-  display: flex;
-  flex-direction: column;
-}
-
-.case-card-expanded:hover {
-  transform: translateY(-6px);
-  border-color: var(--semantic-border-brand-primary);
-  box-shadow: var(--semantic-shadow-lg);
-}
-
-.case-card-media {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
-  background: var(--primitive-obsidian-800);
-  overflow: hidden;
-}
-
-.case-card-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s var(--primitive-ease-default);
-}
-
-.case-card-expanded:hover .case-card-media img {
-  transform: scale(1.04);
-}
-
-
-
-.case-content-body {
-  padding: var(--primitive-space-6);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.case-title-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: var(--primitive-space-2);
-}
-
-.case-card-title {
-  font-family: var(--semantic-font-heading);
-  font-size: var(--primitive-font-size-xl);
-  font-weight: 700;
-  color: var(--semantic-text-primary);
-}
-
-
-
-.case-tech-tags-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--primitive-space-1-5);
-  margin-top: auto;
-  padding-top: var(--primitive-space-4);
-  border-top: 1px solid var(--semantic-border-subtle);
-}
 
 /* --- 4-Phase Sprint Process (Timeline) --- */
 .process-steps-grid {
@@ -2119,9 +2469,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .process-step-title {
-  font-family: var(--semantic-font-heading);
-  font-size: var(--primitive-font-size-lg);
+  font-family: var(--semantic-font-condensed);
+  font-size: var(--primitive-font-size-xl);
   font-weight: 700;
+  letter-spacing: 0.01em;
   margin-bottom: var(--primitive-space-3);
   color: var(--semantic-text-primary);
 }
@@ -2272,8 +2623,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  font-size: var(--primitive-font-size-base);
-  font-weight: var(--primitive-font-weight-bold);
+  font-family: var(--semantic-font-condensed);
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   color: var(--semantic-text-primary);
   cursor: pointer;
   background: transparent;
@@ -2580,7 +2933,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .text-h1 {
-    font-size: clamp(1.85rem, 4.5vw, 2.5rem);
+    font-size: clamp(2.4rem, 5.85vw, 3.25rem);
+    letter-spacing: -0.025em;
   }
 
   .text-h2 {
@@ -2695,9 +3049,6 @@ h1, h2, h3, h4, h5, h6 {
     border-right: none;
     border-bottom: 1px solid var(--semantic-border-subtle);
   }
-  .case-studies-grid {
-    grid-template-columns: 1fr;
-  }
   .process-steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2751,7 +3102,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .text-h1 {
-    font-size: clamp(1.6rem, 6.5vw, 2rem);
+    font-size: clamp(2.08rem, 8.45vw, 2.6rem);
+    letter-spacing: -0.025em;
   }
 
   .text-h2 {
@@ -2912,7 +3264,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Agency Mobile Viewport Adaptations */
   .hero-agency {
-    padding: var(--primitive-space-10) 0 var(--primitive-space-32);
+    padding: clamp(3.5rem, 7vw, 5rem) 0 var(--primitive-space-6);
   }
   .hero-actions-bar {
     flex-direction: column;
@@ -2980,12 +3332,12 @@ h1, h2, h3, h4, h5, h6 {
 .sim-results-pane,
 .sim-option-pill,
 .process-step-card,
-.case-card-expanded,
 .capability-box,
 .cta-high-voltage-box,
 .card,
 .modal-card-dialog,
 .site-header,
+.btn-header-cta,
 .bottom-nav-dock .bottom-nav-pill {
   transition: color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
               background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
@@ -3220,10 +3572,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Light Mode Zero-Shadow Enforcement */
-[data-theme="light"] .site-header.scrolled,
 [data-theme="light"] .simulator-wrapper,
-[data-theme="light"] .case-card-expanded,
-[data-theme="light"] .case-card-expanded:hover,
 [data-theme="light"] .capability-box,
 [data-theme="light"] .capability-box:hover,
 [data-theme="light"] .comparison-card,
