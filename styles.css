@@ -1391,19 +1391,18 @@ h6,
 .site-header {
   position: fixed;
   top: 18px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(1200px, calc(100% - 32px));
+  left: 24px;
+  right: 24px;
+  width: calc(100% - 48px);
+  max-width: none;
+  box-sizing: border-box;
   z-index: 250;
   background: rgba(12, 16, 22, 0.76);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
   backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--primitive-radius-full);
-  box-shadow: 
-    0 20px 45px -12px rgba(0, 0, 0, 0.55),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
   font-family: var(--primitive-font-riven);
   letter-spacing: -0.025em;
   transition: 
@@ -1415,15 +1414,14 @@ h6,
 
 .site-header.scrolled {
   background: rgba(10, 13, 18, 0.88);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 
-    0 24px 50px -10px rgba(0, 0, 0, 0.7),
-    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  border: none;
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.7);
 }
 
 .site-header .container {
-  padding-left: clamp(1rem, 2.5vw, 1.75rem);
-  padding-right: clamp(1rem, 2.5vw, 1.75rem);
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -1431,23 +1429,85 @@ h6,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 48px;
   gap: var(--primitive-space-4);
+}
+
+/* Appbar Desktop Navigation Activities (Shifted from bottom dock) */
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header .nav-links-desktop {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .nav-link-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .nav-link-item a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--primitive-radius-full);
+  font-family: var(--semantic-font-brand, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header .nav-link-item a:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.site-header .nav-link-item a:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* Active State: High-Voltage Chartreuse signature pill highlight */
+.site-header .nav-link-item a.active {
+  background: var(--semantic-color-primary, #76E01A);
+  color: #08090A !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(118, 224, 26, 0.25);
 }
 
 /* Appbar Primary Booking CTA: Direct Cal.com link in Riven Didone */
 .btn-header-cta {
   font-family: var(--primitive-font-riven) !important;
-  font-size: 1.33rem;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.015em;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.48rem 1.45rem;
+  padding: 3px 8px 2px 8px;
+  margin: 0;
   border-radius: var(--primitive-radius-full);
-  line-height: 1.2;
+  line-height: 1.25;
   white-space: nowrap;
   user-select: none;
   cursor: pointer;
@@ -1457,25 +1517,25 @@ h6,
   background: #FFFFFF;
   color: #08090A;
   border: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: none;
   transition: 
-    background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-header-cta:hover {
   background: #F2F3F5;
   color: #000000;
   border-color: #FFFFFF;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+  transform: none;
+  box-shadow: none !important;
 }
 
 .btn-header-cta:active {
-  transform: translateY(0) scale(0.98);
+  transform: scale(0.98);
+  box-shadow: none !important;
 }
 
 .brand-link {
@@ -1491,7 +1551,7 @@ h6,
 /* Official Vector SVG Brand Logos */
 .brand-logo-img {
   grid-area: brand-logo;
-  height: 38px;
+  height: 24px;
   width: auto;
   max-width: 175px;
   display: block;
@@ -1610,18 +1670,7 @@ h6,
 
 /* --- Floating Bottom Glassmorphic Pill Navigation Dock --- */
 .bottom-nav-dock {
-  position: fixed;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 250;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: auto;
-  animation: dockEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) backwards;
-  transition: transform var(--primitive-duration-normal) var(--primitive-ease-spring),
-              opacity var(--primitive-duration-normal) var(--primitive-ease-default);
+  display: none !important;
 }
 
 @keyframes dockEntrance {
@@ -1710,21 +1759,18 @@ h6,
 /* --- Dynamic Theme Support: Floating Glass Appbar in Light Mode --- */
 [data-theme="light"] .site-header,
 .site-header[data-theme="light"] {
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 
-    0 18px 40px -12px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.95),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  border: none;
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.04);
 }
 
 [data-theme="light"] .site-header.scrolled,
 .site-header[data-theme="light"].scrolled {
-  background: rgba(255, 255, 255, 0.94);
-  border-color: rgba(0, 0, 0, 0.12);
-  box-shadow: 
-    0 22px 46px -10px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.06);
 }
 
 /* Light Mode CTA: Inverted to Crisp Stark Black Button with White Text */
@@ -1733,7 +1779,7 @@ h6,
   background: #090A0C;
   color: #FFFFFF;
   border: 1px solid #090A0C;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: none;
 }
 
 [data-theme="light"] .btn-header-cta:hover,
@@ -1741,7 +1787,8 @@ h6,
   background: #202227;
   color: #FFFFFF;
   border-color: #000000;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transform: none;
+  box-shadow: none !important;
 }
 
 [data-theme="light"] .site-header .mobile-nav-toggle,
@@ -1749,6 +1796,26 @@ h6,
   background: rgba(0, 0, 0, 0.05);
   border-color: rgba(0, 0, 0, 0.12);
   color: var(--primitive-gray-950);
+}
+
+/* Dynamic Theme Support: Appbar Nav Links in Light Mode */
+[data-theme="light"] .site-header .nav-link-item a,
+.site-header[data-theme="light"] .nav-link-item a {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+[data-theme="light"] .site-header .nav-link-item a:hover,
+.site-header[data-theme="light"] .nav-link-item a:hover {
+  color: #000000;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .site-header .nav-link-item a.active,
+.site-header[data-theme="light"] .nav-link-item a.active {
+  background: var(--semantic-color-primary, #76E01A);
+  color: #08090A !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(118, 224, 26, 0.2);
 }
 
 /* --- Dynamic Theme Support: Bottom Nav Dock in Light Mode --- */
@@ -1864,7 +1931,7 @@ h6,
 
 /* --- Hero Section & Studio Showcase --- */
 .hero-agency {
-  padding: clamp(6.25rem, 9.5vw, 7.5rem) 0 var(--primitive-space-8);
+  padding: 200px 0 var(--primitive-space-8);
   position: relative;
   overflow: hidden;
 }
@@ -1894,28 +1961,28 @@ h6,
 
 .hero-title-headline {
   font-family: var(--primitive-font-riven);
-  font-size: clamp(3.7rem, 8.85vw, 6.5rem);
+  font-size: 88px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.18;
+  line-height: 1.14;
   letter-spacing: -0.025em;
   color: var(--semantic-text-primary);
-  max-width: min(92%, 1100px);
-  margin: 0 auto clamp(2.75rem, 5vw, 4.25rem);
+  max-width: 800px;
+  margin: 0 auto 120px;
   text-wrap: balance;
 }
 
 /* Hero Heading: Riven Didone editorial signature */
 .hero-agency .hero-title-headline {
   font-family: var(--primitive-font-riven);
-  font-size: clamp(3.7rem, 8.85vw, 6.5rem);
+  font-size: 88px;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.18;
+  line-height: 1.14;
   letter-spacing: -0.025em;
   color: var(--semantic-text-primary);
-  max-width: min(92%, 1100px);
-  margin: 0 auto clamp(2.75rem, 5vw, 4.25rem);
+  max-width: 800px;
+  margin: 0 auto 120px;
   text-wrap: balance;
 }
 
@@ -2000,14 +2067,18 @@ h6,
   overflow: visible;
 }
 
+/* Mobile columns move DOWN on scroll: align to flex-end so tracks start with cards above the viewport, revealing photos rather than empty space */
 .hero-showcase-col.col-mobile {
   width: 136px;
   flex: 0 0 136px;
+  justify-content: flex-end;
 }
 
+/* Desktop columns move UP on scroll: align to flex-start so tracks start from the top, revealing lower cards as user scrolls */
 .hero-showcase-col.col-desktop {
   width: 252px;
   flex: 0 0 252px;
+  justify-content: flex-start;
 }
 
 /* GPU Accelerated Track */
@@ -2174,7 +2245,7 @@ h6,
   background: transparent !important;
   background-color: transparent !important;
   color: var(--semantic-text-primary);
-  padding: clamp(4.5rem, 8vw, 6.75rem) 0 var(--primitive-space-8);
+  padding: 200px 0 var(--primitive-space-8);
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -2800,39 +2871,66 @@ h6,
   z-index: calc(var(--primitive-z-toast) + 1);
 }
 
-/* --- Agency Footer --- */
+/* --- Modern Floating Card Footer --- */
 .site-footer-agency {
   background: transparent !important;
   border-top: none !important;
-  padding: var(--primitive-space-16) 0 var(--primitive-space-8);
+  padding: var(--primitive-space-12) 24px var(--primitive-space-8);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-card-container {
+  background-color: #f7f7f7;
+  border-radius: clamp(32px, 5vw, 56px);
+  padding: clamp(36px, 5vw, 64px) 24px clamp(28px, 4vw, 44px);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  color: #111111;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .footer-top-grid {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: clamp(24px, 4vw, 64px);
+  margin-bottom: clamp(28px, 4vw, 56px);
   flex-wrap: wrap;
-  gap: var(--primitive-space-8);
-  padding-bottom: var(--primitive-space-16);
-  margin-bottom: var(--primitive-space-8);
 }
 
-.footer-top-grid > div:first-child {
-  max-width: 320px;
-  flex: 0 1 320px;
+.footer-col-bio {
+  max-width: 440px;
+  flex: 0 1 440px;
 }
 
-.footer-top-grid > div:not(:first-child) {
-  flex: 0 0 auto;
+.footer-bio-text {
+  font-family: var(--primitive-font-sans);
+  font-size: clamp(1.05rem, 1.3vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.025em;
+  color: #111111;
+  margin: 0;
 }
 
 .footer-col-title {
-  font-size: var(--primitive-font-size-sm);
-  font-weight: var(--primitive-font-weight-bold);
-  color: var(--semantic-text-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: var(--primitive-space-4);
+  display: block;
+  font-family: var(--primitive-font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #71717a;
+  margin-bottom: 0.85rem;
+  text-transform: none;
+  letter-spacing: -0.01em;
 }
 
 .footer-links-list {
@@ -2841,29 +2939,184 @@ h6,
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--primitive-space-2-5);
+  gap: 0.5rem;
 }
 
 .footer-links-list a {
-  font-size: var(--primitive-font-size-sm);
-  color: var(--semantic-text-secondary);
-  transition: color var(--primitive-duration-fast) var(--primitive-ease-default);
+  font-family: var(--primitive-font-sans);
+  font-size: 0.875rem;
+  color: #71717a;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  display: inline-block;
 }
 
 .footer-links-list a:hover {
-  color: var(--semantic-color-primary);
+  color: #09090b;
 }
 
+.footer-col-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-action-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.footer-action-card:hover {
+  transform: translateY(-1px);
+}
+
+.footer-action-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 2px;
+}
+
+.footer-action-title {
+  font-family: var(--primitive-font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.cta-accent-coral .footer-action-title {
+  color: #df3505;
+}
+
+.cta-accent-dark .footer-action-title {
+  color: #111111;
+}
+
+.footer-action-badge {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.footer-action-card:hover .footer-action-badge {
+  transform: translate(2px, -2px);
+}
+
+.badge-coral {
+  background-color: #df3505;
+  color: #ffffff;
+}
+
+.badge-dark {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.footer-action-sub {
+  font-family: var(--primitive-font-sans);
+  font-size: 0.8125rem;
+  color: #8e8e93;
+  font-weight: 400;
+}
+
+/* Center Feature: Full Brand Logo */
+.footer-logo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(1.5rem, 4vw, 3.5rem);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  user-select: none;
+}
+
+.footer-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.footer-logo-full {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  max-height: clamp(80px, 15vw, 220px);
+  object-fit: contain;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.footer-logo-wrap:hover .footer-logo-full {
+  transform: scale(1.015);
+}
+
+/* Footer Bottom Metadata Bar (Below the Box) */
 .footer-bottom-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: var(--primitive-space-6);
-  border-top: 1px solid var(--semantic-border-subtle);
-  font-size: var(--primitive-font-size-xs);
-  color: var(--semantic-text-tertiary);
+  padding: 20px 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--primitive-font-sans);
+  font-size: 0.75rem;
+  color: #8e8e93;
+  border-top: none;
   flex-wrap: wrap;
-  gap: var(--primitive-space-4);
+  gap: 12px;
+}
+
+.footer-bottom-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-dot-sep {
+  color: #d4d4d8;
+  font-size: 0.65rem;
+}
+
+.footer-meta-link {
+  color: #8e8e93;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-meta-link:hover {
+  color: #111111;
+}
+
+.footer-bottom-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.footer-bottom-right .weather-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* Enforce logo-light-full on #f7f7f7 footer card */
+.footer-logo-wrap .theme-logo-light {
+  display: block !important;
+}
+
+.footer-logo-wrap .theme-logo-dark {
+  display: none !important;
 }
 
 /* ==========================================================================
@@ -3031,6 +3284,7 @@ h6,
 
   /* Agency Navigation & Header Tablet Adaptation */
   .bottom-nav-dock,
+  .header-nav-menu,
   .nav-links-desktop {
     display: none !important;
   }
@@ -3057,12 +3311,10 @@ h6,
   }
 
   .footer-top-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: var(--primitive-space-6);
   }
-  .footer-top-grid > div:first-child {
-    max-width: none;
-    flex: initial;
+  .footer-col-bio {
+    max-width: 340px;
   }
   .comparison-card {
     overflow-x: auto;
@@ -3266,6 +3518,11 @@ h6,
   .hero-agency {
     padding: clamp(3.5rem, 7vw, 5rem) 0 var(--primitive-space-6);
   }
+  .hero-agency .hero-title-headline,
+  .hero-title-headline {
+    font-size: clamp(2.5rem, 9.5vw, 4rem);
+    margin-bottom: 60px;
+  }
   .hero-actions-bar {
     flex-direction: column;
     width: 100%;
@@ -3281,14 +3538,26 @@ h6,
   .capabilities-grid-layout {
     grid-template-columns: 1fr;
   }
+  .site-footer-agency {
+    padding: var(--primitive-space-8) 16px var(--primitive-space-6);
+  }
+  .footer-card-container {
+    border-radius: 28px;
+    padding: 32px 16px 20px;
+  }
   .footer-top-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: var(--primitive-space-6);
   }
-  .footer-top-grid > div:first-child {
+  .footer-col-bio {
     max-width: none;
     flex: initial;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 4px 0;
   }
 
   .sim-controls-pane,

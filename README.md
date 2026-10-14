@@ -32,5 +32,4 @@ The site will be live at:
 
 - **`index.html`**: Production website for Nesaasity (Hero, Scope Simulator, Process, Capabilities, FAQs, and Scoping Modal).
 - **`styles.css`**: Complete design system with Chartreuse & Slate tokens, Kumbh Sans & Playfair Display typography, and 1280px / 960px / 480px responsive breakpoints.
-- **`tokens.html`**: Design Tokens Spec & Responsive Breakpoint style guide.
 - **`assets/`**: High-resolution generated UI previews for Cognix AI, Hyperflow, Layered Health, and the Studio Workstation.

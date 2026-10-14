@@ -10,16 +10,16 @@
   <meta property="og:description" content="We bolt your SaaS from zero to product-market fit in 14 days. High-voltage UI/UX, battle-hardened fullstack code.">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts: Cabin Condensed, Inter (with Optical Display Sizing) & JetBrains Mono -->
+  <!-- Google Fonts: Cabin Condensed, Inter (with Optical Display Sizing), JetBrains Mono & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   
   <!-- Dynamic Vector Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/mark-dark-CCmYPckj.svg" id="faviconLink">
 
-  <link rel="stylesheet" crossorigin href="/assets/index-KTwr533W.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-CLkPYWyu.css">
 </head>
 <body class="grid-background-overlay">
   <!-- Fixed Viewport Canvas Backdrop (Seamless Scroll Architecture) -->
@@ -40,9 +40,19 @@
       <div class="nav-inner">
         <!-- Brand Official SVG Logo (Adaptive Dark & Light) -->
         <a href="#hero" class="brand-link" aria-label="Nesaasity Home">
-          <img src="/assets/logo-dark-full-C9mxT5_8.svg" alt="Nesaasity" class="brand-logo-img theme-logo-dark" width="138" height="41">
-          <img src="/assets/logo-light-full-DUvzBaE7.svg" alt="Nesaasity" class="brand-logo-img theme-logo-light" width="138" height="41">
+          <img src="/assets/logo-dark-full-C9mxT5_8.svg" alt="Nesaasity" class="brand-logo-img theme-logo-dark" width="81" height="24">
+          <img src="/assets/logo-light-full-DUvzBaE7.svg" alt="Nesaasity" class="brand-logo-img theme-logo-light" width="81" height="24">
         </a>
+
+        <!-- Desktop Navigation Activities -->
+        <nav class="header-nav-menu" aria-label="Primary Navigation">
+          <ul class="nav-links-desktop">
+            <li class="nav-link-item"><a href="#simulator" class="nav-pill-link" data-section="simulator"><span>Sprint Simulator</span></a></li>
+            <li class="nav-link-item"><a href="#process" class="nav-pill-link" data-section="process"><span>0 &rarr; 1 Engine</span></a></li>
+            <li class="nav-link-item"><a href="#capabilities" class="nav-pill-link" data-section="capabilities"><span>Capabilities</span></a></li>
+            <li class="nav-link-item"><a href="#faq" class="nav-pill-link" data-section="faq"><span>FAQ</span></a></li>
+          </ul>
+        </nav>
 
         <!-- Header Actions: Cal.com Sprint Booking CTA -->
         <div class="nav-cta-group">
@@ -94,17 +104,6 @@
     </div>
   </aside>
 
-  <!-- Floating Bottom Glassmorphic Pill Navigation Dock -->
-  <nav class="bottom-nav-dock" id="bottomNavDock" aria-label="Section Navigation">
-    <div class="bottom-nav-pill">
-      <ul class="nav-links-desktop">
-        <li class="nav-link-item"><a href="#simulator" class="nav-pill-link" data-section="simulator"><span>Sprint Simulator</span></a></li>
-        <li class="nav-link-item"><a href="#process" class="nav-pill-link" data-section="process"><span>0 &rarr; 1 Engine</span></a></li>
-        <li class="nav-link-item"><a href="#capabilities" class="nav-pill-link" data-section="capabilities"><span>Capabilities</span></a></li>
-        <li class="nav-link-item"><a href="#faq" class="nav-pill-link" data-section="faq"><span>FAQ</span></a></li>
-      </ul>
-    </div>
-  </nav>
 
   <main id="hero">
     <!-- HERO SECTION: 0 -> 1 SaaS Studio -->
@@ -863,9 +862,6 @@
             <button class="btn btn-primary btn-lg open-modal-btn" data-scope-type="q4-sprint">
               <span><span class="material-symbols-rounded filled">bolt</span> Schedule 15-Min Scoping Call</span>
             </button>
-            <a href="tokens.html" class="btn btn-outline btn-lg">
-              <span>Explore Design System Tokens &rarr;</span>
-            </a>
           </div>
 
           <p class="text-caption" style="margin-top: var(--primitive-space-5); color: var(--semantic-text-tertiary);">
@@ -962,68 +958,84 @@
 
   <!-- GLOBAL FOOTER -->
   <footer class="site-footer-agency" id="agencyFooter" data-section-theme="light">
-    <div class="container">
+    <!-- The End-to-End Card Box -->
+    <div class="footer-card-container">
+      
+      <!-- Top Section (3 Columns: Bio, Explore, CTAs) -->
       <div class="footer-top-grid">
         
-        <!-- Col 1: Brand Info -->
-        <div>
-          <a href="#hero" class="brand-link" aria-label="Nesaasity Home" style="margin-bottom: var(--primitive-space-3); display: inline-flex;">
-            <img src="/assets/logo-dark-full-C9mxT5_8.svg" alt="Nesaasity" class="brand-logo-img theme-logo-dark" height="38" width="128">
-            <img src="/assets/logo-light-full-DUvzBaE7.svg" alt="Nesaasity" class="brand-logo-img theme-logo-light" height="38" width="128">
-          </a>
-          <p class="text-body-sm" style="margin-bottom: var(--primitive-space-4);">
-            0 &rarr; 1 SaaS MVP studio. Live in 14 days flat.
+        <!-- Col 1: Bio / Tagline Statement -->
+        <div class="footer-col-bio">
+          <p class="footer-bio-text">
+            Nesaasity is independent creative director and MVP studio for venture-backed founders
           </p>
-          <div class="chip-status chip-success" style="font-size: 11px;">
-            &check; System Operational &bull; 99.98% Sprint SLA
-          </div>
         </div>
 
-        <!-- Col 2: Studio Links -->
-        <div>
-          <div class="footer-col-title">Studio Engine</div>
+        <!-- Col 2: Explore Navigation -->
+        <div class="footer-col-nav">
+          <span class="footer-col-title">Explore</span>
           <ul class="footer-links-list">
-            <li><a href="#simulator">Scope Simulator</a></li>
-            <li><a href="#process">The 14-Day Process</a></li>
-            <li><a href="#capabilities">Studio Capabilities</a></li>
-            <li><a href="#comparison">Agency Antidote</a></li>
+            <li><a href="#hero">Bio</a></li>
+            <li><a href="#simulator">Newsletter</a></li>
+            <li><a href="#cta" class="open-modal-btn" data-scope-type="default">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Packages & System -->
-        <div>
-          <div class="footer-col-title">Packaging &amp; Design</div>
-          <ul class="footer-links-list">
-            <li><a href="tokens.html"><span class="material-symbols-rounded">bolt</span> Design Tokens Spec</a></li>
-            <li><a href="#faq">Frequently Asked Questions</a></li>
-            <li><a href="#" class="open-modal-btn" data-scope-type="default">Book Technical Call</a></li>
-          </ul>
-        </div>
+        <!-- Col 3: Action / CTA Cards -->
+        <div class="footer-col-cta">
+          <a href="https://cal.com/nikbobbary" target="_blank" rel="noopener noreferrer" class="footer-action-card cta-accent-coral">
+            <div class="footer-action-header">
+              <span class="footer-action-title">Call Nesaasity</span>
+              <span class="footer-action-badge badge-coral">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </div>
+            <span class="footer-action-sub">Let's work together</span>
+          </a>
 
-        <!-- Col 4: Tech & Office -->
-        <div>
-          <div class="footer-col-title">Connect &amp; Legal</div>
-          <ul class="footer-links-list">
-            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X @nesaasity</a></li>
-            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Organization</a></li>
-            <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble Portfolio</a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Agency</a></li>
-          </ul>
+          <a href="#simulator" class="footer-action-card cta-accent-dark">
+            <div class="footer-action-header">
+              <span class="footer-action-title">Courses &amp; Tools</span>
+              <span class="footer-action-badge badge-dark">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </div>
+            <span class="footer-action-sub">Creative tools</span>
+          </a>
         </div>
 
       </div>
 
-      <!-- Footer Bottom Bar -->
-      <div class="footer-bottom-bar">
-        <div>
-          &copy; 2026 Nesaasity Studio Inc. All rights reserved. Built with Kumbh Sans &amp; Playfair Display tokens.
-        </div>
-        <div style="display: flex; gap: var(--primitive-space-4);">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Security &amp; NDA</a>
-          <a href="tokens.html" style="color: var(--semantic-color-primary);">Tokens Style Guide &rarr;</a>
-        </div>
+      <!-- Center Feature: Giant Full Brand Logo -->
+      <div class="footer-logo-wrap">
+        <a href="#hero" class="footer-logo-link" aria-label="Nesaasity Home">
+          <img src="/assets/logo-light-full-DUvzBaE7.svg" alt="Nesaasity" class="footer-logo-full theme-logo-light" width="998" height="283">
+          <img src="/assets/logo-dark-full-C9mxT5_8.svg" alt="Nesaasity" class="footer-logo-full theme-logo-dark" width="998" height="283">
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Below the Box: Copyright, Privacy & Real-Time Weather Widget -->
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom-left">
+        <span>Nesaasity &copy;2026</span>
+        <span class="footer-dot-sep">&bull;</span>
+        <a href="#" class="footer-meta-link">Privacy Policy</a>
+        <span class="footer-dot-sep">&bull;</span>
+        <a href="#" class="footer-meta-link">Terms of Service</a>
+      </div>
+      <div class="footer-bottom-right" id="footerLocationWidget">
+        <span id="footerLocationCity">Czech</span>
+        <span id="footerLocationTime">1:24 PM</span>
+        <span id="footerLocationTemp">9&deg;C</span>
+        <span class="weather-icon" aria-hidden="true">&#9925;</span>
       </div>
     </div>
   </footer>
@@ -1082,8 +1094,8 @@
       }
     });
 
-    // --- 3b. Bottom Glassmorphic Pill Dock & Active Scrollspy ---
-    const navPillLinks = document.querySelectorAll('.bottom-nav-dock .nav-link-item a');
+    // --- 3b. Appbar Navigation Activities & Active Scrollspy ---
+    const navPillLinks = document.querySelectorAll('.site-header .nav-link-item a, .bottom-nav-dock .nav-link-item a');
     const scrollSectionTargets = [
       { id: 'simulator', navTarget: 'simulator' },
       { id: 'process', navTarget: 'process' },
@@ -1128,6 +1140,7 @@
       if (siteHeader && siteHeader.getAttribute('data-theme') !== theme) {
         siteHeader.setAttribute('data-theme', theme);
       }
+      const bottomNavDock = document.getElementById('bottomNavDock');
       if (bottomNavDock && bottomNavDock.getAttribute('data-theme') !== theme) {
         bottomNavDock.setAttribute('data-theme', theme);
       }
@@ -1577,6 +1590,21 @@
 
     // Initial state trigger
     updateSimulatorCalculations();
+
+    // --- 12. Dynamic Footer Time & Live Status ---
+    function updateFooterClock() {
+      const timeEl = document.getElementById('footerLocationTime');
+      if (!timeEl) return;
+      const now = new Date();
+      // Format 12-hour Czech/local time
+      let hours = now.getHours();
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12 || 12;
+      timeEl.textContent = `${hours}:${minutes} ${ampm}`;
+    }
+    updateFooterClock();
+    setInterval(updateFooterClock, 10000);
   </script>
 </body>
 </html>
