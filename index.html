@@ -47,7 +47,7 @@
         <!-- Desktop Navigation Activities -->
         <nav class="header-nav-menu" aria-label="Primary Navigation">
           <ul class="nav-links-desktop">
-            <li class="nav-link-item"><a href="#simulator" class="nav-pill-link" data-section="simulator"><span>Sprint Simulator</span></a></li>
+            <li class="nav-link-item"><a href="#pricing" class="nav-pill-link" data-section="pricing"><span>Pricing</span></a></li>
             <li class="nav-link-item"><a href="#process" class="nav-pill-link" data-section="process"><span>0 &rarr; 1 Engine</span></a></li>
             <li class="nav-link-item"><a href="#capabilities" class="nav-pill-link" data-section="capabilities"><span>Capabilities</span></a></li>
             <li class="nav-link-item"><a href="#faq" class="nav-pill-link" data-section="faq"><span>FAQ</span></a></li>
@@ -87,7 +87,7 @@
       </div>
 
       <ul class="mobile-drawer-links">
-        <li><a href="#simulator" class="mobile-nav-item">Sprint Simulator</a></li>
+        <li><a href="#pricing" class="mobile-nav-item">Pricing</a></li>
         <li><a href="#process" class="mobile-nav-item">0 &rarr; 1 Engine</a></li>
         <li><a href="#capabilities" class="mobile-nav-item">Capabilities</a></li>
         <li><a href="#faq" class="mobile-nav-item">FAQ</a></li>
@@ -345,154 +345,154 @@
       </div>
     </div>
 
-    <!-- INTERACTIVE 14-DAY SPRINT SIMULATOR & SCOPE CALCULATOR -->
-    <section class="agency-section" id="simulator" data-section-theme="light">
+    <!-- PRICING SECTION: NO LONG-TERM CONTRACTS -->
+    <section class="agency-section pricing-contracts-section" id="pricing" data-section-theme="dark">
       <div class="container">
-        <div class="section-head-wrap">
-          <span class="section-eyebrow-tag"><span class="material-symbols-rounded">bolt</span> Interactive Scope Configurator</span>
-          <h2 class="section-main-title">Calculate Your 14-Day Sprint Scope</h2>
-          <p class="section-lead-desc">
-            Configure stack and stage to calculate timeline, squad, and fee.
-          </p>
+        <!-- Section Header -->
+        <div class="pricing-contracts-header">
+          <h2 class="pricing-contracts-title">No Long-Term Contracts</h2>
+          <p class="pricing-contracts-subtitle">Consistent Pricing and Value Each Month, with the Flexibility to Cancel Anytime</p>
         </div>
 
-        <div class="simulator-wrapper">
-          <div class="simulator-grid">
-            
-            <!-- Left Controls Pane -->
-            <div class="sim-controls-pane">
-              
-              <!-- 1. Stage -->
-              <div>
-                <div class="sim-group-title">
-                  <span>1. Startup Stage</span>
-                  <span class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">STEP 01</span>
-                </div>
-                <div class="sim-options-cluster" id="stageOptions">
-                  <div class="sim-option-pill active" data-stage="pre-seed" data-days="0" data-price="0">
-                    <span><span class="material-symbols-rounded">lightbulb</span> Pre-Seed (Idea on Napkin)</span>
-                  </div>
-                  <div class="sim-option-pill" data-stage="seed" data-days="2" data-price="1200">
-                    <span><span class="material-symbols-rounded">rocket_launch</span> Seed-Funded (Ready to Scale)</span>
-                  </div>
-                  <div class="sim-option-pill" data-stage="ai-pivot" data-days="1" data-price="800">
-                    <span><span class="material-symbols-rounded">smart_toy</span> AI Pivot / LLM Wrap</span>
-                  </div>
-                  <div class="sim-option-pill" data-stage="series-a" data-days="3" data-price="2000">
-                    <span><span class="material-symbols-rounded">domain</span> Series A Spinout / V2 Rewrite</span>
-                  </div>
-                </div>
+        <!-- 3 Pricing Cards Grid -->
+        <div class="pricing-cards-grid">
+          
+          <!-- Card 1: Audit -->
+          <div class="pricing-tier-card pricing-card-dark">
+            <div class="pricing-tier-top">
+              <div class="pricing-tier-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <path d="m19 19-3.5-3.5"></path>
+                </svg>
               </div>
-
-              <!-- 2. Core Architecture -->
-              <div>
-                <div class="sim-group-title">
-                  <span>2. Product Architecture</span>
-                  <span class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">STEP 02</span>
-                </div>
-                <div class="sim-options-cluster" id="archOptions">
-                  <div class="sim-option-pill active" data-arch="fullstack" data-days="10" data-price="6500">
-                    <span><span class="material-symbols-rounded">bolt</span> Fullstack Web App (Next.js 15)</span>
-                  </div>
-                  <div class="sim-option-pill" data-arch="ai-agent" data-days="12" data-price="7800">
-                    <span><span class="material-symbols-rounded">psychology</span> Multi-Agent AI Canvas &amp; Telemetry</span>
-                  </div>
-                  <div class="sim-option-pill" data-arch="b2b-saas" data-days="11" data-price="7200">
-                    <span><span class="material-symbols-rounded">bar_chart</span> B2B Analytics &amp; Workflow Hub</span>
-                  </div>
-                  <div class="sim-option-pill" data-arch="devtools" data-days="13" data-price="8400">
-                    <span><span class="material-symbols-rounded">terminal</span> Developer Cloud Platform / API</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 3. Key Inclusions / Integrations -->
-              <div>
-                <div class="sim-group-title">
-                  <span>3. Production Integrations</span>
-                  <span class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">SELECT ALL NEEDED</span>
-                </div>
-                <div class="sim-options-cluster" id="addonOptions">
-                  <div class="sim-option-pill active" data-addon="stripe" data-days="1" data-price="800">
-                    <span><span class="material-symbols-rounded">credit_card</span> Stripe Billing &amp; Subscriptions</span>
-                  </div>
-                  <div class="sim-option-pill active" data-addon="auth" data-days="0" data-price="0">
-                    <span><span class="material-symbols-rounded">lock</span> Supabase / Clerk Auth &amp; RBAC</span>
-                  </div>
-                  <div class="sim-option-pill active" data-addon="llm" data-days="2" data-price="1400">
-                    <span><span class="material-symbols-rounded">bolt</span> OpenAI / Claude RAG Vector DB</span>
-                  </div>
-                  <div class="sim-option-pill" data-addon="websockets" data-days="2" data-price="1100">
-                    <span><span class="material-symbols-rounded">sensors</span> Real-time WebSockets / Events</span>
-                  </div>
-                  <div class="sim-option-pill" data-addon="deck" data-days="1" data-price="900">
-                    <span><span class="material-symbols-rounded">trending_up</span> Pitch Deck &amp; Demo Day Interactive Assets</span>
-                  </div>
-                </div>
-              </div>
-
+              <h3 class="pricing-tier-heading">Audit</h3>
+              <ul class="pricing-features-list">
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Full product UX review</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Heuristic + funnel analysis</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>3 day turnaround</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Prioritized fix list</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Competitor UX benchmarking</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Co-working sessions for brainstorming</span>
+                </li>
+              </ul>
             </div>
-
-            <!-- Right Results & Action Pane -->
-            <div class="sim-results-pane">
-              <div>
-                <div class="sim-output-hero">
-                  <div class="sim-output-meta-row">
-                    <span class="text-mono" style="font-size: 12px; color: var(--semantic-text-tertiary); text-transform: uppercase;">Estimated Timeline</span>
-                    <span class="badge badge-chartreuse"><span class="pulse-dot"></span>Guaranteed Window</span>
-                  </div>
-                  <div class="sim-output-number" id="calcDays">13 Days</div>
-                  <p class="text-body-sm" style="margin-top: var(--primitive-space-1);">Kickoff call to live production URL.</p>
-                </div>
-
-                <div class="sim-squad-badge">
-                  <span><span class="material-symbols-rounded filled">bolt</span> Sprint Squad:</span>
-                  <strong id="calcSquad">1 Lead Product Designer + 1 Principal Fullstack Eng + 1 AI Systems Architect</strong>
-                </div>
-
-                <div style="margin-bottom: var(--primitive-space-4);">
-                  <div class="sim-group-title" style="margin-bottom: var(--primitive-space-2);">
-                    <span>Guaranteed Deliverables</span>
-                  </div>
-                  <ul class="sim-checklist-items" id="calcDeliverables">
-                    <li class="sim-checklist-item">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                      <span>Complete Figma Design System &amp; Component Primitives</span>
-                    </li>
-                    <li class="sim-checklist-item">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                      <span>Production Next.js 15 Repository with 100% IP Ownership</span>
-                    </li>
-                    <li class="sim-checklist-item">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                      <span>Supabase Database Schemas, Row-Level Security &amp; Auth</span>
-                    </li>
-                    <li class="sim-checklist-item">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                      <span>Live Vercel Production Environment + Automated CI/CD</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div>
-                <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: var(--primitive-space-3); border-top: 1px solid var(--semantic-border-subtle); padding-top: var(--primitive-space-4);">
-                  <div>
-                    <span class="text-caption" style="display: block; text-transform: uppercase;">Fixed Sprint Investment</span>
-                    <strong style="font-size: 2rem; color: var(--semantic-text-primary);" id="calcPrice">$9,500</strong>
-                    <span style="font-size: 12px; color: var(--semantic-text-tertiary);"> / Flat Fixed Fee</span>
-                  </div>
-                  <div class="text-mono" style="font-size: 11px; color: var(--semantic-color-primary);">NO HOURLY SURPRISES</div>
-                </div>
-
-                <button class="btn btn-primary btn-lg" id="lockScopeBtn" style="width: 100%;">
-                  <span><span class="material-symbols-rounded filled">bolt</span> Lock In Scope &amp; Reserve Sprint Slot</span>
-                </button>
-              </div>
-
+            <div class="pricing-tier-bottom">
+              <div class="pricing-amount-val">$500</div>
+              <div class="pricing-period-meta">flat · 3-day delivery</div>
             </div>
-
           </div>
+
+          <!-- Card 2: Design sprint -->
+          <div class="pricing-tier-card pricing-card-dark">
+            <div class="pricing-tier-top">
+              <div class="pricing-tier-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="pricing-tier-heading">Design sprint</h3>
+              <ul class="pricing-features-list">
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>End-to-end MVP design</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>User flows + wireframes</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>High-fidelity UI screens</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Interactive prototype</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Dev-ready Figma handoff</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Daily async updates</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-tier-bottom">
+              <div class="pricing-amount-val">$1,200</div>
+              <div class="pricing-period-meta">/week · 40hrs</div>
+            </div>
+          </div>
+
+          <!-- Card 3: Retainer -->
+          <div class="pricing-tier-card pricing-card-light">
+            <div class="pricing-tier-top">
+              <div class="pricing-tier-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0f1115" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+                </svg>
+              </div>
+              <h3 class="pricing-tier-heading">Retainer</h3>
+              <ul class="pricing-features-list">
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Embedded in your team</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Weekly progress meetings</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Unlimited design requests</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Flexible weekly hours as per needs</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Async first communication</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg class="pricing-check-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Customizable weekly hours as per needs</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-tier-bottom">
+              <div class="pricing-amount-val">$35</div>
+              <div class="pricing-period-meta">/hr · flexible</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centered Call to Action Button -->
+        <div class="pricing-action-footer">
+          <a href="https://cal.com/nikbobbary" target="_blank" rel="noopener noreferrer" class="btn-book-call" aria-label="Book a call on Cal.com">
+            Book a Call
+          </a>
         </div>
       </div>
     </section>
@@ -931,37 +931,44 @@
     <!-- The End-to-End Card Box -->
     <div class="footer-card-container">
       
-      <!-- Footer Call To Action: 2-Column Prioritised Layout -->
-      <div class="footer-cta-grid">
+      <!-- Footer Call To Action: UX + Max Clicks Conversion Hierarchy -->
+      <div class="footer-cta-hero" id="footerCtaHero">
         
-        <!-- Left Column: Exclusivity Badge & High-Impact Headline -->
-        <div class="footer-cta-col-headline">
-          <div class="footer-cta-pill-badge">
-            <span class="pulse-dot"></span>
-            <span>Sprint Queue: 2 Slots Open for Q4</span>
-          </div>
-
-          <h2 class="footer-cta-headline">
-            Stop Spending 6 Months Building What Can Launch in <span class="italic-accent">14 Days</span>.
-          </h2>
+        <!-- Level 1: Scarcity & Availability Badge -->
+        <div class="footer-cta-pill-badge" aria-label="Availability Status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Sprint Queue: 2 Slots Open for Q4</span>
         </div>
 
-        <!-- Right Column: Lead Description, Conversion Action & Reassurance -->
-        <div class="footer-cta-col-action">
-          <p class="footer-cta-lead">
-            Book a 15-minute technical review to lock in kickoff dates.
-          </p>
+        <!-- Level 2: Primary Value Proposition Headline -->
+        <h2 class="footer-cta-headline">
+          Stop Spending 6 Months Building What Can Launch in <span class="italic-accent">14 Days</span>.
+        </h2>
 
-          <div class="footer-cta-actions">
-            <button class="btn btn-primary btn-lg open-modal-btn" data-scope-type="q4-sprint">
-              <span><span class="material-symbols-rounded filled">bolt</span> Schedule 15-Min Scoping Call</span>
-            </button>
-          </div>
+        <!-- Level 3: Actionable Supporting Lead -->
+        <p class="footer-cta-lead">
+          Book a 15-minute technical review to lock in kickoff dates.
+        </p>
 
-          <p class="footer-cta-reassurance">
-            <span class="material-symbols-rounded icon-bolt" aria-hidden="true">bolt</span>
-            <span>No sales pitch &bull; Senior technical review</span>
-          </p>
+        <!-- Level 4: Maximum-Clicks Primary Action Button -->
+        <div class="footer-cta-actions">
+          <button class="btn btn-primary btn-lg open-modal-btn footer-cta-btn" data-scope-type="q4-sprint" id="footerCtaReviewBtn" aria-label="Book 15-Minute Technical Review">
+            <span>Book 15-Minute Technical Review</span>
+            <span class="material-symbols-rounded btn-arrow-icon" aria-hidden="true">arrow_forward</span>
+          </button>
+        </div>
+
+        <!-- Level 5: Friction-Reversal & Trust Microcopy -->
+        <div class="footer-cta-reassurance">
+          <span class="reassurance-item">
+            <span class="material-symbols-rounded reassurance-icon" aria-hidden="true">check_circle</span>
+            <span>No sales pitch</span>
+          </span>
+          <span class="reassurance-dot" aria-hidden="true">&bull;</span>
+          <span class="reassurance-item">
+            <span class="material-symbols-rounded reassurance-icon" aria-hidden="true">verified_user</span>
+            <span>Senior technical review</span>
+          </span>
         </div>
 
       </div>
@@ -1051,7 +1058,7 @@
     // --- 3b. Appbar Navigation Activities & Active Scrollspy ---
     const navPillLinks = document.querySelectorAll('.site-header .nav-link-item a, .bottom-nav-dock .nav-link-item a');
     const scrollSectionTargets = [
-      { id: 'simulator', navTarget: 'simulator' },
+      { id: 'pricing', navTarget: 'pricing' },
       { id: 'process', navTarget: 'process' },
       { id: 'capabilities', navTarget: 'capabilities' },
       { id: 'comparison', navTarget: 'capabilities' },
@@ -1061,7 +1068,7 @@
     // Chronological section separator targets for dynamic mode transitions (2 sections light, 2 dark)
     const sectionSeparatorTargets = [
       { id: 'heroSection', theme: 'dark' },
-      { id: 'simulator', theme: 'light' },
+      { id: 'pricing', theme: 'dark' },
       { id: 'process', theme: 'dark' },
       { id: 'capabilities', theme: 'dark' },
       { id: 'comparison', theme: 'light' },
@@ -1111,7 +1118,7 @@
       }
 
       // 2. Above the first section (Hero area) -> clear active state & dark mode
-      const firstSection = document.getElementById('simulator');
+      const firstSection = document.getElementById('pricing');
       if (firstSection && scrollPos < firstSection.offsetTop - 220) {
         if (!isManualScrolling) setActivePill(null);
         updateTheme('dark');
@@ -1223,96 +1230,22 @@
     if (mobileDrawerOverlay) mobileDrawerOverlay.addEventListener('click', closeMobileMenu);
     mobileNavItems.forEach(item => item.addEventListener('click', closeMobileMenu));
 
-    // --- 5. Interactive 14-Day Sprint Simulator ---
-    const calcDays = document.getElementById('calcDays');
-    const calcPrice = document.getElementById('calcPrice');
-    const calcSquad = document.getElementById('calcSquad');
-    const lockScopeBtn = document.getElementById('lockScopeBtn');
-
-    let simulatorState = {
-      baseDays: 10,
-      stageDays: 0,
-      archDays: 0,
-      addonsDays: 3,
-      basePrice: 6500,
-      stagePrice: 0,
-      archPrice: 0,
-      addonsPrice: 2200,
-      currency: 'USD',
-      rate: 1
-    };
-
-    function updateSimulatorCalculations() {
-      const totalDays = simulatorState.baseDays + simulatorState.stageDays + simulatorState.archDays + simulatorState.addonsDays;
-      const rawPrice = simulatorState.basePrice + simulatorState.stagePrice + simulatorState.archPrice + simulatorState.addonsPrice;
-      const convertedPrice = Math.round(rawPrice * simulatorState.rate);
-
-      let symbol = '$';
-      if (simulatorState.currency === 'EUR') symbol = '€';
-      if (simulatorState.currency === 'GBP') symbol = '£';
-
-      if (calcDays) calcDays.textContent = `${totalDays} Days`;
-      if (calcPrice) calcPrice.textContent = `${symbol}${convertedPrice.toLocaleString()}`;
-
-      if (totalDays <= 12) {
-        calcSquad.textContent = '1 Lead Product Designer + 1 Principal Fullstack Engineer';
-      } else if (totalDays <= 15) {
-        calcSquad.textContent = '1 Lead Product Designer + 1 Principal Fullstack Eng + 1 AI Systems Architect';
-      } else {
-        calcSquad.textContent = '1 Lead Designer + 2 Principal Fullstack Engs + 1 Cloud Architect';
-      }
-    }
-
-    // Stage Pill selection
-    const stagePills = document.querySelectorAll('#stageOptions .sim-option-pill');
-    stagePills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        playTone(550, 'sine', 0.05);
-        stagePills.forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        simulatorState.stageDays = parseInt(pill.getAttribute('data-days')) || 0;
-        simulatorState.stagePrice = parseInt(pill.getAttribute('data-price')) || 0;
-        updateSimulatorCalculations();
+    // --- 5. Pricing Cards Interaction Feedback ---
+    const pricingCards = document.querySelectorAll('.pricing-tier-card');
+    pricingCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        if (typeof playTone === 'function') {
+          playTone(480, 'sine', 0.02);
+        }
       });
     });
 
-    // Architecture Pill selection
-    const archPills = document.querySelectorAll('#archOptions .sim-option-pill');
-    archPills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        playTone(600, 'sine', 0.05);
-        archPills.forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        simulatorState.baseDays = parseInt(pill.getAttribute('data-days')) || 10;
-        simulatorState.basePrice = parseInt(pill.getAttribute('data-price')) || 6500;
-        updateSimulatorCalculations();
-      });
-    });
-
-    // Addons Pill multi-selection
-    const addonPills = document.querySelectorAll('#addonOptions .sim-option-pill');
-    addonPills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        playTone(520, 'sine', 0.05);
-        pill.classList.toggle('active');
-        
-        let sumDays = 0;
-        let sumPrice = 0;
-        document.querySelectorAll('#addonOptions .sim-option-pill.active').forEach(act => {
-          sumDays += parseInt(act.getAttribute('data-days')) || 0;
-          sumPrice += parseInt(act.getAttribute('data-price')) || 0;
-        });
-        simulatorState.addonsDays = sumDays;
-        simulatorState.addonsPrice = sumPrice;
-        updateSimulatorCalculations();
-      });
-    });
-
-    // Lock Scope Button
-    if (lockScopeBtn) {
-      lockScopeBtn.addEventListener('click', () => {
-        playTone(700, 'sine', 0.1);
-        openBookingModal('calculated-simulator');
+    const bookCallBtn = document.querySelector('.btn-book-call');
+    if (bookCallBtn) {
+      bookCallBtn.addEventListener('click', () => {
+        if (typeof playTone === 'function') {
+          playTone(680, 'sine', 0.08);
+        }
       });
     }
 
