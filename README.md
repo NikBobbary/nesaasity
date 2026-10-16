@@ -30,6 +30,6 @@ The site will be live at:
 
 ## Project Structure
 
-- **`index.html`**: Production website for Nesaasity (Hero, Scope Simulator, Process, Capabilities, FAQs, and Scoping Modal).
+- **`index.html`**: Production website for Nesaasity (Hero, Scope Simulator, Process, Capabilities, and Scoping Modal).
 - **`styles.css`**: Complete design system with Chartreuse & Slate tokens, Kumbh Sans & Playfair Display typography, and 1280px / 960px / 480px responsive breakpoints.
 - **`assets/`**: High-resolution generated UI previews for Cognix AI, Hyperflow, Layered Health, and the Studio Workstation.
