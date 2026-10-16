@@ -7,37 +7,24 @@
 /* --------------------------------------------------------------------------
    0. FONTS & EXTERNAL ASSETS
    Cabin Condensed (Card & Step Titles), Inter Display & Inter (Headings & Body),
-   Riven Didone (Signature Editorial Display Serif / Main Headings & Accents)
+   Pixelify Sans (Signature Pixel Display / Main Headings & Accents)
    -------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-/* --- Riven Didone Font-Face (Signature Editorial Display Serif / Headings & Accents) --- */
+/* --- Pixelify Sans Font-Face (Signature Pixel Display / Headings & Accents) --- */
 @font-face {
-  font-family: 'Riven Didone';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
-  font-weight: 100 900;
+  font-family: 'Pixelify Sans';
+  src: url('assets/fonts/pixelify-sans.woff2') format('woff2');
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 
+/* Backward-compatibility aliases: Riven Didone & Burgundia -> map to Pixelify Sans */
 @font-face {
   font-family: 'Riven Didone';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Riven Didone Regular';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  src: url('assets/fonts/pixelify-sans.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -45,20 +32,7 @@
 
 @font-face {
   font-family: 'Riven Didone Regular';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Backward-compatibility alias: Burgundia -> maps to Riven Didone */
-@font-face {
-  font-family: 'Burgundia';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  src: url('assets/fonts/pixelify-sans.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -66,19 +40,7 @@
 
 @font-face {
   font-family: 'Burgundia';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Burgundia PERSONAL USE Regular';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  src: url('assets/fonts/pixelify-sans.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -86,11 +48,9 @@
 
 @font-face {
   font-family: 'Burgundia PERSONAL USE Regular';
-  src: url('assets/fonts/riven-didone-regular.woff2') format('woff2'),
-    url('assets/fonts/riven-didone-regular.ttf') format('truetype'),
-    url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  src: url('assets/fonts/pixelify-sans.woff2') format('woff2');
   font-weight: 100 900;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -328,9 +288,10 @@
   /* From Palette */
   --primitive-error-600: #b02424;
 
-  /* --- Typography Primitives: Riven Didone, Cabin Condensed & Inter Display --- */
-  --primitive-font-riven: 'Riven Didone', 'Riven Didone Regular', 'Burgundia', Georgia, serif;
-  --primitive-font-burgundia: var(--primitive-font-riven);
+  /* --- Typography Primitives: Pixelify Sans, Cabin Condensed & Inter Display --- */
+  --primitive-font-pixelify: 'Pixelify Sans', cursive, sans-serif;
+  --primitive-font-riven: var(--primitive-font-pixelify);
+  --primitive-font-burgundia: var(--primitive-font-pixelify);
   --primitive-font-cabin-condensed: 'Cabin Condensed', -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
   --primitive-font-inter-display: 'Inter Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --primitive-font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -338,10 +299,10 @@
   --primitive-font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   /* Aliases mapped to design hierarchy intent */
-  --primitive-font-heading: var(--primitive-font-riven);
-  /* Main headings */
-  --primitive-font-editorial: var(--primitive-font-riven);
-  /* Emphasised accents */
+  --primitive-font-heading: var(--primitive-font-mono);
+  /* Headings (unhighlighted text) */
+  --primitive-font-editorial: var(--primitive-font-pixelify);
+  /* Highlighted text / Emphasised accents */
   --primitive-font-condensed: var(--primitive-font-cabin-condensed);
   /* Smaller headings & imp text */
   --primitive-font-imp: var(--primitive-font-cabin-condensed);
@@ -353,8 +314,8 @@
 
   /* Backward compatibility aliases */
   --primitive-font-kumbh: var(--primitive-font-inter-display);
-  --primitive-font-playfair: var(--primitive-font-riven);
-  --primitive-font-serif: var(--primitive-font-riven);
+  --primitive-font-playfair: var(--primitive-font-pixelify);
+  --primitive-font-serif: var(--primitive-font-pixelify);
 
   /* Font Weights (Kumbh Sans full native scale) */
   --primitive-font-weight-light: 300;
@@ -519,14 +480,15 @@
   --semantic-backdrop-blur-lg: blur(24px);
 
   /* --- Semantic Typography (Font Roles & Intent Hierarchy) ---
-     1. Emphasised accents, main headings: Riven Didone
-     2. Smaller headings, imp text: Cabin Condensed
-     3. Normal text, body with not much importance: Inter Display
+     1. Headings (unhighlighted text): JetBrains Mono
+     2. Highlighted text & emphasised accents in headings: Pixelify Sans
+     3. Smaller UI text & imp text: Cabin Condensed
+     4. Normal text, body with not much importance: Inter Display
      ----------------------------------------------------------------------- */
-  --semantic-font-heading: var(--primitive-font-riven);
-  --semantic-font-display: var(--primitive-font-riven);
-  --semantic-font-editorial: var(--primitive-font-riven);
-  --semantic-font-serif: var(--primitive-font-riven);
+  --semantic-font-heading: var(--primitive-font-mono);
+  --semantic-font-display: var(--primitive-font-mono);
+  --semantic-font-editorial: var(--primitive-font-pixelify);
+  --semantic-font-serif: var(--primitive-font-pixelify);
 
   --semantic-font-condensed: var(--primitive-font-cabin-condensed);
   --semantic-font-brand: var(--primitive-font-cabin-condensed);
@@ -554,19 +516,19 @@
   --semantic-type-h1-line-height: 1.2;
   --semantic-type-h1-letter-spacing: -0.025em;
 
-  --semantic-type-h2-family: var(--semantic-font-condensed);
+  --semantic-type-h2-family: var(--semantic-font-heading);
   --semantic-type-h2-size: clamp(1.75rem, 3.5vw, var(--primitive-font-size-3xl));
   --semantic-type-h2-weight: var(--primitive-font-weight-bold);
   --semantic-type-h2-line-height: var(--primitive-line-height-snug);
-  --semantic-type-h2-letter-spacing: 0.015em;
+  --semantic-type-h2-letter-spacing: -0.02em;
 
-  --semantic-type-h3-family: var(--semantic-font-condensed);
+  --semantic-type-h3-family: var(--semantic-font-heading);
   --semantic-type-h3-size: var(--primitive-font-size-xl);
   --semantic-type-h3-weight: var(--primitive-font-weight-bold);
   --semantic-type-h3-line-height: var(--primitive-line-height-snug);
-  --semantic-type-h3-letter-spacing: 0.01em;
+  --semantic-type-h3-letter-spacing: -0.015em;
 
-  --semantic-type-h4-family: var(--semantic-font-condensed);
+  --semantic-type-h4-family: var(--semantic-font-heading);
   --semantic-type-h4-size: var(--primitive-font-size-lg);
   --semantic-type-h4-weight: var(--primitive-font-weight-semibold);
   --semantic-type-h4-line-height: var(--primitive-line-height-snug);
@@ -875,46 +837,70 @@ button {
 
 /* ==========================================================================
    GLOBAL TYPOGRAPHY HIERARCHY RULES:
-   1. Emphasised accents, main headings in Riven Didone
-   2. Smaller headings, imp text in Cabin Condensed
-   3. Normal text, body with not much importance in Inter Display
+   1. Headings (unhighlighted text) in JetBrains Mono
+   2. Highlighted text & emphasised accents in headings in Pixelify Sans
+   3. Important UI text (Buttons, badges, metrics) in Cabin Condensed
+   4. Normal text, body with not much importance in Inter Display
    ========================================================================== */
 
-/* --- 1. Main Headings: Riven Didone --- */
+/* --- 1. Headings (Unhighlighted text): JetBrains Mono --- */
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
 .hero-title-headline,
-.section-main-title {
-  font-family: var(--primitive-font-riven);
+.hero-agency .hero-title-headline,
+.section-main-title,
+.pricing-contracts-title,
+.footer-cta-headline,
+.pricing-tier-heading,
+.process-step-title {
+  font-family: var(--primitive-font-mono);
   color: var(--semantic-text-primary);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.025em;
 }
 
-/* --- 1. Emphasised Accents: Riven Didone (Italic) --- */
+/* --- 1. Highlighted Text & Accents in Headings: Pixelify Sans --- */
 em,
 i,
 .italic-accent,
 .text-editorial,
 .text-editorial-italic,
+.accent-pixelify,
 .accent-riven,
-.accent-burgundia {
-  font-family: var(--primitive-font-riven) !important;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: -0.02em;
+.accent-burgundia,
+.highlight,
+mark,
+h1 .italic-accent,
+h2 .italic-accent,
+h3 .italic-accent,
+h4 .italic-accent,
+h5 .italic-accent,
+h6 .italic-accent,
+.hero-title-headline .italic-accent,
+.section-main-title .italic-accent,
+.pricing-contracts-title .italic-accent,
+.footer-cta-headline .italic-accent,
+h1 .highlight,
+h2 .highlight,
+h3 .highlight,
+.hero-title-headline .highlight,
+.section-main-title .highlight,
+.footer-cta-headline .highlight {
+  font-family: var(--primitive-font-pixelify) !important;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
-/* --- 2. Smaller Headings: Cabin Condensed --- */
-h2:not(.section-main-title):not(.hero-title-headline),
-h3,
-h4,
-h5,
-h6,
-.text-h2:not(.section-main-title),
-.text-h3,
-.text-h4,
-.process-step-title,
+/* --- 2. Smaller UI Headings & Modal Titles: Cabin Condensed --- */
 .sim-group-title,
 .capability-card-title,
 .faq-question-btn,
@@ -1087,12 +1073,13 @@ h6,
   font-family: var(--primitive-font-cabin-condensed) !important;
 }
 
+.font-pixelify,
 .font-riven,
 .font-burgundia,
 .font-editorial,
 .font-serif {
-  font-family: var(--primitive-font-riven) !important;
-  letter-spacing: -0.025em;
+  font-family: var(--primitive-font-pixelify) !important;
+  letter-spacing: -0.01em;
 }
 
 .font-mono {
@@ -1101,7 +1088,7 @@ h6,
 
 /* Backward compatibility aliases */
 .font-playfair {
-  font-family: var(--primitive-font-riven) !important;
+  font-family: var(--primitive-font-pixelify) !important;
 }
 
 .font-kumbh {
@@ -1497,8 +1484,8 @@ h6,
   border: none;
   border-radius: 16px;
   box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
-  font-family: var(--primitive-font-riven);
-  letter-spacing: -0.025em;
+  font-family: var(--primitive-font-sans);
+  letter-spacing: -0.01em;
   transition:
     background-color 0.45s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.45s cubic-bezier(0.16, 1, 0.3, 1),
@@ -1589,9 +1576,9 @@ h6,
   box-shadow: none !important;
 }
 
-/* Appbar Primary Booking CTA: Direct Cal.com link in Riven Didone */
+/* Appbar Primary Booking CTA: Direct Cal.com link in Pixelify Sans */
 .btn-header-cta {
-  font-family: var(--primitive-font-riven) !important;
+  font-family: var(--primitive-font-pixelify) !important;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.015em;
@@ -2042,9 +2029,9 @@ h6,
 }
 
 .hero-title-headline {
-  font-family: var(--primitive-font-riven);
+  font-family: var(--primitive-font-mono);
   font-size: 88px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: -0.025em;
@@ -2054,11 +2041,11 @@ h6,
   text-wrap: balance;
 }
 
-/* Hero Heading: Riven Didone editorial signature */
+/* Hero Heading: JetBrains Mono signature */
 .hero-agency .hero-title-headline {
-  font-family: var(--primitive-font-riven);
+  font-family: var(--primitive-font-mono);
   font-size: 88px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: -0.025em;
@@ -2080,13 +2067,13 @@ h6,
 }
 
 .hero-title-headline .italic-accent {
-  font-family: var(--primitive-font-riven);
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.15em;
+  font-family: var(--primitive-font-pixelify) !important;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.12em;
   color: var(--primitive-chartreuse-300);
-  padding: 0 0.15em;
-  letter-spacing: -0.02em;
+  padding: 0 0.12em;
+  letter-spacing: -0.01em;
 }
 
 .hero-subtitle {
@@ -2422,9 +2409,9 @@ h6,
 }
 
 .section-main-title {
-  font-family: var(--primitive-font-riven);
+  font-family: var(--primitive-font-mono);
   font-size: clamp(2.95rem, 5.85vw, 4.25rem);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.18;
   letter-spacing: -0.025em;
   color: var(--semantic-text-primary);
@@ -2432,13 +2419,13 @@ h6,
 }
 
 .section-main-title .italic-accent {
-  font-family: var(--primitive-font-riven);
-  font-weight: 400;
-  font-style: italic;
+  font-family: var(--primitive-font-pixelify) !important;
+  font-weight: 600;
+  font-style: normal;
   font-size: 1.12em;
   color: var(--primitive-chartreuse-300);
   padding: 0 0.12em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .section-lead-desc {
@@ -2465,9 +2452,9 @@ h6,
 }
 
 .pricing-contracts-title {
-  font-family: var(--primitive-font-riven), serif !important;
+  font-family: var(--primitive-font-mono), monospace !important;
   font-size: clamp(2.6rem, 5.5vw, 4.25rem) !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: #ffffff !important;
@@ -2696,11 +2683,11 @@ h6,
   color: #000000 !important;
   padding: 13px 48px;
   border-radius: 9999px;
-  font-family: var(--primitive-font-riven), serif !important;
+  font-family: var(--primitive-font-pixelify), sans-serif !important;
   font-style: italic !important;
   font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: -0.015em;
+  font-weight: 500;
+  letter-spacing: -0.01em;
   text-decoration: none;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
@@ -3176,24 +3163,24 @@ h6,
 
 /* Level 2: Primary Value Proposition Headline */
 .footer-cta-headline {
-  font-family: var(--primitive-font-riven), var(--primitive-font-sans);
+  font-family: var(--primitive-font-mono), monospace;
   font-size: clamp(2.4rem, 4.8vw, 4.25rem);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -0.028em;
+  letter-spacing: -0.025em;
   color: #0b0f17;
   margin: 0 0 clamp(16px, 2vw, 22px) 0;
   max-width: 840px;
 }
 
 .footer-cta-headline .italic-accent {
-  font-family: var(--primitive-font-riven);
-  font-weight: 400;
-  font-style: italic;
+  font-family: var(--primitive-font-pixelify) !important;
+  font-weight: 600;
+  font-style: normal;
   font-size: 1.08em;
   color: var(--primitive-chartreuse-700, #367809);
   padding: 0 0.08em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 /* Level 3: Actionable Supporting Lead */
