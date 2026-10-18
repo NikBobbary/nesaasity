@@ -9,7 +9,7 @@
    Cabin Condensed (Card & Step Titles), Inter Display & Inter (Headings & Body),
    Pixelify Sans (Signature Pixel Display / Main Headings & Accents)
    -------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600;700&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 /* --- Pixelify Sans Font-Face (Signature Pixel Display / Headings & Accents) --- */
@@ -21,10 +21,11 @@
   font-display: swap;
 }
 
-/* Backward-compatibility aliases: Riven Didone & Burgundia -> map to Pixelify Sans */
+/* --- Riven Didone Font-Face (from Riven Didone Regular.ttf) --- */
 @font-face {
   font-family: 'Riven Didone';
-  src: url('assets/fonts/pixelify-sans.woff2') format('woff2');
+  src: url('Riven Didone Regular.ttf') format('truetype'),
+    url('assets/fonts/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -32,7 +33,18 @@
 
 @font-face {
   font-family: 'Riven Didone Regular';
-  src: url('assets/fonts/pixelify-sans.woff2') format('woff2');
+  src: url('Riven Didone Regular.ttf') format('truetype'),
+    url('assets/fonts/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Map 'JetBrains Mono' font family directly to Riven Didone Regular.ttf */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('Riven Didone Regular.ttf') format('truetype'),
+    url('assets/fonts/riven-didone-regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -57,9 +69,9 @@
 /* Authentic Riven Didone Serif Font */
 @font-face {
   font-family: 'Riven Didone Font';
-  src: url('assets/framer/riven-didone-regular.woff2') format('woff2'),
-       url('Riven Didone Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('Riven Didone Regular.ttf') format('truetype'),
+    url('assets/framer/riven-didone-regular.woff2') format('woff2');
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -310,13 +322,13 @@
 
   /* --- Typography Primitives: Pixelify Sans, Cabin Condensed & Inter Display --- */
   --primitive-font-pixelify: 'Pixelify Sans', cursive, sans-serif;
-  --primitive-font-riven: var(--primitive-font-pixelify);
+  --primitive-font-riven: 'Riven Didone Regular', 'Riven Didone', serif;
   --primitive-font-burgundia: var(--primitive-font-pixelify);
   --primitive-font-cabin-condensed: 'Cabin Condensed', -apple-system, BlinkMacSystemFont, 'Arial Narrow', sans-serif;
   --primitive-font-inter-display: 'Inter Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --primitive-font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --primitive-font-opening-hours: 'Opening Hours Sans', 'Opening Hours Sans Regular', sans-serif;
-  --primitive-font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --primitive-font-mono: 'Riven Didone Regular', 'Riven Didone', 'JetBrains Mono', serif;
 
   /* Aliases mapped to design hierarchy intent */
   --primitive-font-heading: var(--primitive-font-mono);
@@ -475,11 +487,14 @@
   /* Mobile devices boundary */
 
   /* ==========================================================================
-     SECTION LAYOUT & SPACING TOKENS (All sections except Hero & Footer)
+     SECTION LAYOUT & SPACING TOKENS
+     Increased by 50%: ~330px top & bottom padding per section
+     yields ~660px breathing room between adjacent sections
      ========================================================================== */
-  --section-padding-y: var(--primitive-space-80);
+  --section-padding-y: clamp(210px, 24vw, 330px);
   --section-padding-x: clamp(1.25rem, 3.5vw, 3.5rem);
   --section-max-width: 1440px;
+  --services-viewport-padding-top: clamp(60px, 8vh, 88px);
 
   /* Semantic Aliases */
   --semantic-section-padding-y: var(--section-padding-y);
@@ -514,7 +529,7 @@
   --semantic-backdrop-blur-lg: blur(24px);
 
   /* --- Semantic Typography (Font Roles & Intent Hierarchy) ---
-     1. Headings (unhighlighted text): JetBrains Mono
+     1. Headings (unhighlighted text): Riven Didone
      2. Highlighted text & emphasised accents in headings: Pixelify Sans
      3. Smaller UI text & imp text: Cabin Condensed
      4. Normal text, body with not much importance: Inter Display
@@ -871,13 +886,13 @@ button {
 
 /* ==========================================================================
    GLOBAL TYPOGRAPHY HIERARCHY RULES:
-   1. Headings (unhighlighted text) in JetBrains Mono
+   1. Headings (unhighlighted text) in Riven Didone
    2. Highlighted text & emphasised accents in headings in Pixelify Sans
    3. Important UI text (Buttons, badges, metrics) in Cabin Condensed
    4. Normal text, body with not much importance in Inter Display
    ========================================================================== */
 
-/* --- 1. Headings (Unhighlighted text): JetBrains Mono --- */
+/* --- 1. Headings (Unhighlighted text): Riven Didone --- */
 h1,
 h2,
 h3,
@@ -1545,18 +1560,25 @@ h3 .highlight,
   justify-content: space-between;
   height: 48px;
   gap: var(--primitive-space-4);
+  position: relative;
 }
 
 /* Appbar Desktop Navigation Activities (Shifted from bottom dock) */
 .header-nav-menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto;
 }
 
 .site-header .nav-links-desktop {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   list-style: none;
   margin: 0;
@@ -1951,6 +1973,7 @@ h3 .highlight,
   display: flex;
   align-items: center;
   gap: var(--primitive-space-3);
+  margin-left: auto;
 }
 
 /* Mobile Hamburger Toggle */
@@ -2033,7 +2056,7 @@ h3 .highlight,
 
 /* --- Hero Section & Studio Showcase --- */
 .hero-agency {
-  padding: 200px 0 var(--primitive-space-8);
+  padding: 200px 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -2070,7 +2093,7 @@ h3 .highlight,
   letter-spacing: -0.025em;
   color: var(--semantic-text-primary);
   max-width: 1200px;
-  margin: 0 auto 120px;
+  margin: 0 auto clamp(16px, 2.5vw, 24px);
   text-wrap: balance;
 }
 
@@ -2084,7 +2107,7 @@ h3 .highlight,
   letter-spacing: -0.025em;
   color: var(--semantic-text-primary);
   max-width: 1200px;
-  margin: 0 auto 120px;
+  margin: 0 auto clamp(16px, 2.5vw, 24px);
   text-wrap: balance;
 }
 
@@ -2111,11 +2134,13 @@ h3 .highlight,
 
 .hero-subtitle {
   font-family: var(--primitive-font-inter-display);
-  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: var(--primitive-font-weight-regular);
   line-height: 1.6;
   color: var(--semantic-text-secondary);
-  margin: 0 auto var(--primitive-space-8);
+  max-width: 680px;
+  margin: 0 auto clamp(56px, 7vw, 96px);
+  text-wrap: balance;
 }
 
 .hero-actions-bar {
@@ -2282,7 +2307,7 @@ h3 .highlight,
 
 /* --- Tech Stack & Tools Marquee --- */
 .tech-marquee-strip {
-  padding: var(--primitive-space-6) 0;
+  padding: var(--primitive-space-6) 0 var(--services-viewport-padding-top);
   border-top: none;
   border-bottom: none;
   overflow: hidden;
@@ -2358,7 +2383,7 @@ h3 .highlight,
   background: transparent !important;
   background-color: transparent !important;
   color: var(--semantic-text-primary);
-  padding: 200px 0 var(--primitive-space-8);
+  padding: 200px 0 0;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -2366,7 +2391,7 @@ h3 .highlight,
 }
 
 .tech-marquee-strip {
-  padding: var(--primitive-space-6) 0;
+  padding: var(--primitive-space-6) 0 var(--services-viewport-padding-top);
   border-top: none;
   border-bottom: none;
   overflow: hidden;
@@ -2498,7 +2523,7 @@ h3 .highlight,
 }
 
 .pricing-contracts-title {
-  font-family: var(--primitive-font-mono), monospace !important;
+  font-family: var(--primitive-font-mono), serif !important;
   font-size: clamp(2.6rem, 5.5vw, 4.25rem) !important;
   font-weight: 500 !important;
   line-height: 1.15;
@@ -2845,45 +2870,82 @@ h3 .highlight,
   background: transparent !important;
 }
 
-/* --- Services & Capabilities Grid: Elevate your digital footprint --- */
+/* --- Services: Sticky Scroll-Driven Horizontal Track Architecture --- */
 .services-elevate-section {
-  padding: var(--section-padding-y) 0;
   position: relative;
+  height: 350vh;
+  /* Calibrated dynamically in JS for 1:1 tactile scroll */
+  padding: 0;
   z-index: 2;
+  box-sizing: border-box;
 }
 
-.services-elevate-section .container {
+.services-sticky-viewport {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
   width: 100%;
-  max-width: var(--section-max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: var(--services-viewport-padding-top);
+  padding-bottom: clamp(20px, 3vh, 40px);
+}
+
+.services-sticky-container {
+  width: 100%;
+  max-width: var(--section-max-width, 1280px);
   margin: 0 auto;
-  padding-left: var(--section-padding-x);
-  padding-right: var(--section-padding-x);
+  padding-left: var(--section-padding-x, 24px);
+  padding-right: var(--section-padding-x, 24px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .services-elevate-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: var(--primitive-space-6);
-  margin-bottom: clamp(2.5rem, 4.5vw, 3.75rem);
+  gap: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: clamp(1.75rem, 3vh, 2.5rem);
+  flex-shrink: 0;
 }
 
 .services-headline {
-  font-family: var(--primitive-font-mono), monospace !important;
-  font-size: clamp(2.4rem, 4.8vw, 3.85rem) !important;
+  font-family: var(--primitive-font-mono), serif !important;
+  font-size: clamp(2.4rem, 4.6vw, 3.85rem) !important;
   font-weight: 500 !important;
   line-height: 1.14;
   letter-spacing: -0.025em;
-  color: var(--semantic-text-primary);
+  color: var(--semantic-text-primary, #ffffff);
   margin: 0;
   text-wrap: balance;
 }
 
+.services-headline-accent {
+  color: var(--primitive-chartreuse-400, #76e01a);
+}
+
 .services-header-actions {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 440px;
   flex-shrink: 0;
+}
+
+.services-header-desc {
+  font-family: var(--primitive-font-inter-display), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(0.875rem, 1.05vw, 0.975rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.62);
+  margin: 0;
+  letter-spacing: -0.01em;
 }
 
 .btn-services-pill {
@@ -2891,7 +2953,7 @@ h3 .highlight,
   align-items: center;
   justify-content: center;
   padding: 10px 22px;
-  border-radius: var(--primitive-radius-full);
+  border-radius: var(--primitive-radius-full, 9999px);
   font-family: var(--primitive-font-inter-display), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
   font-size: 0.875rem;
   font-weight: 500;
@@ -2929,67 +2991,171 @@ h3 .highlight,
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
 }
 
-/* 10-Card Services Grid (5x2 on Desktop) */
-.services-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: clamp(0.75rem, 1.25vw, 1.25rem);
+.services-scroll-container {
+  position: relative;
   width: 100%;
+  overflow: visible;
+  padding: 16px 0 32px 0;
+  margin: -8px 0 -16px 0;
 }
 
+.services-cards-track {
+  display: flex;
+  gap: clamp(2.25rem, 3.3vw, 3.375rem);
+  width: max-content;
+  will-change: transform;
+}
+
+/* Service Card Item: Solid Sleek Surface (No 3D Triangulation Artifacts) */
 .service-card-item {
-  background: #080808;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  padding: clamp(2rem, 3vw, 2.75rem) clamp(1rem, 1.5vw, 1.5rem);
+  flex: 0 0 auto;
+  width: clamp(510px, 40.5vw, 615px);
+  height: clamp(470px, 49vh, 520px);
+  min-height: 470px;
+  background: #151619;
+  border: none !important;
+  outline: none;
+  border-radius: 24px;
+  padding: clamp(2rem, 2.6vw, 2.65rem) clamp(4rem, 5.2vw, 5.3rem) clamp(2rem, 2.6vw, 2.65rem) clamp(2rem, 2.6vw, 2.65rem);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 195px;
   position: relative;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.3s ease,
-    background 0.3s ease,
-    box-shadow 0.3s ease;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.35s ease,
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.45);
+  will-change: transform;
 }
 
+/* Card Hover Elevation (Smooth 2D, Zero Triangles or Gradient Seams) */
 .service-card-item:hover {
-  transform: translateY(-4px);
-  background: #0f0f0f;
-  border-color: rgba(255, 255, 255, 0.22);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+  background: #1c1d22;
+  transform: translateY(-6px);
+  border: none !important;
+  box-shadow: 0 24px 50px -15px rgba(0, 0, 0, 0.7);
 }
 
-.service-card-icon-wrap {
-  width: 44px;
-  height: 44px;
+/* Card Content Layout */
+.service-card-inner {
+  position: relative;
+  z-index: 2;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  color: #ffffff;
-  transition: transform 0.3s ease;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  pointer-events: none;
 }
 
-.service-card-icon-wrap svg {
-  display: block;
+/* Card Top Group: Title + Arrow + Description */
+.service-card-top {
+  display: flex;
+  flex-direction: column;
 }
 
-.service-card-item:hover .service-card-icon-wrap {
-  transform: scale(1.08);
+.service-card-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .service-card-title {
   font-family: var(--primitive-font-inter-display), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  font-size: 0.9375rem;
+  font-size: clamp(1.4rem, 1.75vw, 1.65rem);
   font-weight: 500;
-  line-height: 1.35;
-  letter-spacing: -0.015em;
-  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: #ffffff;
   margin: 0;
-  text-wrap: balance;
+  transition: color 0.3s ease;
+}
+
+/* Arrow in Top-Right */
+.service-card-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.45);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+.service-card-arrow svg {
+  display: block;
+}
+
+.service-card-item:hover .service-card-arrow {
+  color: #ffffff;
+  transform: translate(2px, -2px);
+}
+
+/* Card Description */
+.service-card-desc {
+  font-family: var(--primitive-font-inter-display), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(0.9rem, 1.05vw, 0.965rem);
+  font-weight: 400;
+  line-height: 1.62;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 14px 0 0 0;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.service-card-item:hover .service-card-desc {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Bottom Visual Area: Right Aligned */
+.service-card-visual-area {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  padding-top: 24px;
+}
+
+/* Icon Wrap: No Background, No Shadow, Transparent */
+.service-card-icon-wrap {
+  width: auto;
+  height: auto;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.4);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.35s ease;
+}
+
+/* Material Symbols Rounded: 300 Weight */
+.service-card-icon-wrap .material-symbols-rounded {
+  font-family: 'Material Symbols Rounded' !important;
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48 !important;
+  font-weight: 300 !important;
+  font-size: clamp(48px, 4.4vw, 64px) !important;
+  color: rgba(255, 255, 255, 0.38) !important;
+  line-height: 1 !important;
+  display: block;
+  user-select: none;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.service-card-item:hover .service-card-icon-wrap .material-symbols-rounded {
+  color: rgba(255, 255, 255, 0.88) !important;
+  transform: scale(1.06);
 }
 
 /* Light Theme Adaptability */
@@ -3020,81 +3186,79 @@ h3 .highlight,
   border-color: rgba(0, 0, 0, 0.22);
 }
 
+[data-theme="light"] .services-nav-arrow {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #0c0d0e;
+}
+
+[data-theme="light"] .services-nav-arrow:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .services-nav-arrow:disabled {
+  opacity: 0.28;
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
 [data-theme="light"] .service-card-item {
   background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: none !important;
+  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.06);
 }
 
 [data-theme="light"] .service-card-item:hover {
   background: #fbfbfb;
-  border-color: rgba(0, 0, 0, 0.18);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border: none !important;
+  box-shadow: 0 20px 44px -12px rgba(0, 0, 0, 0.12);
 }
 
 [data-theme="light"] .service-card-icon-wrap {
+  background: transparent !important;
+  border: none !important;
   color: #0c0d0e;
 }
 
-[data-theme="light"] .service-card-title {
+[data-theme="light"] .service-card-item:hover .service-card-icon-wrap {
+  background: transparent !important;
+  border: none !important;
   color: #1a1a1a;
 }
 
-/* Breakpoints for Services Grid */
-@media (max-width: 1200px) {
-  .services-cards-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-  }
-
-  .service-card-item {
-    padding: 1.75rem 0.65rem;
-    min-height: 180px;
-  }
-
-  .service-card-title {
-    font-size: 0.875rem;
-  }
+[data-theme="light"] .service-card-title {
+  color: #0c0d0e;
 }
 
-@media (max-width: 1024px) {
-  .services-cards-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+[data-theme="light"] .service-card-desc {
+  color: rgba(12, 13, 14, 0.6);
 }
 
+[data-theme="light"] .service-card-item:hover .service-card-desc {
+  color: rgba(12, 13, 14, 0.85);
+}
+
+/* Responsive Media Queries */
 @media (max-width: 768px) {
   .services-elevate-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--primitive-space-4);
-  }
-
-  .services-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: var(--primitive-space-4, 1.25rem);
   }
 
   .service-card-item {
-    min-height: 165px;
-    padding: 1.5rem 0.75rem;
-    border-radius: 16px;
+    width: min(390px, 85vw);
+    min-height: 230px;
+    padding: 1.5rem 2.7rem 1.5rem 1.35rem;
+    border-radius: 18px;
   }
 }
 
 @media (max-width: 480px) {
-  .services-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-
   .service-card-item {
-    padding: 1.25rem 0.5rem;
-    min-height: 155px;
-  }
-
-  .service-card-title {
-    font-size: 0.8125rem;
+    width: min(360px, 85vw);
+    min-height: 220px;
+    padding: 1.35rem 2.4rem 1.35rem 1.2rem;
   }
 }
 
@@ -3146,10 +3310,47 @@ h3 .highlight,
    STARTING IS EASY, SO IS CONTINUING — 3-STEP PROCESS SECTION
    ========================================================================== */
 .steps-continue-section {
-  padding: clamp(4.5rem, 7.5vw, 6.75rem) 0 clamp(3.5rem, 5.5vw, 5.25rem) 0;
+  padding: var(--section-padding-y) 0;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
+}
+
+@media (min-width: 993px) {
+  .steps-continue-section {
+    position: relative;
+    padding: 0;
+    min-height: 380vh;
+  }
+
+  .steps-sticky-viewport {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: clamp(64px, 8vh, 88px);
+    padding-bottom: clamp(48px, 6vh, 72px);
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 992px) {
+  .steps-continue-section {
+    padding: var(--section-padding-y) 0;
+    height: auto !important;
+  }
+
+  .steps-sticky-viewport {
+    position: static;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+  }
 }
 
 .steps-continue-section .container {
@@ -3167,7 +3368,7 @@ h3 .highlight,
 }
 
 .steps-section-title {
-  font-family: var(--primitive-font-mono), SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-family: var(--primitive-font-mono), serif !important;
   font-size: clamp(2.5rem, 5.2vw, 4.25rem);
   font-weight: 500;
   line-height: 1.18;
@@ -3217,17 +3418,21 @@ h3 .highlight,
 }
 
 .steps-item-card {
+  position: relative;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 24px;
   padding: 16px 16px 28px 16px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.35s ease,
-              background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.45s ease,
+    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  cursor: default;
+  will-change: transform, box-shadow, opacity, background-color;
 }
 
 [data-theme="dark"] .steps-item-card {
@@ -3236,15 +3441,28 @@ h3 .highlight,
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
-.steps-item-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(0, 0, 0, 0.14);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.07);
+/* Activated Card State: Floats in 3D, thinner and more understated stroke */
+.steps-item-card.is-active {
+  transform: translateY(-14px) scale(1.02);
+  background: #ffffff !important;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.08);
+  opacity: 1 !important;
+  z-index: 10;
 }
 
-[data-theme="dark"] .steps-item-card:hover {
-  border-color: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+[data-theme="dark"] .steps-item-card.is-active {
+  background: #14171f !important;
+  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.55);
+}
+
+/* Spotlight contrast when a step is activated (scroll-driven only, no hover) */
+.steps-cards-grid.has-active-step .steps-item-card:not(.is-active) {
+  opacity: 0.62;
+  transform: translateY(0);
+}
+
+.steps-cards-grid.has-active-step .steps-item-card.is-past:not(.is-active) {
+  opacity: 0.84;
 }
 
 .steps-visual-frame {
@@ -3275,7 +3493,7 @@ h3 .highlight,
 }
 
 .steps-content-title {
-  font-family: var(--primitive-font-mono), SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-family: var(--primitive-font-mono), serif !important;
   font-size: clamp(1.05rem, 1.35vw, 1.2rem);
   font-weight: 600;
   color: var(--semantic-text-primary);
@@ -3328,17 +3546,21 @@ h3 .highlight,
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.6s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease,
+    border 0.4s ease;
 }
 
 .call-window-left {
-  width: 56%;
+  width: 58%;
   aspect-ratio: 4 / 3;
   left: 4%;
   top: 13%;
   transform: rotate(-6deg);
   z-index: 1;
-  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
 }
 
 .call-window-right {
@@ -3352,13 +3574,21 @@ h3 .highlight,
   border: 1.5px solid rgba(255, 255, 255, 0.9);
 }
 
-.steps-item-card:hover .call-window-left {
-  transform: rotate(-8deg) scale(1.02);
+/* Interactivity 1: Woman video call window comes to front */
+.steps-item-card.is-active .call-window-left {
+  z-index: 10 !important;
+  transform: rotate(-2deg) scale(1.18) translate(18px, 10px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.55);
+  border: 2px solid #ffffff;
 }
 
-.steps-item-card:hover .call-window-right {
-  transform: rotate(2deg) scale(1.02);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+.steps-item-card.is-active .call-window-right {
+  z-index: 1 !important;
+  transform: rotate(8deg) scale(0.86) translate(10px, 8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  opacity: 0.65;
+  filter: brightness(0.8);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .call-window-img {
@@ -3380,11 +3610,13 @@ h3 .highlight,
   justify-content: center;
   z-index: 4;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.steps-item-card:hover .call-action-pill {
-  transform: scale(1.08);
+.steps-item-card.is-active .call-action-pill {
+  transform: scale(1.1);
+  background: var(--primitive-chartreuse-400, #76e01a);
+  color: #0b0f19;
 }
 
 .pill-mic-pos {
@@ -3444,7 +3676,9 @@ h3 .highlight,
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.65s ease,
+    background-color 0.4s ease;
 }
 
 [data-theme="dark"] .notion-task-card-item {
@@ -3452,9 +3686,65 @@ h3 .highlight,
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
-.notion-task-card-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+/* Interactivity 2: Dynamic Kanban Task Progression (scroll-driven, no hover, no green border) */
+/* 1. In Doing: One task card (User Flows) moves to Completed */
+.steps-item-card.is-active .task-userflows {
+  transform: translateX(calc(100% + 8px)) translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  z-index: 6;
+  transition-delay: 0.06s;
+  border: none !important;
+  outline: none !important;
+}
+
+.steps-item-card.is-active .task-userflows .notion-status-dot {
+  background: #10b981 !important;
+  box-shadow: none !important;
+}
+
+/* 2. In Doing: The remaining card (Branding Materials) moves to top of column */
+.steps-item-card.is-active .task-branding {
+  transform: translateY(calc(-100% - 6px));
+  transition-delay: 0.14s;
+  border: none !important;
+  outline: none !important;
+}
+
+/* 3. In To-Do: One more card (Marketing Materials) moves from To-Do into Doing */
+.steps-item-card.is-active .task-marketing {
+  transform: translateX(calc(100% + 8px)) translateY(calc(100% + 6px));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  transition-delay: 0.22s;
+  border: none !important;
+  outline: none !important;
+}
+
+.steps-item-card.is-active .task-marketing .notion-status-dot {
+  background: #06b6d4 !important;
+  box-shadow: none !important;
+}
+
+/* 4. In To-Do: The remaining card (Landing Page) moves to top of column */
+.steps-item-card.is-active .task-landing {
+  transform: translateY(calc(-100% - 6px));
+  transition-delay: 0.28s;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Completed column empty placeholder fades out */
+.steps-item-card.is-active .notion-empty-column-slot {
+  opacity: 0;
+  border-color: transparent;
+  transform: scale(0.92);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.steps-item-card.is-active .column-completed .notion-column-title {
+  color: var(--semantic-text-primary) !important;
+  font-weight: 700;
+  text-shadow: none;
 }
 
 .notion-task-card-header {
@@ -3472,10 +3762,21 @@ h3 .highlight,
   flex-shrink: 0;
 }
 
-.dot-status-green { background: #10b981; }
-.dot-status-yellow { background: #f59e0b; }
-.dot-status-cyan { background: #06b6d4; }
-.dot-status-blue { background: #3b82f6; }
+.dot-status-green {
+  background: #10b981;
+}
+
+.dot-status-yellow {
+  background: #f59e0b;
+}
+
+.dot-status-cyan {
+  background: #06b6d4;
+}
+
+.dot-status-blue {
+  background: #3b82f6;
+}
 
 .notion-task-title-text {
   font-size: 8.5px;
@@ -3528,7 +3829,7 @@ h3 .highlight,
 /* --- Card 3: Before / After Delivery Layout --- */
 .steps-visual-delivery {
   background: #f2f4f6;
-  padding: 10px 14px 0 14px;
+  padding: 0 14px;
   align-items: flex-end;
 }
 
@@ -3543,6 +3844,7 @@ h3 .highlight,
   gap: 12px;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .delivery-column-side {
@@ -3553,10 +3855,13 @@ h3 .highlight,
   min-width: 0;
   height: 100%;
   justify-content: flex-end;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.6s ease,
+    filter 0.6s ease;
 }
 
 .delivery-script-label {
-  font-family: var(--primitive-font-mono), SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-family: var(--primitive-font-mono), serif !important;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -3599,28 +3904,59 @@ h3 .highlight,
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-bottom: none;
   background: #ffffff;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+  transition: width 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    height 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.65s ease,
+    border-color 0.4s ease;
 }
 
 .preview-card-before {
-  height: 165px;
+  height: 58%;
   opacity: 0.94;
 }
 
 .preview-card-after {
-  height: 195px;
+  height: 68%;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
   z-index: 2;
+  transform: translateY(0);
+}
+
+/* Interactivity 3: The After screenshot comes to center, top comes to 25% height of parent frame */
+.steps-item-card.is-active .side-before {
+  transform: translateX(-35px) scale(0.75);
+  opacity: 0.18;
+  filter: blur(1.5px) grayscale(0.8);
+  pointer-events: none;
+}
+
+.steps-item-card.is-active .side-after {
+  transform: translateX(calc(-50% - 6px));
+  z-index: 20 !important;
+}
+
+.steps-item-card.is-active .preview-card-after {
+  height: 75% !important;
+  width: 142% !important;
+  box-shadow: 0 20px 44px -8px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  /* clean neutral border, no green */
+  z-index: 10;
+}
+
+[data-theme="dark"] .steps-item-card.is-active .preview-card-after {
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.6);
+}
+
+.steps-item-card.is-active .side-after .delivery-script-label {
   transform: translateY(-2px);
-}
-
-.steps-item-card:hover .preview-card-before {
-  transform: translateY(2px);
-}
-
-.steps-item-card:hover .preview-card-after {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+  background: var(--primitive-chartreuse-400, #76e01a) !important;
+  color: #080a0f !important;
+  font-weight: 700;
+  border-color: rgba(118, 224, 26, 0.9);
+  box-shadow: 0 0 16px rgba(118, 224, 26, 0.7);
 }
 
 .delivery-preview-browser-card img {
@@ -3832,7 +4168,7 @@ h3 .highlight,
 .site-footer-agency {
   background: transparent !important;
   border-top: none !important;
-  padding: var(--primitive-space-12) 24px var(--primitive-space-8);
+  padding: var(--section-padding-y) 24px var(--primitive-space-8);
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -3901,7 +4237,7 @@ h3 .highlight,
 
 /* Level 2: Primary Value Proposition Headline */
 .footer-cta-headline {
-  font-family: var(--primitive-font-mono), monospace;
+  font-family: var(--primitive-font-mono), serif;
   font-size: clamp(2.4rem, 4.8vw, 4.25rem);
   font-weight: 500;
   line-height: 1.1;
@@ -4514,13 +4850,20 @@ h3 .highlight,
 
   /* Agency Mobile Viewport Adaptations */
   .hero-agency {
-    padding: clamp(3.5rem, 7vw, 5rem) 0 var(--primitive-space-6);
+    padding: clamp(3.5rem, 7vw, 5rem) 0 0;
   }
 
   .hero-agency .hero-title-headline,
   .hero-title-headline {
     font-size: clamp(2.5rem, 9.5vw, 4rem);
-    margin-bottom: 60px;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+    line-height: 1.55;
+    margin-bottom: 48px;
+    padding: 0 var(--primitive-space-4);
   }
 
   .hero-actions-bar {
